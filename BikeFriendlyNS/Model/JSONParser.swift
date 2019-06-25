@@ -64,30 +64,32 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             //the following insures none of the JsonElement values are nil through optional binding
             if let title = jsonElement["title"],
                   let latitude = jsonElement["latitude"],
-                  let longitude = jsonElement["longitude"]
-//                let url = jsonElement["url"] as? String,
-//                let descrip = jsonElement["descrip"] as? String,
-//                let phone = jsonElement["phone"] as? String,
-//                let address = jsonElement["address"] as? String,
-//                let imagePath = jsonElement["imagePath"] as? String
+                  let longitude = jsonElement["longitude"],
+                  let url = jsonElement["url"],
+                  let descrip = jsonElement["descrip"],
+                  let phone = jsonElement["phone"],
+                  let address = jsonElement["address"],
+                  let imagePath = jsonElement["imagePath"],
+                  let typeOfService = jsonElement["typeOfService"]
             {
                 
                   location.title = title as? String
-                  print(location.title)
                 
                   location.latitude = latitude as? String
-                  print(latitude)
                 
                   location.longitude = longitude as? String
-                  print(longitude)
                 
-//                location.url = url
-//                location.descrip = descrip
-//                location.phone = phone
-//                location.address = address
-//                location.imagePath = imagePath
+                  location.url = url as? String
                 
+                  location.descrip = descrip as? String
                 
+                  location.phone = phone as? String
+                
+                  location.address = address as? String
+                
+                  location.imagePath = imagePath as? String
+                
+                  location.typeOfService = typeOfService as? String
             }
             
             locations.add(location)

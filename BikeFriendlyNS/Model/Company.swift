@@ -20,12 +20,13 @@ class Company: NSObject {
     var phone: String?
     var address: String?
     var imagePath: String?
+    var typeOfService: String?
     
     override init(){
         
     }
     
-    init(title: String, latitude: String,longitude: String, url: String, descrip: String, phone: String, address: String, imagePath: String){
+    init(title: String, latitude: String,longitude: String, url: String, descrip: String, phone: String, address: String, imagePath: String, typeOfService: String){
         
         self.title = title
         self.latitude = latitude
@@ -35,6 +36,7 @@ class Company: NSObject {
         self.phone = phone
         self.address = address
         self.imagePath = imagePath
+        self.typeOfService = typeOfService
     }
     
     

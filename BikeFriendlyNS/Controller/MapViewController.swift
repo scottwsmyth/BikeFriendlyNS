@@ -58,7 +58,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             let longitude: String? = temp.longitude
             
             if let strLat = latitude {
-                dLati = Double(strLat)!
+                dLati = Double(strLat)! as! Double
             }
             
             if let strLong = longitude{
@@ -138,79 +138,30 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     //Function for adding an info button/image on each annotation
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-       
+
+        var temp: Company = Company()
         
         if annotation is MKUserLocation { return nil }
     
             var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "CustomAnnotation")
         
             if annotationView == nil {
-            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "CustomAnnotation")}
+
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "CustomAnnotation")
+
+            }
+    
+                //Loop to apply images to each annotation
         
-            //Conditionals to set the annotation image
-        
-            if      annotation.title == "The New Glasgow Town Hall" ||
-                    annotation.title == "Hants Exhibition Grounds" ||
-                    annotation.title == "BernArt" ||
-                    annotation.title == "Cathedral Church of All Saints" ||
-                    annotation.title == "Berwick and District Library"{
-                    annotationView?.image = UIImage(named: "Attraction")
-            }
-            else if annotation.title == "Holiday Inn Truro" ||
-                    annotation.title == "Best Western Plus"{
-                    annotationView?.image = UIImage(named: "Building")
-            }
-            else if annotation.title == "Mercator Vineyards" ||
-                    annotation.title == "Meander River Brewery" ||
-                    annotation.title == "Breton Brewery" ||
-                    annotation.title == "Good Robot Brewery" ||
-                    annotation.title == "Tanner and Co. Brewing" ||
-                    annotation.title == "Annapolis Valley Cider" ||
-                    annotation.title == "Garrison Brewery" ||
-                    annotation.title == "Duncans Pub" ||
-                    annotation.title == "The Union Street Cafe" ||
-                    annotation.title == "The Dancing Goat Café and Bakery" ||
-                    annotation.title == "Pavia Espresso Bar and Cafe"{
-                    annotationView?.image = UIImage(named: "Resturant")
-            }
-            else if annotation.title == "Halifax Cycles and Guitars" ||
-                    annotation.title == "Velofix NS" ||
-                    annotation.title == "Train Station Bike and Bean" ||
-                    annotation.title == "Sportwheels Sports Excellence" ||
-                    annotation.title == "Cyclesmith" ||
-                    annotation.title == "Velo Baie Sainte-Marie" ||
-                    annotation.title == "The Bicycle Specialist" ||
-                    annotation.title == "Frameworks Cycles and Fitness" ||
-                    annotation.title == "Idealbikes"{
-                    annotationView?.image = UIImage(named: "Bike")
-            }
-            else if annotation.title == "Queens Place Emera Centre" ||
-                    annotation.title == "Wiles Lake Farmers Market" ||
-                    annotation.title == "Cloud Nine Novelties" ||
-                    annotation.title == "Bay Ferry Ltd “Fundy Rose”" ||
-                    annotation.title == "Jeff’s Old Volkswagon Home"{
-                    annotationView?.image = UIImage(named: "Flag")
-            }
-            else if annotation.title == "OceanStone Seaside Resort" ||
-                    annotation.title == "River Ridge Lodge" ||
-                    annotation.title == "Garden House B&B" ||
-                    annotation.title == "Kaulbach House" ||
-                    annotation.title == "Harbour Guesthouse" ||
-                    annotation.title == "Lane’s Privateer Inn" ||
-                    annotation.title == "The Scotsman Inn" ||
-                    annotation.title == "The Maven Gypsy B&B and Cottages" ||
-                    annotation.title == "The Burlington Rose"{
-                    annotationView?.image = UIImage(named: "House")
-            }
-            else if annotation.title == "Bear River Millyard and Recreation" ||
-                    annotation.title == "Lacey Mines Campground"{
-                    annotationView?.image = UIImage(named: "Camping")
-            }
-            else if annotation.title == "Earltown General Store" ||
-                    annotation.title == "Snow White Laundry and Convenience"{
-                    annotationView?.image = UIImage(named: "Grocery.png")
-            }
-        
+                for i in 0 ..< feedItems.count{
+                    
+                temp = feedItems[i] as! Company
+                
+                    if annotation.title == temp.title{
+                        annotationView?.image = UIImage(named: temp.typeOfService!)
+                    }
+                }
+    
             let btn = UIButton(type: .detailDisclosure) as UIButton
             annotationView?.rightCalloutAccessoryView = btn
         
@@ -222,31 +173,36 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     
     //Function that fires when the info button is pressed on a specific annotation
     
-//    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//
-//        for i in ..<feedItems.count {
-//
-//            if i["title"] as? String == view.annotation?.title{
-//
-//                //Find the current annotation in points array grab the description and image
-//
-//                let vc = storyboard?.instantiateViewController(withIdentifier: "LocationDetailController") as? LocationDetailController
-//
-//                //Setting the LocationDetailController properties
-//
-//                vc?.passedImg = i["img"] as! UIImage
-//                vc?.passedDescription = i["des"] as! String
-//                vc?.passedTitle = i["title"] as! String
-//                vc?.passedDescription2 = i["des2"] as! String
-//                vc?.passedURL = i["URL"] as! String
-//
-//                //Push the LocationDetailController on the stack
-//
-//                self.navigationController?.pushViewController(vc!, animated: true)
-//
-//            }
-//        }
-//    }
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+
+        for i in 0 ..< feedItems.count {
+            
+            var temp: Company = Company()
+            
+            temp = feedItems[i] as! Company
+            
+            if temp.title == view.annotation?.title{
+                
+                //Find the current annotation in points array grab the description and image
+
+                let vc = storyboard?.instantiateViewController(withIdentifier: "LocationDetailController") as? LocationDetailController
+
+                //Setting the LocationDetailController properties
+                
+                  vc?.passedImg = UIImage(named: temp.imagePath!)!
+                  vc?.passedTitle = temp.title as! String
+                  vc?.passedDescription = temp.descrip as! String
+                  vc?.passedAddress = temp.address as! String
+                  vc?.passedPhone = temp.phone as! String
+                  vc?.passedURL = temp.url as! String
+
+                //Push the LocationDetailController on the stack
+
+                self.navigationController?.pushViewController(vc!, animated: true)
+
+            }
+        }
+    }
 }
 
 

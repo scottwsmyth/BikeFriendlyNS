@@ -137,29 +137,29 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odq-eK-LnR">
-                                <rect key="frame" x="46" y="314" width="284" height="70"/>
+                                <rect key="frame" x="46" y="314" width="284" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="mUQ-m3-Bu5"/>
+                                    <constraint firstAttribute="height" constant="60" id="mUQ-m3-Bu5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KMC-V8-i8u">
-                                <rect key="frame" x="45" y="517" width="285" height="100"/>
+                                <rect key="frame" x="45" y="497" width="285" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="chE-qO-ipk"/>
+                                    <constraint firstAttribute="height" constant="50" id="chE-qO-ipk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBV-Fg-y0y">
-                                <rect key="frame" x="30" y="392" width="315" height="120"/>
+                                <rect key="frame" x="30" y="382" width="315" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Ouf-VM-CEI"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ouf-VM-CEI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -176,6 +176,16 @@
                                     <action selector="btn_URL:" destination="WND-5l-ToG" eventType="touchUpInside" id="qco-rz-BxC"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bem-rS-7hn">
+                                <rect key="frame" x="44" y="552" width="287" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wx4-Bt-CjF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -189,8 +199,11 @@
                             <constraint firstItem="KMC-V8-i8u" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="45" id="QoR-UW-DTv"/>
                             <constraint firstItem="QVn-tG-Dqu" firstAttribute="trailing" secondItem="KMC-V8-i8u" secondAttribute="trailing" constant="45" id="Wh1-i5-Iu1"/>
                             <constraint firstItem="Odq-eK-LnR" firstAttribute="top" secondItem="PVG-Zq-0lf" secondAttribute="bottom" constant="10" id="Wur-jF-YCm"/>
-                            <constraint firstItem="KMC-V8-i8u" firstAttribute="top" secondItem="HBV-Fg-y0y" secondAttribute="bottom" constant="5" id="g3N-Ob-uaU"/>
+                            <constraint firstItem="bem-rS-7hn" firstAttribute="top" secondItem="KMC-V8-i8u" secondAttribute="bottom" constant="5" id="XP6-ci-zH9"/>
+                            <constraint firstItem="QVn-tG-Dqu" firstAttribute="trailing" secondItem="bem-rS-7hn" secondAttribute="trailing" constant="44" id="aG9-ZE-YNl"/>
+                            <constraint firstItem="KMC-V8-i8u" firstAttribute="top" secondItem="HBV-Fg-y0y" secondAttribute="bottom" constant="15" id="g3N-Ob-uaU"/>
                             <constraint firstItem="Odq-eK-LnR" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="46" id="khf-8m-FkC"/>
+                            <constraint firstItem="bem-rS-7hn" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="44" id="m8N-mo-MEX"/>
                             <constraint firstItem="PVG-Zq-0lf" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="45.5" id="mRX-Nk-ZAa"/>
                             <constraint firstItem="HBV-Fg-y0y" firstAttribute="top" secondItem="Odq-eK-LnR" secondAttribute="bottom" constant="8" id="nZ5-nO-DYL"/>
                             <constraint firstItem="QVn-tG-Dqu" firstAttribute="trailing" secondItem="HBV-Fg-y0y" secondAttribute="trailing" constant="30" id="x7b-2q-ygv"/>
@@ -199,10 +212,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Uk6-E3-Jpn"/>
                     <connections>
-                        <outlet property="currentDescrip" destination="KMC-V8-i8u" id="cnB-Er-aRk"/>
-                        <outlet property="currentDescrip2" destination="HBV-Fg-y0y" id="zod-20-j8q"/>
+                        <outlet property="currentAddress" destination="KMC-V8-i8u" id="axg-OK-MDf"/>
+                        <outlet property="currentDescrip" destination="HBV-Fg-y0y" id="jj0-kB-N6f"/>
                         <outlet property="currentImage" destination="PVG-Zq-0lf" id="KTI-9h-p8X"/>
                         <outlet property="currentLabel" destination="Odq-eK-LnR" id="ULs-Bj-HrK"/>
+                        <outlet property="currentPhone" destination="bem-rS-7hn" id="ypf-ul-B3M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWc-G6-XO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
