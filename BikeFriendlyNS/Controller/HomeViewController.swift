@@ -8,7 +8,14 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, JSONParserProtocol {
+    
+    var feedItems: NSArray = NSArray()
+    
+    func itemsDownloaded(items: NSArray) {
+        feedItems = items
+    }
+    
 
     @IBAction func beginButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SecondViewSegue", sender: self) //Segue from welcome screen to the MapViewController
@@ -16,7 +23,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let jsonParser = JSONParser()
+        jsonParser.delegate = self
+        jsonParser.downloadItems()
+        
+        //let item: Company = feedItems[0] as! Company
+        print("Hello:")
+        
     }
 
 

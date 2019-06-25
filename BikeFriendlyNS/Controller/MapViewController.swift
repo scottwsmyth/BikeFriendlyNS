@@ -10,17 +10,24 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate{
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
+    var feedItems: NSArray = NSArray()
+    var selectedLocation : Company = Company()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addAnnotations()
-        checkLocationServices()
-        zoomInOnUserLocation()
-        
+    
+//        addAnnotations()
+//        checkLocationServices()
+//        zoomInOnUserLocation()
+    }
+    
+    func itemsDownloaded(items: NSArray) {
+
+        feedItems = items
     }
     
     let businessList = BusinessList() // Grabbing business list

@@ -98,6 +98,7 @@
 		D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D77AE22AFE57E0073522C /* CustomButton.swift */; };
 		D27D77B522AFF2760073522C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D27D77B422AFF2760073522C /* Podfile */; };
 		D299120022C15BB500164FC5 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29911FF22C15BB500164FC5 /* Company.swift */; };
+		D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299120122C24B4B00164FC5 /* JSONParser.swift */; };
 		D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B5322AFD11C002BF17B /* AppDelegate.swift */; };
 		D29D3B5622AFD11C002BF17B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B5522AFD11C002BF17B /* HomeViewController.swift */; };
 		D29D3B5922AFD11C002BF17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29D3B5722AFD11C002BF17B /* Main.storyboard */; };
@@ -223,6 +224,7 @@
 		D27D77AE22AFE57E0073522C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D27D77B422AFF2760073522C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D29911FF22C15BB500164FC5 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		D299120122C24B4B00164FC5 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		D29D3B5022AFD11C002BF17B /* BikeFriendlyNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeFriendlyNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29D3B5322AFD11C002BF17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D29D3B5522AFD11C002BF17B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				D2DD295622B8030F002C53CC /* BusinessList.swift */,
 				D29911FF22C15BB500164FC5 /* Company.swift */,
+				D299120122C24B4B00164FC5 /* JSONParser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 			files = (
 				D29D3B5622AFD11C002BF17B /* HomeViewController.swift in Sources */,
 				D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */,
+				D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */,
 				D2DD295522B7C737002C53CC /* LocationDetailController.swift in Sources */,
 				D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */,
 				D299120022C15BB500164FC5 /* Company.swift in Sources */,
