@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController, MKMapViewDelegate{
+class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol {
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
@@ -20,9 +20,18 @@ class MapViewController: UIViewController, MKMapViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
     
-//        addAnnotations()
-//        checkLocationServices()
-//        zoomInOnUserLocation()
+        for i in 0 ..< feedItems.count{
+            
+            var temp: Company = Company()
+            
+            temp = feedItems[i] as! Company
+            
+            //print(temp.title)
+        }
+        
+          addAnnotations()
+          checkLocationServices()
+          zoomInOnUserLocation()
     }
     
     func itemsDownloaded(items: NSArray) {
@@ -30,16 +39,35 @@ class MapViewController: UIViewController, MKMapViewDelegate{
         feedItems = items
     }
     
-    let businessList = BusinessList() // Grabbing business list
-
     //Function sets each annotations title and coordinates. First creates an empty MKPointAnnotation, then sets the properties
     
     func addAnnotations(){
         
-        for i in businessList.points {
+        for i in 0 ..< feedItems.count {
             let annotation = MKPointAnnotation()
-            annotation.title = i["title"] as? String
-            annotation.coordinate = CLLocationCoordinate2D(latitude: i["latitude"] as! Double, longitude: i["longitude"] as! Double)
+            
+            var temp: Company = Company()
+            
+            temp = feedItems[i] as! Company
+            
+            annotation.title = temp.title
+            
+            var dLati = 0.0
+            var dLongi = 0.0
+            let latitude: String? = temp.latitude
+            let longitude: String? = temp.longitude
+            
+            if let strLat = latitude {
+                dLati = Double(strLat)!
+            }
+            
+            if let strLong = longitude{
+                dLongi = Double(strLong)! as! Double
+            }
+            
+                annotation.coordinate = CLLocationCoordinate2D(latitude: dLati, longitude: dLongi)// doubleLat is of type Double now
+            
+            
             
             mapView.addAnnotation(annotation)
         }
@@ -194,31 +222,31 @@ class MapViewController: UIViewController, MKMapViewDelegate{
     
     //Function that fires when the info button is pressed on a specific annotation
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        
-        for i in businessList.points {
-
-            if i["title"] as? String == view.annotation?.title{
-                
-                //Find the current annotation in points array grab the description and image
-                
-                let vc = storyboard?.instantiateViewController(withIdentifier: "LocationDetailController") as? LocationDetailController
-                
-                //Setting the LocationDetailController properties
-                
-                vc?.passedImg = i["img"] as! UIImage
-                vc?.passedDescription = i["des"] as! String
-                vc?.passedTitle = i["title"] as! String
-                vc?.passedDescription2 = i["des2"] as! String
-                vc?.passedURL = i["URL"] as! String
-                
-                //Push the LocationDetailController on the stack
-                
-                self.navigationController?.pushViewController(vc!, animated: true)
-    
-            }
-        }
-    }
+//    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//
+//        for i in ..<feedItems.count {
+//
+//            if i["title"] as? String == view.annotation?.title{
+//
+//                //Find the current annotation in points array grab the description and image
+//
+//                let vc = storyboard?.instantiateViewController(withIdentifier: "LocationDetailController") as? LocationDetailController
+//
+//                //Setting the LocationDetailController properties
+//
+//                vc?.passedImg = i["img"] as! UIImage
+//                vc?.passedDescription = i["des"] as! String
+//                vc?.passedTitle = i["title"] as! String
+//                vc?.passedDescription2 = i["des2"] as! String
+//                vc?.passedURL = i["URL"] as! String
+//
+//                //Push the LocationDetailController on the stack
+//
+//                self.navigationController?.pushViewController(vc!, animated: true)
+//
+//            }
+//        }
+//    }
 }
 
 

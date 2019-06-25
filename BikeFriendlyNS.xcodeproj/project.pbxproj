@@ -109,7 +109,6 @@
 		D2A08F4B22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D2A08F4A22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf */; };
 		D2A08F4F22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A08F4E22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png */; };
 		D2DD295522B7C737002C53CC /* LocationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailController.swift */; };
-		D2DD295722B8030F002C53CC /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295622B8030F002C53CC /* BusinessList.swift */; };
 		F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */; };
 /* End PBXBuildFile section */
 
@@ -241,7 +240,6 @@
 		D2A08F4A22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "BFC-Certification-Tall-CMYK.pdf"; path = "../../../../../../Downloads/BFC-Certification-Tall-CMYK.pdf"; sourceTree = "<group>"; };
 		D2A08F4E22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BFC-Certification-Tall-CMYK-1.png"; path = "../../../../../../Downloads/BFC-Certification-Tall-CMYK-1.png"; sourceTree = "<group>"; };
 		D2DD295422B7C737002C53CC /* LocationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailController.swift; path = BikeFriendlyNS/Controller/LocationDetailController.swift; sourceTree = SOURCE_ROOT; };
-		D2DD295622B8030F002C53CC /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessList.swift; path = BikeFriendlyNS/Model/BusinessList.swift; sourceTree = SOURCE_ROOT; };
 		FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeFriendlyNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -350,7 +348,6 @@
 		D29D3B8122AFD1D0002BF17B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D2DD295622B8030F002C53CC /* BusinessList.swift */,
 				D29911FF22C15BB500164FC5 /* Company.swift */,
 				D299120122C24B4B00164FC5 /* JSONParser.swift */,
 			);
@@ -746,7 +743,6 @@
 				D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */,
 				D299120022C15BB500164FC5 /* Company.swift in Sources */,
 				D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */,
-				D2DD295722B8030F002C53CC /* BusinessList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

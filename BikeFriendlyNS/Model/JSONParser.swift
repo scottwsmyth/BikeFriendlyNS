@@ -38,6 +38,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
     }
     
     func parseJSON(_ data:Data) {
+    
         
         var jsonResult = NSArray()
         
@@ -54,30 +55,38 @@ class JSONParser: NSObject, URLSessionDataDelegate {
         
         for i in 0 ..< jsonResult.count
         {
-            
+        
             jsonElement = jsonResult[i] as! NSDictionary
             
+            print(jsonElement)
             let location = Company()
             
             //the following insures none of the JsonElement values are nil through optional binding
-            if let title = jsonElement["title"] as? String,
-                let latitude = jsonElement["latitude"] as? Float,
-                let longitude = jsonElement["longitude"] as? Float,
-                let url = jsonElement["url"] as? String,
-                let descrip = jsonElement["descrip"] as? String,
-                let phone = jsonElement["phone"] as? String,
-                let address = jsonElement["address"] as? String,
-                let imagePath = jsonElement["imagePath"] as? String
+            if let title = jsonElement["title"],
+                  let latitude = jsonElement["latitude"],
+                  let longitude = jsonElement["longitude"]
+//                let url = jsonElement["url"] as? String,
+//                let descrip = jsonElement["descrip"] as? String,
+//                let phone = jsonElement["phone"] as? String,
+//                let address = jsonElement["address"] as? String,
+//                let imagePath = jsonElement["imagePath"] as? String
             {
                 
-                location.title = title
-                location.latitude = latitude
-                location.longitude = longitude
-                location.url = url
-                location.descrip = descrip
-                location.phone = phone
-                location.address = address
-                location.imagePath = imagePath
+                  location.title = title as? String
+                  print(location.title)
+                
+                  location.latitude = latitude as? String
+                  print(latitude)
+                
+                  location.longitude = longitude as? String
+                  print(longitude)
+                
+//                location.url = url
+//                location.descrip = descrip
+//                location.phone = phone
+//                location.address = address
+//                location.imagePath = imagePath
+                
                 
             }
             

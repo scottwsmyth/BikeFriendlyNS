@@ -13,8 +13,8 @@ class Company: NSObject {
     //properties
     
     var title: String?
-    var latitude: Float?
-    var longitude: Float?
+    var latitude: String?
+    var longitude: String?
     var url: String?
     var descrip: String?
     var phone: String?
@@ -25,7 +25,7 @@ class Company: NSObject {
         
     }
     
-    init(title: String, latitude: Float,longitude: Float, url: String, descrip: String, phone: String, address: String, imagePath: String){
+    init(title: String, latitude: String,longitude: String, url: String, descrip: String, phone: String, address: String, imagePath: String){
         
         self.title = title
         self.latitude = latitude

@@ -29,8 +29,16 @@ class HomeViewController: UIViewController, JSONParserProtocol {
         jsonParser.downloadItems()
         
         //let item: Company = feedItems[0] as! Company
-        print("Hello:")
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nav = segue.destination as! UINavigationController
+        
+        let vc = nav.topViewController as! MapViewController
+        
+        vc.feedItems = self.feedItems
     }
 
 
