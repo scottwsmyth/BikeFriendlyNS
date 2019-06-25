@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationDetailController: UIViewController {
+class LocationDetailViewController: UIViewController {
     
     
     //Button IBAction which opens the current company's facebook URL when the icon is tapped on the storyboard.

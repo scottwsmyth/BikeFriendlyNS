@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol {
-
+    
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var feedItems: NSArray = NSArray()
@@ -185,7 +185,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
                 
                 //Find the current annotation in points array grab the description and image
 
-                let vc = storyboard?.instantiateViewController(withIdentifier: "LocationDetailController") as? LocationDetailController
+                let vc = storyboard?.instantiateViewController(withIdentifier: "LocationDetailViewController") as? LocationDetailViewController
 
                 //Setting the LocationDetailController properties
                 
@@ -202,6 +202,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
 
             }
         }
+    }
+    
+    @IBAction func feedbackBtnPressed(_ sender: UIButton) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "FeedbackViewController") as? FeedbackViewController
+
+        self.navigationController?.pushViewController(vc!, animated: true)
+
     }
 }
 

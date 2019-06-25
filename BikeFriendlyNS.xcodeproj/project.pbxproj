@@ -7,96 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20F14D822BD1746001CBC4F /* Attraction.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14D722BD1745001CBC4F /* Attraction.png */; };
-		D20F14E822BD1D97001CBC4F /* Resturant.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14E722BD1D97001CBC4F /* Resturant.png */; };
-		D20F14EC22BD1E53001CBC4F /* Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14E922BD1E53001CBC4F /* Flag.png */; };
-		D20F14ED22BD1E53001CBC4F /* Bike.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14EA22BD1E53001CBC4F /* Bike.png */; };
-		D20F14EE22BD1E53001CBC4F /* House.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14EB22BD1E53001CBC4F /* House.png */; };
-		D20F14F022BD1E8B001CBC4F /* Building.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14EF22BD1E8A001CBC4F /* Building.png */; };
-		D20F14F222BD23DA001CBC4F /* Camping.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14F122BD23DA001CBC4F /* Camping.png */; };
-		D20F14F422BD475C001CBC4F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D20F14F322BD475C001CBC4F /* Logo.png */; };
+		D20AEBC022C2A682003F6153 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */; };
 		D20F14F622C15153001CBC4F /* service.php in Resources */ = {isa = PBXBuildFile; fileRef = D20F14F522C15153001CBC4F /* service.php */; };
 		D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21A68F622B278AB003EF706 /* MapViewController.swift */; };
 		D21A68FB22B29A16003EF706 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21A68FA22B29A16003EF706 /* MapKit.framework */; };
-		D26AD9CA22BAB4DE002E497D /* RiverRidge.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD97F22BAB4DC002E497D /* RiverRidge.png */; };
-		D26AD9CB22BAB4DE002E497D /* MEC.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98022BAB4DC002E497D /* MEC.png */; };
-		D26AD9CC22BAB4DE002E497D /* DuncansPub.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98122BAB4DC002E497D /* DuncansPub.png */; };
-		D26AD9CD22BAB4DE002E497D /* HarbourGuesthouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98222BAB4DC002E497D /* HarbourGuesthouse.png */; };
-		D26AD9CE22BAB4DE002E497D /* iFIT.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98322BAB4DC002E497D /* iFIT.png */; };
-		D26AD9CF22BAB4DE002E497D /* Garrison.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98422BAB4DC002E497D /* Garrison.png */; };
-		D26AD9D022BAB4DE002E497D /* IdealBikes.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98522BAB4DC002E497D /* IdealBikes.png */; };
-		D26AD9D122BAB4DE002E497D /* Maven.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98622BAB4DC002E497D /* Maven.png */; };
-		D26AD9D222BAB4DE002E497D /* Francis.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98722BAB4DC002E497D /* Francis.png */; };
-		D26AD9D322BAB4DE002E497D /* Earltown.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98822BAB4DC002E497D /* Earltown.png */; };
-		D26AD9D422BAB4DE002E497D /* Sportwheels.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98922BAB4DC002E497D /* Sportwheels.png */; };
-		D26AD9D522BAB4DE002E497D /* Frameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98A22BAB4DC002E497D /* Frameworks.png */; };
-		D26AD9D622BAB4DE002E497D /* KaulbackHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98B22BAB4DC002E497D /* KaulbackHouse.png */; };
-		D26AD9D722BAB4DE002E497D /* JavaBlend.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98C22BAB4DC002E497D /* JavaBlend.png */; };
-		D26AD9D822BAB4DE002E497D /* Lanes.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98D22BAB4DC002E497D /* Lanes.png */; };
-		D26AD9D922BAB4DE002E497D /* Hubbards.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98E22BAB4DC002E497D /* Hubbards.png */; };
-		D26AD9DA22BAB4DE002E497D /* Mecklenburg.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD98F22BAB4DC002E497D /* Mecklenburg.png */; };
-		D26AD9DB22BAB4DE002E497D /* Jeffs.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99022BAB4DC002E497D /* Jeffs.png */; };
-		D26AD9DC22BAB4DE002E497D /* BernArt.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99122BAB4DC002E497D /* BernArt.png */; };
-		D26AD9DD22BAB4DE002E497D /* Apron.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99222BAB4DC002E497D /* Apron.png */; };
-		D26AD9DE22BAB4DE002E497D /* TangledGardens.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99322BAB4DC002E497D /* TangledGardens.png */; };
-		D26AD9DF22BAB4DE002E497D /* Oak.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99422BAB4DC002E497D /* Oak.png */; };
-		D26AD9E022BAB4DE002E497D /* Breton.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99522BAB4DD002E497D /* Breton.png */; };
-		D26AD9E122BAB4DE002E497D /* SchoolhouseBrewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99622BAB4DD002E497D /* SchoolhouseBrewery.png */; };
-		D26AD9E222BAB4DE002E497D /* BicycleSpecialist.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99722BAB4DD002E497D /* BicycleSpecialist.png */; };
-		D26AD9E322BAB4DE002E497D /* Bike&Bean.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99822BAB4DD002E497D /* Bike&Bean.png */; };
-		D26AD9E422BAB4DE002E497D /* BayFerry.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99922BAB4DD002E497D /* BayFerry.png */; };
-		D26AD9E522BAB4DE002E497D /* CloudNineNovelties.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99A22BAB4DD002E497D /* CloudNineNovelties.png */; };
-		D26AD9E622BAB4DE002E497D /* Highland.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99B22BAB4DD002E497D /* Highland.png */; };
-		D26AD9E722BAB4DE002E497D /* Mabou.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99C22BAB4DD002E497D /* Mabou.png */; };
-		D26AD9E822BAB4DE002E497D /* CathedralChurch.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99D22BAB4DD002E497D /* CathedralChurch.png */; };
-		D26AD9E922BAB4DE002E497D /* Saltbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99E22BAB4DD002E497D /* Saltbox.png */; };
-		D26AD9EA22BAB4DE002E497D /* Schoolhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD99F22BAB4DD002E497D /* Schoolhouse.png */; };
-		D26AD9EB22BAB4DE002E497D /* BurlingtonRose.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A022BAB4DD002E497D /* BurlingtonRose.png */; };
-		D26AD9EC22BAB4DE002E497D /* The_Bicycle_Lunchbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A122BAB4DD002E497D /* The_Bicycle_Lunchbox.png */; };
-		D26AD9ED22BAB4DE002E497D /* Wiles-Lake.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A222BAB4DD002E497D /* Wiles-Lake.png */; };
-		D26AD9EE22BAB4DE002E497D /* SnowWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A322BAB4DD002E497D /* SnowWhite.png */; };
-		D26AD9EF22BAB4DE002E497D /* SweetRide.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A422BAB4DD002E497D /* SweetRide.png */; };
-		D26AD9F022BAB4DE002E497D /* Meander-Brewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A522BAB4DD002E497D /* Meander-Brewery.png */; };
-		D26AD9F122BAB4DE002E497D /* OceanStone.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A622BAB4DD002E497D /* OceanStone.png */; };
-		D26AD9F222BAB4DE002E497D /* Kiwi.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A722BAB4DD002E497D /* Kiwi.png */; };
-		D26AD9F322BAB4DE002E497D /* LaceyMines.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A822BAB4DD002E497D /* LaceyMines.png */; };
-		D26AD9F422BAB4DE002E497D /* Northumberland.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9A922BAB4DD002E497D /* Northumberland.png */; };
-		D26AD9F522BAB4DE002E497D /* Hants-Exhibition-Grounds.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9AA22BAB4DD002E497D /* Hants-Exhibition-Grounds.png */; };
-		D26AD9F622BAB4DE002E497D /* Annapolis.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9AB22BAB4DD002E497D /* Annapolis.png */; };
-		D26AD9F722BAB4DE002E497D /* Lunchbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9AC22BAB4DD002E497D /* Lunchbox.png */; };
-		D26AD9F822BAB4DE002E497D /* Scotsman.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9AD22BAB4DD002E497D /* Scotsman.png */; };
-		D26AD9F922BAB4DE002E497D /* VeloBaie.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9AE22BAB4DD002E497D /* VeloBaie.png */; };
-		D26AD9FA22BAB4DE002E497D /* GoodRobot.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9AF22BAB4DD002E497D /* GoodRobot.png */; };
-		D26AD9FB22BAB4DE002E497D /* Digby.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B022BAB4DD002E497D /* Digby.png */; };
-		D26AD9FC22BAB4DE002E497D /* Velofix.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B122BAB4DD002E497D /* Velofix.png */; };
-		D26AD9FD22BAB4DE002E497D /* Cycles-Guitars.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B222BAB4DD002E497D /* Cycles-Guitars.png */; };
-		D26AD9FE22BAB4DE002E497D /* Mercator-Vineyards.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B322BAB4DD002E497D /* Mercator-Vineyards.png */; };
-		D26AD9FF22BAB4DE002E497D /* UnionStreet.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B422BAB4DD002E497D /* UnionStreet.png */; };
-		D26ADA0022BAB4DE002E497D /* Liscomb.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B522BAB4DD002E497D /* Liscomb.png */; };
-		D26ADA0122BAB4DE002E497D /* BearRiver.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B622BAB4DE002E497D /* BearRiver.png */; };
-		D26ADA0222BAB4DE002E497D /* GardenHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B722BAB4DE002E497D /* GardenHouse.png */; };
-		D26ADA0322BAB4DE002E497D /* Spoke&Note.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B822BAB4DE002E497D /* Spoke&Note.png */; };
-		D26ADA0422BAB4DE002E497D /* BikeMonkey.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9B922BAB4DE002E497D /* BikeMonkey.png */; };
-		D26ADA0522BAB4DE002E497D /* Berwick&District.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9BA22BAB4DE002E497D /* Berwick&District.png */; };
-		D26ADA0622BAB4DE002E497D /* HubCycle.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9BB22BAB4DE002E497D /* HubCycle.png */; };
-		D26ADA0722BAB4DE002E497D /* Best-Western-Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9BC22BAB4DE002E497D /* Best-Western-Plus.png */; };
-		D26ADA0822BAB4DE002E497D /* AKTC.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9BD22BAB4DE002E497D /* AKTC.png */; };
-		D26ADA0922BAB4DE002E497D /* Tanner.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9BE22BAB4DE002E497D /* Tanner.png */; };
-		D26ADA0A22BAB4DE002E497D /* OutsideOutdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9BF22BAB4DE002E497D /* OutsideOutdoor.png */; };
-		D26ADA0B22BAB4DE002E497D /* HeartBikes.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C022BAB4DE002E497D /* HeartBikes.png */; };
-		D26ADA0C22BAB4DE002E497D /* Holiday-Inn.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C122BAB4DE002E497D /* Holiday-Inn.png */; };
-		D26ADA0D22BAB4DE002E497D /* BanksBikes.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C222BAB4DE002E497D /* BanksBikes.png */; };
-		D26ADA0E22BAB4DE002E497D /* NewGlasgow.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C322BAB4DE002E497D /* NewGlasgow.png */; };
-		D26ADA0F22BAB4DE002E497D /* Pavia.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C422BAB4DE002E497D /* Pavia.png */; };
-		D26ADA1022BAB4DE002E497D /* Queens-Place.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C522BAB4DE002E497D /* Queens-Place.png */; };
-		D26ADA1122BAB4DE002E497D /* RumbLine.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C622BAB4DE002E497D /* RumbLine.png */; };
-		D26ADA1222BAB4DE002E497D /* Stuart.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C722BAB4DE002E497D /* Stuart.png */; };
-		D26ADA1322BAB4DE002E497D /* Cyclesmith.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C822BAB4DE002E497D /* Cyclesmith.png */; };
-		D26ADA1422BAB4DE002E497D /* DancingGoat.png in Resources */ = {isa = PBXBuildFile; fileRef = D26AD9C922BAB4DE002E497D /* DancingGoat.png */; };
-		D26ADA2922BAB4E3002E497D /* FacebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D26ADA1E22BAB4E3002E497D /* FacebookLogo.png */; };
-		D27D77A622AFD3110073522C /* homepage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D27D77A522AFD3110073522C /* homepage.jpeg */; };
 		D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D77AE22AFE57E0073522C /* CustomButton.swift */; };
 		D27D77B522AFF2760073522C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D27D77B422AFF2760073522C /* Podfile */; };
+		D296BB9522C2AB2F00C6239E /* Maven.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3922C2AB2A00C6239E /* Maven.png */; };
+		D296BB9622C2AB2F00C6239E /* Annapolis.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3A22C2AB2A00C6239E /* Annapolis.png */; };
+		D296BB9722C2AB2F00C6239E /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3B22C2AB2A00C6239E /* Logo.png */; };
+		D296BB9822C2AB2F00C6239E /* BicycleSpecialist.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3C22C2AB2A00C6239E /* BicycleSpecialist.png */; };
+		D296BB9922C2AB2F00C6239E /* Building.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3D22C2AB2A00C6239E /* Building.png */; };
+		D296BB9A22C2AB2F00C6239E /* Stuart.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3E22C2AB2A00C6239E /* Stuart.png */; };
+		D296BB9B22C2AB2F00C6239E /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3F22C2AB2A00C6239E /* 58.png */; };
+		D296BB9C22C2AB2F00C6239E /* LaceyMines.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4022C2AB2B00C6239E /* LaceyMines.png */; };
+		D296BB9D22C2AB2F00C6239E /* Hubbards.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4122C2AB2B00C6239E /* Hubbards.png */; };
+		D296BB9E22C2AB2F00C6239E /* RumbLine.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4222C2AB2B00C6239E /* RumbLine.png */; };
+		D296BB9F22C2AB2F00C6239E /* Hants-Exhibition-Grounds.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4322C2AB2B00C6239E /* Hants-Exhibition-Grounds.png */; };
+		D296BBA022C2AB2F00C6239E /* CloudNineNovelties.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4422C2AB2B00C6239E /* CloudNineNovelties.png */; };
+		D296BBA122C2AB2F00C6239E /* Breton.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4522C2AB2B00C6239E /* Breton.png */; };
+		D296BBA222C2AB2F00C6239E /* Northumberland.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4622C2AB2B00C6239E /* Northumberland.png */; };
+		D296BBA322C2AB2F00C6239E /* Scotsman.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4722C2AB2B00C6239E /* Scotsman.png */; };
+		D296BBA422C2AB2F00C6239E /* Saltbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4822C2AB2B00C6239E /* Saltbox.png */; };
+		D296BBA522C2AB2F00C6239E /* Mecklenburg.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4922C2AB2B00C6239E /* Mecklenburg.png */; };
+		D296BBA622C2AB2F00C6239E /* Velofix.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4A22C2AB2B00C6239E /* Velofix.png */; };
+		D296BBA722C2AB2F00C6239E /* Bike&Bean.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4B22C2AB2B00C6239E /* Bike&Bean.png */; };
+		D296BBA822C2AB2F00C6239E /* Apron.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4C22C2AB2B00C6239E /* Apron.png */; };
+		D296BBA922C2AB2F00C6239E /* OceanStone.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4D22C2AB2B00C6239E /* OceanStone.png */; };
+		D296BBAA22C2AB2F00C6239E /* Bike.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4E22C2AB2B00C6239E /* Bike.png */; };
+		D296BBAB22C2AB2F00C6239E /* Mercator-Vineyards.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4F22C2AB2B00C6239E /* Mercator-Vineyards.png */; };
+		D296BBAC22C2AB2F00C6239E /* FacebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5022C2AB2B00C6239E /* FacebookLogo.png */; };
+		D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5122C2AB2B00C6239E /* Digby.png */; };
+		D296BBAE22C2AB2F00C6239E /* Attraction.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5222C2AB2B00C6239E /* Attraction.png */; };
+		D296BBAF22C2AB2F00C6239E /* BikeMonkey.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5322C2AB2B00C6239E /* BikeMonkey.png */; };
+		D296BBB022C2AB2F00C6239E /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5422C2AB2B00C6239E /* eye.png */; };
+		D296BBB122C2AB2F00C6239E /* BurlingtonRose.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5522C2AB2B00C6239E /* BurlingtonRose.png */; };
+		D296BBB222C2AB2F00C6239E /* The_Bicycle_Lunchbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5622C2AB2B00C6239E /* The_Bicycle_Lunchbox.png */; };
+		D296BBB322C2AB2F00C6239E /* write-letter.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5722C2AB2C00C6239E /* write-letter.png */; };
+		D296BBB422C2AB2F00C6239E /* Lanes.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5822C2AB2C00C6239E /* Lanes.png */; };
+		D296BBB522C2AB2F00C6239E /* Cycles-Guitars.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5922C2AB2C00C6239E /* Cycles-Guitars.png */; };
+		D296BBB622C2AB2F00C6239E /* Cyclesmith.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5A22C2AB2C00C6239E /* Cyclesmith.png */; };
+		D296BBB722C2AB2F00C6239E /* CathedralChurch.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5B22C2AB2C00C6239E /* CathedralChurch.png */; };
+		D296BBB822C2AB2F00C6239E /* Lunchbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5C22C2AB2C00C6239E /* Lunchbox.png */; };
+		D296BBB922C2AB2F00C6239E /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5D22C2AB2C00C6239E /* 87.png */; };
+		D296BBBA22C2AB2F00C6239E /* Logo-White-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5E22C2AB2C00C6239E /* Logo-White-BG.png */; };
+		D296BBBB22C2AB2F00C6239E /* GoodRobot.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB5F22C2AB2C00C6239E /* GoodRobot.png */; };
+		D296BBBC22C2AB2F00C6239E /* Berwick&District.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6022C2AB2C00C6239E /* Berwick&District.png */; };
+		D296BBBD22C2AB2F00C6239E /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6122C2AB2C00C6239E /* 120.png */; };
+		D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6222C2AB2C00C6239E /* Best-Western-Plus.png */; };
+		D296BBBF22C2AB2F00C6239E /* MEC.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6322C2AB2C00C6239E /* MEC.png */; };
+		D296BBC022C2AB2F00C6239E /* Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6422C2AB2C00C6239E /* Flag.png */; };
+		D296BBC122C2AB2F00C6239E /* BayFerry.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6522C2AB2C00C6239E /* BayFerry.png */; };
+		D296BBC222C2AB2F00C6239E /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6622C2AB2D00C6239E /* 80.png */; };
+		D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6722C2AB2D00C6239E /* HubCycle.png */; };
+		D296BBC422C2AB2F00C6239E /* Mabou.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6822C2AB2D00C6239E /* Mabou.png */; };
+		D296BBC522C2AB2F00C6239E /* NewGlasgow.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6922C2AB2D00C6239E /* NewGlasgow.png */; };
+		D296BBC622C2AB2F00C6239E /* AKTC.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6A22C2AB2D00C6239E /* AKTC.png */; };
+		D296BBC722C2AB2F00C6239E /* OutsideOutdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6B22C2AB2D00C6239E /* OutsideOutdoor.png */; };
+		D296BBC822C2AB2F00C6239E /* Sportwheels.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6C22C2AB2D00C6239E /* Sportwheels.png */; };
+		D296BBC922C2AB2F00C6239E /* Frameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6D22C2AB2D00C6239E /* Frameworks.png */; };
+		D296BBCA22C2AB2F00C6239E /* Camping.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6E22C2AB2D00C6239E /* Camping.png */; };
+		D296BBCB22C2AB2F00C6239E /* Earltown.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6F22C2AB2D00C6239E /* Earltown.png */; };
+		D296BBCC22C2AB2F00C6239E /* UnionStreet.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7022C2AB2D00C6239E /* UnionStreet.png */; };
+		D296BBCD22C2AB2F00C6239E /* BanksBikes.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7122C2AB2D00C6239E /* BanksBikes.png */; };
+		D296BBCE22C2AB2F00C6239E /* GardenHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7222C2AB2D00C6239E /* GardenHouse.png */; };
+		D296BBCF22C2AB2F00C6239E /* Liscomb.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7322C2AB2D00C6239E /* Liscomb.png */; };
+		D296BBD022C2AB2F00C6239E /* RiverRidge.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7422C2AB2E00C6239E /* RiverRidge.png */; };
+		D296BBD122C2AB2F00C6239E /* Queens-Place.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7522C2AB2E00C6239E /* Queens-Place.png */; };
+		D296BBD222C2AB2F00C6239E /* DancingGoat.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7622C2AB2E00C6239E /* DancingGoat.png */; };
+		D296BBD322C2AB2F00C6239E /* Resturant.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7722C2AB2E00C6239E /* Resturant.png */; };
+		D296BBD422C2AB2F00C6239E /* Spoke&Note.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7822C2AB2E00C6239E /* Spoke&Note.png */; };
+		D296BBD522C2AB2F00C6239E /* House.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7922C2AB2E00C6239E /* House.png */; };
+		D296BBD622C2AB2F00C6239E /* Garrison.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7A22C2AB2E00C6239E /* Garrison.png */; };
+		D296BBD722C2AB2F00C6239E /* VeloBaie.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7B22C2AB2E00C6239E /* VeloBaie.png */; };
+		D296BBD822C2AB2F00C6239E /* Wiles-Lake.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7C22C2AB2E00C6239E /* Wiles-Lake.png */; };
+		D296BBD922C2AB2F00C6239E /* DuncansPub.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7D22C2AB2E00C6239E /* DuncansPub.png */; };
+		D296BBDA22C2AB2F00C6239E /* homepage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7E22C2AB2E00C6239E /* homepage.jpeg */; };
+		D296BBDB22C2AB2F00C6239E /* JavaBlend.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB7F22C2AB2E00C6239E /* JavaBlend.png */; };
+		D296BBDC22C2AB2F00C6239E /* HeartBikes.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8022C2AB2E00C6239E /* HeartBikes.png */; };
+		D296BBDD22C2AB2F00C6239E /* Kiwi.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8122C2AB2E00C6239E /* Kiwi.png */; };
+		D296BBDE22C2AB2F00C6239E /* BearRiver.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8222C2AB2E00C6239E /* BearRiver.png */; };
+		D296BBDF22C2AB2F00C6239E /* Highland.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8322C2AB2E00C6239E /* Highland.png */; };
+		D296BBE022C2AB2F00C6239E /* BernArt.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8422C2AB2E00C6239E /* BernArt.png */; };
+		D296BBE122C2AB2F00C6239E /* Francis.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8522C2AB2E00C6239E /* Francis.png */; };
+		D296BBE222C2AB2F00C6239E /* IdealBikes.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8622C2AB2E00C6239E /* IdealBikes.png */; };
+		D296BBE322C2AB2F00C6239E /* iFIT.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8722C2AB2E00C6239E /* iFIT.png */; };
+		D296BBE422C2AB2F00C6239E /* Meander-Brewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8822C2AB2E00C6239E /* Meander-Brewery.png */; };
+		D296BBE522C2AB2F00C6239E /* KaulbackHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8922C2AB2E00C6239E /* KaulbackHouse.png */; };
+		D296BBE622C2AB2F00C6239E /* Oak.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8A22C2AB2E00C6239E /* Oak.png */; };
+		D296BBE722C2AB2F00C6239E /* HarbourGuesthouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8B22C2AB2F00C6239E /* HarbourGuesthouse.png */; };
+		D296BBE822C2AB2F00C6239E /* Pavia.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8C22C2AB2F00C6239E /* Pavia.png */; };
+		D296BBE922C2AB2F00C6239E /* Holiday-Inn.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8D22C2AB2F00C6239E /* Holiday-Inn.png */; };
+		D296BBEA22C2AB2F00C6239E /* Schoolhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8E22C2AB2F00C6239E /* Schoolhouse.png */; };
+		D296BBEB22C2AB2F00C6239E /* Jeffs.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB8F22C2AB2F00C6239E /* Jeffs.png */; };
+		D296BBEC22C2AB2F00C6239E /* SnowWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9022C2AB2F00C6239E /* SnowWhite.png */; };
+		D296BBED22C2AB2F00C6239E /* SchoolhouseBrewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9122C2AB2F00C6239E /* SchoolhouseBrewery.png */; };
+		D296BBEE22C2AB2F00C6239E /* SweetRide.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9222C2AB2F00C6239E /* SweetRide.png */; };
+		D296BBEF22C2AB2F00C6239E /* TangledGardens.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9322C2AB2F00C6239E /* TangledGardens.png */; };
+		D296BBF022C2AB2F00C6239E /* Tanner.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9422C2AB2F00C6239E /* Tanner.png */; };
 		D299120022C15BB500164FC5 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29911FF22C15BB500164FC5 /* Company.swift */; };
 		D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299120122C24B4B00164FC5 /* JSONParser.swift */; };
 		D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B5322AFD11C002BF17B /* AppDelegate.swift */; };
@@ -106,9 +114,7 @@
 		D29D3B5E22AFD11E002BF17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29D3B5C22AFD11E002BF17B /* LaunchScreen.storyboard */; };
 		D29D3B6922AFD11E002BF17B /* BikeFriendlyNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B6822AFD11E002BF17B /* BikeFriendlyNSTests.swift */; };
 		D29D3B7422AFD11E002BF17B /* BikeFriendlyNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */; };
-		D2A08F4B22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D2A08F4A22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf */; };
-		D2A08F4F22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A08F4E22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png */; };
-		D2DD295522B7C737002C53CC /* LocationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailController.swift */; };
+		D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */; };
 		F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */; };
 /* End PBXBuildFile section */
 
@@ -132,96 +138,104 @@
 /* Begin PBXFileReference section */
 		415E7E9CABD003DA81EBD84F /* Pods-BikeFriendlyNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeFriendlyNS.debug.xcconfig"; path = "Target Support Files/Pods-BikeFriendlyNS/Pods-BikeFriendlyNS.debug.xcconfig"; sourceTree = "<group>"; };
 		B8AF5EF63A49A926D30DA0D8 /* Pods-BikeFriendlyNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeFriendlyNS.release.xcconfig"; path = "Target Support Files/Pods-BikeFriendlyNS/Pods-BikeFriendlyNS.release.xcconfig"; sourceTree = "<group>"; };
-		D20F14D722BD1745001CBC4F /* Attraction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Attraction.png; path = "../../../BF Assets/Icons/Attraction.png"; sourceTree = "<group>"; };
-		D20F14E722BD1D97001CBC4F /* Resturant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Resturant.png; path = "../../../BF Assets/Icons/Resturant.png"; sourceTree = "<group>"; };
-		D20F14E922BD1E53001CBC4F /* Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flag.png; path = "../../../BF Assets/Icons/Flag.png"; sourceTree = "<group>"; };
-		D20F14EA22BD1E53001CBC4F /* Bike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bike.png; path = "../../../BF Assets/Icons/Bike.png"; sourceTree = "<group>"; };
-		D20F14EB22BD1E53001CBC4F /* House.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = House.png; path = "../../../BF Assets/Icons/House.png"; sourceTree = "<group>"; };
-		D20F14EF22BD1E8A001CBC4F /* Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Building.png; path = "../../../BF Assets/Icons/Building.png"; sourceTree = "<group>"; };
-		D20F14F122BD23DA001CBC4F /* Camping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camping.png; path = "../../../BF Assets/Icons/Camping.png"; sourceTree = "<group>"; };
-		D20F14F322BD475C001CBC4F /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = "../../../BF Assets/Logo/Logo.png"; sourceTree = "<group>"; };
+		D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		D20F14F522C15153001CBC4F /* service.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = service.php; sourceTree = "<group>"; };
 		D21A68F622B278AB003EF706 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BikeFriendlyNS/Controller/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		D21A68FA22B29A16003EF706 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D26AD97F22BAB4DC002E497D /* RiverRidge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RiverRidge.png; path = "../../../BF Assets/Company Images/RiverRidge.png"; sourceTree = "<group>"; };
-		D26AD98022BAB4DC002E497D /* MEC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MEC.png; path = "../../../BF Assets/Company Images/MEC.png"; sourceTree = "<group>"; };
-		D26AD98122BAB4DC002E497D /* DuncansPub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DuncansPub.png; path = "../../../BF Assets/Company Images/DuncansPub.png"; sourceTree = "<group>"; };
-		D26AD98222BAB4DC002E497D /* HarbourGuesthouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HarbourGuesthouse.png; path = "../../../BF Assets/Company Images/HarbourGuesthouse.png"; sourceTree = "<group>"; };
-		D26AD98322BAB4DC002E497D /* iFIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iFIT.png; path = "../../../BF Assets/Company Images/iFIT.png"; sourceTree = "<group>"; };
-		D26AD98422BAB4DC002E497D /* Garrison.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Garrison.png; path = "../../../BF Assets/Company Images/Garrison.png"; sourceTree = "<group>"; };
-		D26AD98522BAB4DC002E497D /* IdealBikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IdealBikes.png; path = "../../../BF Assets/Company Images/IdealBikes.png"; sourceTree = "<group>"; };
-		D26AD98622BAB4DC002E497D /* Maven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maven.png; path = "../../../BF Assets/Company Images/Maven.png"; sourceTree = "<group>"; };
-		D26AD98722BAB4DC002E497D /* Francis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Francis.png; path = "../../../BF Assets/Company Images/Francis.png"; sourceTree = "<group>"; };
-		D26AD98822BAB4DC002E497D /* Earltown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Earltown.png; path = "../../../BF Assets/Company Images/Earltown.png"; sourceTree = "<group>"; };
-		D26AD98922BAB4DC002E497D /* Sportwheels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sportwheels.png; path = "../../../BF Assets/Company Images/Sportwheels.png"; sourceTree = "<group>"; };
-		D26AD98A22BAB4DC002E497D /* Frameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Frameworks.png; path = "../../../BF Assets/Company Images/Frameworks.png"; sourceTree = "<group>"; };
-		D26AD98B22BAB4DC002E497D /* KaulbackHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KaulbackHouse.png; path = "../../../BF Assets/Company Images/KaulbackHouse.png"; sourceTree = "<group>"; };
-		D26AD98C22BAB4DC002E497D /* JavaBlend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = JavaBlend.png; path = "../../../BF Assets/Company Images/JavaBlend.png"; sourceTree = "<group>"; };
-		D26AD98D22BAB4DC002E497D /* Lanes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lanes.png; path = "../../../BF Assets/Company Images/Lanes.png"; sourceTree = "<group>"; };
-		D26AD98E22BAB4DC002E497D /* Hubbards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hubbards.png; path = "../../../BF Assets/Company Images/Hubbards.png"; sourceTree = "<group>"; };
-		D26AD98F22BAB4DC002E497D /* Mecklenburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mecklenburg.png; path = "../../../BF Assets/Company Images/Mecklenburg.png"; sourceTree = "<group>"; };
-		D26AD99022BAB4DC002E497D /* Jeffs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Jeffs.png; path = "../../../BF Assets/Company Images/Jeffs.png"; sourceTree = "<group>"; };
-		D26AD99122BAB4DC002E497D /* BernArt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BernArt.png; path = "../../../BF Assets/Company Images/BernArt.png"; sourceTree = "<group>"; };
-		D26AD99222BAB4DC002E497D /* Apron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apron.png; path = "../../../BF Assets/Company Images/Apron.png"; sourceTree = "<group>"; };
-		D26AD99322BAB4DC002E497D /* TangledGardens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TangledGardens.png; path = "../../../BF Assets/Company Images/TangledGardens.png"; sourceTree = "<group>"; };
-		D26AD99422BAB4DC002E497D /* Oak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Oak.png; path = "../../../BF Assets/Company Images/Oak.png"; sourceTree = "<group>"; };
-		D26AD99522BAB4DD002E497D /* Breton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Breton.png; path = "../../../BF Assets/Company Images/Breton.png"; sourceTree = "<group>"; };
-		D26AD99622BAB4DD002E497D /* SchoolhouseBrewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SchoolhouseBrewery.png; path = "../../../BF Assets/Company Images/SchoolhouseBrewery.png"; sourceTree = "<group>"; };
-		D26AD99722BAB4DD002E497D /* BicycleSpecialist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BicycleSpecialist.png; path = "../../../BF Assets/Company Images/BicycleSpecialist.png"; sourceTree = "<group>"; };
-		D26AD99822BAB4DD002E497D /* Bike&Bean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bike&Bean.png"; path = "../../../BF Assets/Company Images/Bike&Bean.png"; sourceTree = "<group>"; };
-		D26AD99922BAB4DD002E497D /* BayFerry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BayFerry.png; path = "../../../BF Assets/Company Images/BayFerry.png"; sourceTree = "<group>"; };
-		D26AD99A22BAB4DD002E497D /* CloudNineNovelties.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloudNineNovelties.png; path = "../../../BF Assets/Company Images/CloudNineNovelties.png"; sourceTree = "<group>"; };
-		D26AD99B22BAB4DD002E497D /* Highland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highland.png; path = "../../../BF Assets/Company Images/Highland.png"; sourceTree = "<group>"; };
-		D26AD99C22BAB4DD002E497D /* Mabou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mabou.png; path = "../../../BF Assets/Company Images/Mabou.png"; sourceTree = "<group>"; };
-		D26AD99D22BAB4DD002E497D /* CathedralChurch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CathedralChurch.png; path = "../../../BF Assets/Company Images/CathedralChurch.png"; sourceTree = "<group>"; };
-		D26AD99E22BAB4DD002E497D /* Saltbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Saltbox.png; path = "../../../BF Assets/Company Images/Saltbox.png"; sourceTree = "<group>"; };
-		D26AD99F22BAB4DD002E497D /* Schoolhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Schoolhouse.png; path = "../../../BF Assets/Company Images/Schoolhouse.png"; sourceTree = "<group>"; };
-		D26AD9A022BAB4DD002E497D /* BurlingtonRose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BurlingtonRose.png; path = "../../../BF Assets/Company Images/BurlingtonRose.png"; sourceTree = "<group>"; };
-		D26AD9A122BAB4DD002E497D /* The_Bicycle_Lunchbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = The_Bicycle_Lunchbox.png; path = "../../../BF Assets/Company Images/The_Bicycle_Lunchbox.png"; sourceTree = "<group>"; };
-		D26AD9A222BAB4DD002E497D /* Wiles-Lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Wiles-Lake.png"; path = "../../../BF Assets/Company Images/Wiles-Lake.png"; sourceTree = "<group>"; };
-		D26AD9A322BAB4DD002E497D /* SnowWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnowWhite.png; path = "../../../BF Assets/Company Images/SnowWhite.png"; sourceTree = "<group>"; };
-		D26AD9A422BAB4DD002E497D /* SweetRide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SweetRide.png; path = "../../../BF Assets/Company Images/SweetRide.png"; sourceTree = "<group>"; };
-		D26AD9A522BAB4DD002E497D /* Meander-Brewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Meander-Brewery.png"; path = "../../../BF Assets/Company Images/Meander-Brewery.png"; sourceTree = "<group>"; };
-		D26AD9A622BAB4DD002E497D /* OceanStone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OceanStone.png; path = "../../../BF Assets/Company Images/OceanStone.png"; sourceTree = "<group>"; };
-		D26AD9A722BAB4DD002E497D /* Kiwi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kiwi.png; path = "../../../BF Assets/Company Images/Kiwi.png"; sourceTree = "<group>"; };
-		D26AD9A822BAB4DD002E497D /* LaceyMines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaceyMines.png; path = "../../../BF Assets/Company Images/LaceyMines.png"; sourceTree = "<group>"; };
-		D26AD9A922BAB4DD002E497D /* Northumberland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Northumberland.png; path = "../../../BF Assets/Company Images/Northumberland.png"; sourceTree = "<group>"; };
-		D26AD9AA22BAB4DD002E497D /* Hants-Exhibition-Grounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hants-Exhibition-Grounds.png"; path = "../../../BF Assets/Company Images/Hants-Exhibition-Grounds.png"; sourceTree = "<group>"; };
-		D26AD9AB22BAB4DD002E497D /* Annapolis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Annapolis.png; path = "../../../BF Assets/Company Images/Annapolis.png"; sourceTree = "<group>"; };
-		D26AD9AC22BAB4DD002E497D /* Lunchbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lunchbox.png; path = "../../../BF Assets/Company Images/Lunchbox.png"; sourceTree = "<group>"; };
-		D26AD9AD22BAB4DD002E497D /* Scotsman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Scotsman.png; path = "../../../BF Assets/Company Images/Scotsman.png"; sourceTree = "<group>"; };
-		D26AD9AE22BAB4DD002E497D /* VeloBaie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VeloBaie.png; path = "../../../BF Assets/Company Images/VeloBaie.png"; sourceTree = "<group>"; };
-		D26AD9AF22BAB4DD002E497D /* GoodRobot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoodRobot.png; path = "../../../BF Assets/Company Images/GoodRobot.png"; sourceTree = "<group>"; };
-		D26AD9B022BAB4DD002E497D /* Digby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Digby.png; path = "../../../BF Assets/Company Images/Digby.png"; sourceTree = "<group>"; };
-		D26AD9B122BAB4DD002E497D /* Velofix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Velofix.png; path = "../../../BF Assets/Company Images/Velofix.png"; sourceTree = "<group>"; };
-		D26AD9B222BAB4DD002E497D /* Cycles-Guitars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cycles-Guitars.png"; path = "../../../BF Assets/Company Images/Cycles-Guitars.png"; sourceTree = "<group>"; };
-		D26AD9B322BAB4DD002E497D /* Mercator-Vineyards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mercator-Vineyards.png"; path = "../../../BF Assets/Company Images/Mercator-Vineyards.png"; sourceTree = "<group>"; };
-		D26AD9B422BAB4DD002E497D /* UnionStreet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnionStreet.png; path = "../../../BF Assets/Company Images/UnionStreet.png"; sourceTree = "<group>"; };
-		D26AD9B522BAB4DD002E497D /* Liscomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Liscomb.png; path = "../../../BF Assets/Company Images/Liscomb.png"; sourceTree = "<group>"; };
-		D26AD9B622BAB4DE002E497D /* BearRiver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BearRiver.png; path = "../../../BF Assets/Company Images/BearRiver.png"; sourceTree = "<group>"; };
-		D26AD9B722BAB4DE002E497D /* GardenHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GardenHouse.png; path = "../../../BF Assets/Company Images/GardenHouse.png"; sourceTree = "<group>"; };
-		D26AD9B822BAB4DE002E497D /* Spoke&Note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spoke&Note.png"; path = "../../../BF Assets/Company Images/Spoke&Note.png"; sourceTree = "<group>"; };
-		D26AD9B922BAB4DE002E497D /* BikeMonkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BikeMonkey.png; path = "../../../BF Assets/Company Images/BikeMonkey.png"; sourceTree = "<group>"; };
-		D26AD9BA22BAB4DE002E497D /* Berwick&District.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Berwick&District.png"; path = "../../../BF Assets/Company Images/Berwick&District.png"; sourceTree = "<group>"; };
-		D26AD9BB22BAB4DE002E497D /* HubCycle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HubCycle.png; path = "../../../BF Assets/Company Images/HubCycle.png"; sourceTree = "<group>"; };
-		D26AD9BC22BAB4DE002E497D /* Best-Western-Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Best-Western-Plus.png"; path = "../../../BF Assets/Company Images/Best-Western-Plus.png"; sourceTree = "<group>"; };
-		D26AD9BD22BAB4DE002E497D /* AKTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AKTC.png; path = "../../../BF Assets/Company Images/AKTC.png"; sourceTree = "<group>"; };
-		D26AD9BE22BAB4DE002E497D /* Tanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tanner.png; path = "../../../BF Assets/Company Images/Tanner.png"; sourceTree = "<group>"; };
-		D26AD9BF22BAB4DE002E497D /* OutsideOutdoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OutsideOutdoor.png; path = "../../../BF Assets/Company Images/OutsideOutdoor.png"; sourceTree = "<group>"; };
-		D26AD9C022BAB4DE002E497D /* HeartBikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HeartBikes.png; path = "../../../BF Assets/Company Images/HeartBikes.png"; sourceTree = "<group>"; };
-		D26AD9C122BAB4DE002E497D /* Holiday-Inn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Holiday-Inn.png"; path = "../../../BF Assets/Company Images/Holiday-Inn.png"; sourceTree = "<group>"; };
-		D26AD9C222BAB4DE002E497D /* BanksBikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BanksBikes.png; path = "../../../BF Assets/Company Images/BanksBikes.png"; sourceTree = "<group>"; };
-		D26AD9C322BAB4DE002E497D /* NewGlasgow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewGlasgow.png; path = "../../../BF Assets/Company Images/NewGlasgow.png"; sourceTree = "<group>"; };
-		D26AD9C422BAB4DE002E497D /* Pavia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pavia.png; path = "../../../BF Assets/Company Images/Pavia.png"; sourceTree = "<group>"; };
-		D26AD9C522BAB4DE002E497D /* Queens-Place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Queens-Place.png"; path = "../../../BF Assets/Company Images/Queens-Place.png"; sourceTree = "<group>"; };
-		D26AD9C622BAB4DE002E497D /* RumbLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RumbLine.png; path = "../../../BF Assets/Company Images/RumbLine.png"; sourceTree = "<group>"; };
-		D26AD9C722BAB4DE002E497D /* Stuart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stuart.png; path = "../../../BF Assets/Company Images/Stuart.png"; sourceTree = "<group>"; };
-		D26AD9C822BAB4DE002E497D /* Cyclesmith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cyclesmith.png; path = "../../../BF Assets/Company Images/Cyclesmith.png"; sourceTree = "<group>"; };
-		D26AD9C922BAB4DE002E497D /* DancingGoat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DancingGoat.png; path = "../../../BF Assets/Company Images/DancingGoat.png"; sourceTree = "<group>"; };
-		D26ADA1E22BAB4E3002E497D /* FacebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FacebookLogo.png; path = "../../../BF Assets/Icons/FacebookLogo.png"; sourceTree = "<group>"; };
-		D27D77A522AFD3110073522C /* homepage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = homepage.jpeg; path = ../../../../../Pics/homepage.jpeg; sourceTree = "<group>"; };
 		D27D77AE22AFE57E0073522C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D27D77B422AFF2760073522C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D296BB3922C2AB2A00C6239E /* Maven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maven.png; path = "BF Assets/Maven.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3A22C2AB2A00C6239E /* Annapolis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Annapolis.png; path = "BF Assets/Annapolis.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3B22C2AB2A00C6239E /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = "BF Assets/Logo.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3C22C2AB2A00C6239E /* BicycleSpecialist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BicycleSpecialist.png; path = "BF Assets/BicycleSpecialist.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3D22C2AB2A00C6239E /* Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Building.png; path = "BF Assets/Building.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3E22C2AB2A00C6239E /* Stuart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stuart.png; path = "BF Assets/Stuart.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3F22C2AB2A00C6239E /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = "BF Assets/58.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4022C2AB2B00C6239E /* LaceyMines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaceyMines.png; path = "BF Assets/LaceyMines.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4122C2AB2B00C6239E /* Hubbards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hubbards.png; path = "BF Assets/Hubbards.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4222C2AB2B00C6239E /* RumbLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RumbLine.png; path = "BF Assets/RumbLine.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4322C2AB2B00C6239E /* Hants-Exhibition-Grounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hants-Exhibition-Grounds.png"; path = "BF Assets/Hants-Exhibition-Grounds.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4422C2AB2B00C6239E /* CloudNineNovelties.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloudNineNovelties.png; path = "BF Assets/CloudNineNovelties.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4522C2AB2B00C6239E /* Breton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Breton.png; path = "BF Assets/Breton.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4622C2AB2B00C6239E /* Northumberland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Northumberland.png; path = "BF Assets/Northumberland.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4722C2AB2B00C6239E /* Scotsman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Scotsman.png; path = "BF Assets/Scotsman.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4822C2AB2B00C6239E /* Saltbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Saltbox.png; path = "BF Assets/Saltbox.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4922C2AB2B00C6239E /* Mecklenburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mecklenburg.png; path = "BF Assets/Mecklenburg.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4A22C2AB2B00C6239E /* Velofix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Velofix.png; path = "BF Assets/Velofix.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4B22C2AB2B00C6239E /* Bike&Bean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bike&Bean.png"; path = "BF Assets/Bike&Bean.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4C22C2AB2B00C6239E /* Apron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apron.png; path = "BF Assets/Apron.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4D22C2AB2B00C6239E /* OceanStone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OceanStone.png; path = "BF Assets/OceanStone.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4E22C2AB2B00C6239E /* Bike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bike.png; path = "BF Assets/Bike.png"; sourceTree = SOURCE_ROOT; };
+		D296BB4F22C2AB2B00C6239E /* Mercator-Vineyards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mercator-Vineyards.png"; path = "BF Assets/Mercator-Vineyards.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5022C2AB2B00C6239E /* FacebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FacebookLogo.png; path = "BF Assets/FacebookLogo.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5122C2AB2B00C6239E /* Digby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Digby.png; path = "BF Assets/Digby.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5222C2AB2B00C6239E /* Attraction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Attraction.png; path = "BF Assets/Attraction.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5322C2AB2B00C6239E /* BikeMonkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BikeMonkey.png; path = "BF Assets/BikeMonkey.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5422C2AB2B00C6239E /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eye.png; path = "BF Assets/eye.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5522C2AB2B00C6239E /* BurlingtonRose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BurlingtonRose.png; path = "BF Assets/BurlingtonRose.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5622C2AB2B00C6239E /* The_Bicycle_Lunchbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = The_Bicycle_Lunchbox.png; path = "BF Assets/The_Bicycle_Lunchbox.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5722C2AB2C00C6239E /* write-letter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "write-letter.png"; path = "BF Assets/write-letter.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5822C2AB2C00C6239E /* Lanes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lanes.png; path = "BF Assets/Lanes.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5922C2AB2C00C6239E /* Cycles-Guitars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cycles-Guitars.png"; path = "BF Assets/Cycles-Guitars.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5A22C2AB2C00C6239E /* Cyclesmith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cyclesmith.png; path = "BF Assets/Cyclesmith.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5B22C2AB2C00C6239E /* CathedralChurch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CathedralChurch.png; path = "BF Assets/CathedralChurch.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5C22C2AB2C00C6239E /* Lunchbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lunchbox.png; path = "BF Assets/Lunchbox.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5D22C2AB2C00C6239E /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 87.png; path = "BF Assets/87.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5E22C2AB2C00C6239E /* Logo-White-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo-White-BG.png"; path = "BF Assets/Logo-White-BG.png"; sourceTree = SOURCE_ROOT; };
+		D296BB5F22C2AB2C00C6239E /* GoodRobot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoodRobot.png; path = "BF Assets/GoodRobot.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6022C2AB2C00C6239E /* Berwick&District.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Berwick&District.png"; path = "BF Assets/Berwick&District.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6122C2AB2C00C6239E /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = "BF Assets/120.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6222C2AB2C00C6239E /* Best-Western-Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Best-Western-Plus.png"; path = "BF Assets/Best-Western-Plus.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6322C2AB2C00C6239E /* MEC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MEC.png; path = "BF Assets/MEC.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6422C2AB2C00C6239E /* Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flag.png; path = "BF Assets/Flag.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6522C2AB2C00C6239E /* BayFerry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BayFerry.png; path = "BF Assets/BayFerry.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6622C2AB2D00C6239E /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = "BF Assets/80.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6722C2AB2D00C6239E /* HubCycle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HubCycle.png; path = "BF Assets/HubCycle.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6822C2AB2D00C6239E /* Mabou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mabou.png; path = "BF Assets/Mabou.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6922C2AB2D00C6239E /* NewGlasgow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewGlasgow.png; path = "BF Assets/NewGlasgow.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6A22C2AB2D00C6239E /* AKTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AKTC.png; path = "BF Assets/AKTC.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6B22C2AB2D00C6239E /* OutsideOutdoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OutsideOutdoor.png; path = "BF Assets/OutsideOutdoor.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6C22C2AB2D00C6239E /* Sportwheels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sportwheels.png; path = "BF Assets/Sportwheels.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6D22C2AB2D00C6239E /* Frameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Frameworks.png; path = "BF Assets/Frameworks.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6E22C2AB2D00C6239E /* Camping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camping.png; path = "BF Assets/Camping.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6F22C2AB2D00C6239E /* Earltown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Earltown.png; path = "BF Assets/Earltown.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7022C2AB2D00C6239E /* UnionStreet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnionStreet.png; path = "BF Assets/UnionStreet.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7122C2AB2D00C6239E /* BanksBikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BanksBikes.png; path = "BF Assets/BanksBikes.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7222C2AB2D00C6239E /* GardenHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GardenHouse.png; path = "BF Assets/GardenHouse.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7322C2AB2D00C6239E /* Liscomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Liscomb.png; path = "BF Assets/Liscomb.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7422C2AB2E00C6239E /* RiverRidge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RiverRidge.png; path = "BF Assets/RiverRidge.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7522C2AB2E00C6239E /* Queens-Place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Queens-Place.png"; path = "BF Assets/Queens-Place.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7622C2AB2E00C6239E /* DancingGoat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DancingGoat.png; path = "BF Assets/DancingGoat.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7722C2AB2E00C6239E /* Resturant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Resturant.png; path = "BF Assets/Resturant.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7822C2AB2E00C6239E /* Spoke&Note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spoke&Note.png"; path = "BF Assets/Spoke&Note.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7922C2AB2E00C6239E /* House.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = House.png; path = "BF Assets/House.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7A22C2AB2E00C6239E /* Garrison.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Garrison.png; path = "BF Assets/Garrison.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7B22C2AB2E00C6239E /* VeloBaie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VeloBaie.png; path = "BF Assets/VeloBaie.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7C22C2AB2E00C6239E /* Wiles-Lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Wiles-Lake.png"; path = "BF Assets/Wiles-Lake.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7D22C2AB2E00C6239E /* DuncansPub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DuncansPub.png; path = "BF Assets/DuncansPub.png"; sourceTree = SOURCE_ROOT; };
+		D296BB7E22C2AB2E00C6239E /* homepage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = homepage.jpeg; path = "BF Assets/homepage.jpeg"; sourceTree = SOURCE_ROOT; };
+		D296BB7F22C2AB2E00C6239E /* JavaBlend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = JavaBlend.png; path = "BF Assets/JavaBlend.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8022C2AB2E00C6239E /* HeartBikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HeartBikes.png; path = "BF Assets/HeartBikes.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8122C2AB2E00C6239E /* Kiwi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kiwi.png; path = "BF Assets/Kiwi.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8222C2AB2E00C6239E /* BearRiver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BearRiver.png; path = "BF Assets/BearRiver.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8322C2AB2E00C6239E /* Highland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highland.png; path = "BF Assets/Highland.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8422C2AB2E00C6239E /* BernArt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BernArt.png; path = "BF Assets/BernArt.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8522C2AB2E00C6239E /* Francis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Francis.png; path = "BF Assets/Francis.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8622C2AB2E00C6239E /* IdealBikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IdealBikes.png; path = "BF Assets/IdealBikes.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8722C2AB2E00C6239E /* iFIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iFIT.png; path = "BF Assets/iFIT.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8822C2AB2E00C6239E /* Meander-Brewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Meander-Brewery.png"; path = "BF Assets/Meander-Brewery.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8922C2AB2E00C6239E /* KaulbackHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KaulbackHouse.png; path = "BF Assets/KaulbackHouse.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8A22C2AB2E00C6239E /* Oak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Oak.png; path = "BF Assets/Oak.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8B22C2AB2F00C6239E /* HarbourGuesthouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HarbourGuesthouse.png; path = "BF Assets/HarbourGuesthouse.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8C22C2AB2F00C6239E /* Pavia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pavia.png; path = "BF Assets/Pavia.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8D22C2AB2F00C6239E /* Holiday-Inn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Holiday-Inn.png"; path = "BF Assets/Holiday-Inn.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8E22C2AB2F00C6239E /* Schoolhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Schoolhouse.png; path = "BF Assets/Schoolhouse.png"; sourceTree = SOURCE_ROOT; };
+		D296BB8F22C2AB2F00C6239E /* Jeffs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Jeffs.png; path = "BF Assets/Jeffs.png"; sourceTree = SOURCE_ROOT; };
+		D296BB9022C2AB2F00C6239E /* SnowWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnowWhite.png; path = "BF Assets/SnowWhite.png"; sourceTree = SOURCE_ROOT; };
+		D296BB9122C2AB2F00C6239E /* SchoolhouseBrewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SchoolhouseBrewery.png; path = "BF Assets/SchoolhouseBrewery.png"; sourceTree = SOURCE_ROOT; };
+		D296BB9222C2AB2F00C6239E /* SweetRide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SweetRide.png; path = "BF Assets/SweetRide.png"; sourceTree = SOURCE_ROOT; };
+		D296BB9322C2AB2F00C6239E /* TangledGardens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TangledGardens.png; path = "BF Assets/TangledGardens.png"; sourceTree = SOURCE_ROOT; };
+		D296BB9422C2AB2F00C6239E /* Tanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tanner.png; path = "BF Assets/Tanner.png"; sourceTree = SOURCE_ROOT; };
 		D29911FF22C15BB500164FC5 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		D299120122C24B4B00164FC5 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		D29D3B5022AFD11C002BF17B /* BikeFriendlyNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeFriendlyNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,9 +251,7 @@
 		D29D3B6F22AFD11E002BF17B /* BikeFriendlyNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeFriendlyNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeFriendlyNSUITests.swift; sourceTree = "<group>"; };
 		D29D3B7522AFD11E002BF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2A08F4A22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "BFC-Certification-Tall-CMYK.pdf"; path = "../../../../../../Downloads/BFC-Certification-Tall-CMYK.pdf"; sourceTree = "<group>"; };
-		D2A08F4E22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BFC-Certification-Tall-CMYK-1.png"; path = "../../../../../../Downloads/BFC-Certification-Tall-CMYK-1.png"; sourceTree = "<group>"; };
-		D2DD295422B7C737002C53CC /* LocationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailController.swift; path = BikeFriendlyNS/Controller/LocationDetailController.swift; sourceTree = SOURCE_ROOT; };
+		D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailViewController.swift; path = BikeFriendlyNS/Controller/LocationDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeFriendlyNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -368,7 +380,8 @@
 			children = (
 				D29D3B5522AFD11C002BF17B /* HomeViewController.swift */,
 				D21A68F622B278AB003EF706 /* MapViewController.swift */,
-				D2DD295422B7C737002C53CC /* LocationDetailController.swift */,
+				D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */,
+				D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,93 +389,98 @@
 		D29D3B8522AFD217002BF17B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				D20F14F322BD475C001CBC4F /* Logo.png */,
-				D20F14D722BD1745001CBC4F /* Attraction.png */,
-				D20F14EF22BD1E8A001CBC4F /* Building.png */,
-				D20F14F122BD23DA001CBC4F /* Camping.png */,
-				D20F14E722BD1D97001CBC4F /* Resturant.png */,
-				D20F14EA22BD1E53001CBC4F /* Bike.png */,
-				D20F14E922BD1E53001CBC4F /* Flag.png */,
-				D20F14EB22BD1E53001CBC4F /* House.png */,
-				D26ADA1E22BAB4E3002E497D /* FacebookLogo.png */,
-				D26AD9BD22BAB4DE002E497D /* AKTC.png */,
-				D26AD9AB22BAB4DD002E497D /* Annapolis.png */,
-				D26AD99222BAB4DC002E497D /* Apron.png */,
-				D26AD9C222BAB4DE002E497D /* BanksBikes.png */,
-				D26AD99922BAB4DD002E497D /* BayFerry.png */,
-				D26AD9B622BAB4DE002E497D /* BearRiver.png */,
-				D26AD99122BAB4DC002E497D /* BernArt.png */,
-				D26AD9BA22BAB4DE002E497D /* Berwick&District.png */,
-				D26AD9BC22BAB4DE002E497D /* Best-Western-Plus.png */,
-				D26AD99722BAB4DD002E497D /* BicycleSpecialist.png */,
-				D26AD99822BAB4DD002E497D /* Bike&Bean.png */,
-				D26AD9B922BAB4DE002E497D /* BikeMonkey.png */,
-				D26AD99522BAB4DD002E497D /* Breton.png */,
-				D26AD9A022BAB4DD002E497D /* BurlingtonRose.png */,
-				D26AD99D22BAB4DD002E497D /* CathedralChurch.png */,
-				D26AD99A22BAB4DD002E497D /* CloudNineNovelties.png */,
-				D26AD9B222BAB4DD002E497D /* Cycles-Guitars.png */,
-				D26AD9C822BAB4DE002E497D /* Cyclesmith.png */,
-				D26AD9C922BAB4DE002E497D /* DancingGoat.png */,
-				D26AD9B022BAB4DD002E497D /* Digby.png */,
-				D26AD98122BAB4DC002E497D /* DuncansPub.png */,
-				D26AD98822BAB4DC002E497D /* Earltown.png */,
-				D26AD98722BAB4DC002E497D /* Francis.png */,
-				D26AD98A22BAB4DC002E497D /* Frameworks.png */,
-				D26AD9B722BAB4DE002E497D /* GardenHouse.png */,
-				D26AD98422BAB4DC002E497D /* Garrison.png */,
-				D26AD9AF22BAB4DD002E497D /* GoodRobot.png */,
-				D26AD9AA22BAB4DD002E497D /* Hants-Exhibition-Grounds.png */,
-				D26AD98222BAB4DC002E497D /* HarbourGuesthouse.png */,
-				D26AD9C022BAB4DE002E497D /* HeartBikes.png */,
-				D26AD99B22BAB4DD002E497D /* Highland.png */,
-				D26AD9C122BAB4DE002E497D /* Holiday-Inn.png */,
-				D26AD98E22BAB4DC002E497D /* Hubbards.png */,
-				D26AD9BB22BAB4DE002E497D /* HubCycle.png */,
-				D26AD98522BAB4DC002E497D /* IdealBikes.png */,
-				D26AD98322BAB4DC002E497D /* iFIT.png */,
-				D26AD98C22BAB4DC002E497D /* JavaBlend.png */,
-				D26AD99022BAB4DC002E497D /* Jeffs.png */,
-				D26AD98B22BAB4DC002E497D /* KaulbackHouse.png */,
-				D26AD9A722BAB4DD002E497D /* Kiwi.png */,
-				D26AD9A822BAB4DD002E497D /* LaceyMines.png */,
-				D26AD98D22BAB4DC002E497D /* Lanes.png */,
-				D26AD9B522BAB4DD002E497D /* Liscomb.png */,
-				D26AD9AC22BAB4DD002E497D /* Lunchbox.png */,
-				D26AD99C22BAB4DD002E497D /* Mabou.png */,
-				D26AD98622BAB4DC002E497D /* Maven.png */,
-				D26AD9A522BAB4DD002E497D /* Meander-Brewery.png */,
-				D26AD98022BAB4DC002E497D /* MEC.png */,
-				D26AD98F22BAB4DC002E497D /* Mecklenburg.png */,
-				D26AD9B322BAB4DD002E497D /* Mercator-Vineyards.png */,
-				D26AD9C322BAB4DE002E497D /* NewGlasgow.png */,
-				D26AD9A922BAB4DD002E497D /* Northumberland.png */,
-				D26AD99422BAB4DC002E497D /* Oak.png */,
-				D26AD9A622BAB4DD002E497D /* OceanStone.png */,
-				D26AD9BF22BAB4DE002E497D /* OutsideOutdoor.png */,
-				D26AD9C422BAB4DE002E497D /* Pavia.png */,
-				D26AD9C522BAB4DE002E497D /* Queens-Place.png */,
-				D26AD97F22BAB4DC002E497D /* RiverRidge.png */,
-				D26AD9C622BAB4DE002E497D /* RumbLine.png */,
-				D26AD99E22BAB4DD002E497D /* Saltbox.png */,
-				D26AD99F22BAB4DD002E497D /* Schoolhouse.png */,
-				D26AD99622BAB4DD002E497D /* SchoolhouseBrewery.png */,
-				D26AD9AD22BAB4DD002E497D /* Scotsman.png */,
-				D26AD9A322BAB4DD002E497D /* SnowWhite.png */,
-				D26AD9B822BAB4DE002E497D /* Spoke&Note.png */,
-				D26AD98922BAB4DC002E497D /* Sportwheels.png */,
-				D26AD9C722BAB4DE002E497D /* Stuart.png */,
-				D26AD9A422BAB4DD002E497D /* SweetRide.png */,
-				D26AD99322BAB4DC002E497D /* TangledGardens.png */,
-				D26AD9BE22BAB4DE002E497D /* Tanner.png */,
-				D26AD9A122BAB4DD002E497D /* The_Bicycle_Lunchbox.png */,
-				D26AD9B422BAB4DD002E497D /* UnionStreet.png */,
-				D26AD9AE22BAB4DD002E497D /* VeloBaie.png */,
-				D26AD9B122BAB4DD002E497D /* Velofix.png */,
-				D26AD9A222BAB4DD002E497D /* Wiles-Lake.png */,
-				D2A08F4E22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png */,
-				D2A08F4A22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf */,
-				D27D77A522AFD3110073522C /* homepage.jpeg */,
+				D296BB3F22C2AB2A00C6239E /* 58.png */,
+				D296BB6622C2AB2D00C6239E /* 80.png */,
+				D296BB5D22C2AB2C00C6239E /* 87.png */,
+				D296BB6122C2AB2C00C6239E /* 120.png */,
+				D296BB6A22C2AB2D00C6239E /* AKTC.png */,
+				D296BB3A22C2AB2A00C6239E /* Annapolis.png */,
+				D296BB4C22C2AB2B00C6239E /* Apron.png */,
+				D296BB5222C2AB2B00C6239E /* Attraction.png */,
+				D296BB7122C2AB2D00C6239E /* BanksBikes.png */,
+				D296BB6522C2AB2C00C6239E /* BayFerry.png */,
+				D296BB8222C2AB2E00C6239E /* BearRiver.png */,
+				D296BB8422C2AB2E00C6239E /* BernArt.png */,
+				D296BB6022C2AB2C00C6239E /* Berwick&District.png */,
+				D296BB6222C2AB2C00C6239E /* Best-Western-Plus.png */,
+				D296BB3C22C2AB2A00C6239E /* BicycleSpecialist.png */,
+				D296BB4E22C2AB2B00C6239E /* Bike.png */,
+				D296BB4B22C2AB2B00C6239E /* Bike&Bean.png */,
+				D296BB5322C2AB2B00C6239E /* BikeMonkey.png */,
+				D296BB4522C2AB2B00C6239E /* Breton.png */,
+				D296BB3D22C2AB2A00C6239E /* Building.png */,
+				D296BB5522C2AB2B00C6239E /* BurlingtonRose.png */,
+				D296BB6E22C2AB2D00C6239E /* Camping.png */,
+				D296BB5B22C2AB2C00C6239E /* CathedralChurch.png */,
+				D296BB4422C2AB2B00C6239E /* CloudNineNovelties.png */,
+				D296BB5922C2AB2C00C6239E /* Cycles-Guitars.png */,
+				D296BB5A22C2AB2C00C6239E /* Cyclesmith.png */,
+				D296BB7622C2AB2E00C6239E /* DancingGoat.png */,
+				D296BB5122C2AB2B00C6239E /* Digby.png */,
+				D296BB7D22C2AB2E00C6239E /* DuncansPub.png */,
+				D296BB6F22C2AB2D00C6239E /* Earltown.png */,
+				D296BB5422C2AB2B00C6239E /* eye.png */,
+				D296BB5022C2AB2B00C6239E /* FacebookLogo.png */,
+				D296BB6422C2AB2C00C6239E /* Flag.png */,
+				D296BB6D22C2AB2D00C6239E /* Frameworks.png */,
+				D296BB8522C2AB2E00C6239E /* Francis.png */,
+				D296BB7222C2AB2D00C6239E /* GardenHouse.png */,
+				D296BB7A22C2AB2E00C6239E /* Garrison.png */,
+				D296BB5F22C2AB2C00C6239E /* GoodRobot.png */,
+				D296BB4322C2AB2B00C6239E /* Hants-Exhibition-Grounds.png */,
+				D296BB8B22C2AB2F00C6239E /* HarbourGuesthouse.png */,
+				D296BB8022C2AB2E00C6239E /* HeartBikes.png */,
+				D296BB8322C2AB2E00C6239E /* Highland.png */,
+				D296BB8D22C2AB2F00C6239E /* Holiday-Inn.png */,
+				D296BB7E22C2AB2E00C6239E /* homepage.jpeg */,
+				D296BB7922C2AB2E00C6239E /* House.png */,
+				D296BB4122C2AB2B00C6239E /* Hubbards.png */,
+				D296BB6722C2AB2D00C6239E /* HubCycle.png */,
+				D296BB8622C2AB2E00C6239E /* IdealBikes.png */,
+				D296BB8722C2AB2E00C6239E /* iFIT.png */,
+				D296BB7F22C2AB2E00C6239E /* JavaBlend.png */,
+				D296BB8F22C2AB2F00C6239E /* Jeffs.png */,
+				D296BB8922C2AB2E00C6239E /* KaulbackHouse.png */,
+				D296BB8122C2AB2E00C6239E /* Kiwi.png */,
+				D296BB4022C2AB2B00C6239E /* LaceyMines.png */,
+				D296BB5822C2AB2C00C6239E /* Lanes.png */,
+				D296BB7322C2AB2D00C6239E /* Liscomb.png */,
+				D296BB5E22C2AB2C00C6239E /* Logo-White-BG.png */,
+				D296BB3B22C2AB2A00C6239E /* Logo.png */,
+				D296BB5C22C2AB2C00C6239E /* Lunchbox.png */,
+				D296BB6822C2AB2D00C6239E /* Mabou.png */,
+				D296BB3922C2AB2A00C6239E /* Maven.png */,
+				D296BB8822C2AB2E00C6239E /* Meander-Brewery.png */,
+				D296BB6322C2AB2C00C6239E /* MEC.png */,
+				D296BB4922C2AB2B00C6239E /* Mecklenburg.png */,
+				D296BB4F22C2AB2B00C6239E /* Mercator-Vineyards.png */,
+				D296BB6922C2AB2D00C6239E /* NewGlasgow.png */,
+				D296BB4622C2AB2B00C6239E /* Northumberland.png */,
+				D296BB8A22C2AB2E00C6239E /* Oak.png */,
+				D296BB4D22C2AB2B00C6239E /* OceanStone.png */,
+				D296BB6B22C2AB2D00C6239E /* OutsideOutdoor.png */,
+				D296BB8C22C2AB2F00C6239E /* Pavia.png */,
+				D296BB7522C2AB2E00C6239E /* Queens-Place.png */,
+				D296BB7722C2AB2E00C6239E /* Resturant.png */,
+				D296BB7422C2AB2E00C6239E /* RiverRidge.png */,
+				D296BB4222C2AB2B00C6239E /* RumbLine.png */,
+				D296BB4822C2AB2B00C6239E /* Saltbox.png */,
+				D296BB8E22C2AB2F00C6239E /* Schoolhouse.png */,
+				D296BB9122C2AB2F00C6239E /* SchoolhouseBrewery.png */,
+				D296BB4722C2AB2B00C6239E /* Scotsman.png */,
+				D296BB9022C2AB2F00C6239E /* SnowWhite.png */,
+				D296BB7822C2AB2E00C6239E /* Spoke&Note.png */,
+				D296BB6C22C2AB2D00C6239E /* Sportwheels.png */,
+				D296BB3E22C2AB2A00C6239E /* Stuart.png */,
+				D296BB9222C2AB2F00C6239E /* SweetRide.png */,
+				D296BB9322C2AB2F00C6239E /* TangledGardens.png */,
+				D296BB9422C2AB2F00C6239E /* Tanner.png */,
+				D296BB5622C2AB2B00C6239E /* The_Bicycle_Lunchbox.png */,
+				D296BB7022C2AB2D00C6239E /* UnionStreet.png */,
+				D296BB7B22C2AB2E00C6239E /* VeloBaie.png */,
+				D296BB4A22C2AB2B00C6239E /* Velofix.png */,
+				D296BB7C22C2AB2E00C6239E /* Wiles-Lake.png */,
+				D296BB5722C2AB2C00C6239E /* write-letter.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -578,98 +596,103 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D296BBC022C2AB2F00C6239E /* Flag.png in Resources */,
+				D296BBF022C2AB2F00C6239E /* Tanner.png in Resources */,
+				D296BBE822C2AB2F00C6239E /* Pavia.png in Resources */,
+				D296BBE922C2AB2F00C6239E /* Holiday-Inn.png in Resources */,
+				D296BBBA22C2AB2F00C6239E /* Logo-White-BG.png in Resources */,
+				D296BBAA22C2AB2F00C6239E /* Bike.png in Resources */,
 				D29D3B5E22AFD11E002BF17B /* LaunchScreen.storyboard in Resources */,
-				D26ADA0222BAB4DE002E497D /* GardenHouse.png in Resources */,
+				D296BBD622C2AB2F00C6239E /* Garrison.png in Resources */,
+				D296BBD522C2AB2F00C6239E /* House.png in Resources */,
+				D296BBB422C2AB2F00C6239E /* Lanes.png in Resources */,
+				D296BBB722C2AB2F00C6239E /* CathedralChurch.png in Resources */,
+				D296BBEE22C2AB2F00C6239E /* SweetRide.png in Resources */,
+				D296BB9922C2AB2F00C6239E /* Building.png in Resources */,
+				D296BBCF22C2AB2F00C6239E /* Liscomb.png in Resources */,
+				D296BBEC22C2AB2F00C6239E /* SnowWhite.png in Resources */,
+				D296BBB322C2AB2F00C6239E /* write-letter.png in Resources */,
+				D296BBA922C2AB2F00C6239E /* OceanStone.png in Resources */,
+				D296BB9C22C2AB2F00C6239E /* LaceyMines.png in Resources */,
+				D296BBB922C2AB2F00C6239E /* 87.png in Resources */,
+				D296BBDF22C2AB2F00C6239E /* Highland.png in Resources */,
+				D296BB9522C2AB2F00C6239E /* Maven.png in Resources */,
+				D296BBC222C2AB2F00C6239E /* 80.png in Resources */,
+				D296BBBB22C2AB2F00C6239E /* GoodRobot.png in Resources */,
+				D296BBE622C2AB2F00C6239E /* Oak.png in Resources */,
+				D296BBDA22C2AB2F00C6239E /* homepage.jpeg in Resources */,
+				D296BBB822C2AB2F00C6239E /* Lunchbox.png in Resources */,
+				D296BBBD22C2AB2F00C6239E /* 120.png in Resources */,
+				D296BBC122C2AB2F00C6239E /* BayFerry.png in Resources */,
+				D296BBD922C2AB2F00C6239E /* DuncansPub.png in Resources */,
+				D296BBC522C2AB2F00C6239E /* NewGlasgow.png in Resources */,
+				D296BB9A22C2AB2F00C6239E /* Stuart.png in Resources */,
+				D296BBBF22C2AB2F00C6239E /* MEC.png in Resources */,
+				D296BBAC22C2AB2F00C6239E /* FacebookLogo.png in Resources */,
+				D296BBCC22C2AB2F00C6239E /* UnionStreet.png in Resources */,
+				D296BBEA22C2AB2F00C6239E /* Schoolhouse.png in Resources */,
+				D296BBE122C2AB2F00C6239E /* Francis.png in Resources */,
+				D296BBA522C2AB2F00C6239E /* Mecklenburg.png in Resources */,
+				D296BBD322C2AB2F00C6239E /* Resturant.png in Resources */,
+				D296BBCE22C2AB2F00C6239E /* GardenHouse.png in Resources */,
+				D296BBD022C2AB2F00C6239E /* RiverRidge.png in Resources */,
+				D296BBA622C2AB2F00C6239E /* Velofix.png in Resources */,
+				D296BBEF22C2AB2F00C6239E /* TangledGardens.png in Resources */,
+				D296BBDE22C2AB2F00C6239E /* BearRiver.png in Resources */,
+				D296BBD722C2AB2F00C6239E /* VeloBaie.png in Resources */,
+				D296BBB222C2AB2F00C6239E /* The_Bicycle_Lunchbox.png in Resources */,
+				D296BBA722C2AB2F00C6239E /* Bike&Bean.png in Resources */,
+				D296BBE522C2AB2F00C6239E /* KaulbackHouse.png in Resources */,
 				D29D3B5B22AFD11E002BF17B /* Assets.xcassets in Resources */,
-				D26ADA0122BAB4DE002E497D /* BearRiver.png in Resources */,
-				D26ADA1322BAB4DE002E497D /* Cyclesmith.png in Resources */,
-				D26AD9F222BAB4DE002E497D /* Kiwi.png in Resources */,
-				D26AD9EA22BAB4DE002E497D /* Schoolhouse.png in Resources */,
-				D20F14EC22BD1E53001CBC4F /* Flag.png in Resources */,
-				D20F14E822BD1D97001CBC4F /* Resturant.png in Resources */,
-				D26AD9D922BAB4DE002E497D /* Hubbards.png in Resources */,
-				D26ADA0322BAB4DE002E497D /* Spoke&Note.png in Resources */,
-				D26AD9FA22BAB4DE002E497D /* GoodRobot.png in Resources */,
-				D26AD9D522BAB4DE002E497D /* Frameworks.png in Resources */,
-				D26AD9D822BAB4DE002E497D /* Lanes.png in Resources */,
-				D26AD9EB22BAB4DE002E497D /* BurlingtonRose.png in Resources */,
-				D26AD9ED22BAB4DE002E497D /* Wiles-Lake.png in Resources */,
-				D26ADA0922BAB4DE002E497D /* Tanner.png in Resources */,
-				D26AD9CF22BAB4DE002E497D /* Garrison.png in Resources */,
-				D26AD9D122BAB4DE002E497D /* Maven.png in Resources */,
-				D2A08F4B22B3CD13007E85B5 /* BFC-Certification-Tall-CMYK.pdf in Resources */,
-				D20F14F022BD1E8B001CBC4F /* Building.png in Resources */,
-				D26AD9E222BAB4DE002E497D /* BicycleSpecialist.png in Resources */,
-				D26AD9DD22BAB4DE002E497D /* Apron.png in Resources */,
-				D26AD9E022BAB4DE002E497D /* Breton.png in Resources */,
-				D26ADA0422BAB4DE002E497D /* BikeMonkey.png in Resources */,
-				D20F14EE22BD1E53001CBC4F /* House.png in Resources */,
-				D26AD9DF22BAB4DE002E497D /* Oak.png in Resources */,
-				D26AD9FE22BAB4DE002E497D /* Mercator-Vineyards.png in Resources */,
-				D26AD9F122BAB4DE002E497D /* OceanStone.png in Resources */,
-				D20F14ED22BD1E53001CBC4F /* Bike.png in Resources */,
-				D26AD9FC22BAB4DE002E497D /* Velofix.png in Resources */,
-				D26AD9F322BAB4DE002E497D /* LaceyMines.png in Resources */,
-				D26ADA0D22BAB4DE002E497D /* BanksBikes.png in Resources */,
-				D26AD9E822BAB4DE002E497D /* CathedralChurch.png in Resources */,
-				D26AD9CB22BAB4DE002E497D /* MEC.png in Resources */,
-				D26AD9D422BAB4DE002E497D /* Sportwheels.png in Resources */,
-				D26AD9EE22BAB4DE002E497D /* SnowWhite.png in Resources */,
-				D26AD9CC22BAB4DE002E497D /* DuncansPub.png in Resources */,
-				D26ADA0522BAB4DE002E497D /* Berwick&District.png in Resources */,
-				D20F14F222BD23DA001CBC4F /* Camping.png in Resources */,
-				D26ADA0C22BAB4DE002E497D /* Holiday-Inn.png in Resources */,
-				D26AD9D322BAB4DE002E497D /* Earltown.png in Resources */,
+				D296BBE422C2AB2F00C6239E /* Meander-Brewery.png in Resources */,
+				D296BBD222C2AB2F00C6239E /* DancingGoat.png in Resources */,
+				D296BBC922C2AB2F00C6239E /* Frameworks.png in Resources */,
+				D296BBC422C2AB2F00C6239E /* Mabou.png in Resources */,
+				D296BBC622C2AB2F00C6239E /* AKTC.png in Resources */,
 				D20F14F622C15153001CBC4F /* service.php in Resources */,
-				D26AD9F522BAB4DE002E497D /* Hants-Exhibition-Grounds.png in Resources */,
-				D26AD9DE22BAB4DE002E497D /* TangledGardens.png in Resources */,
-				D20F14D822BD1746001CBC4F /* Attraction.png in Resources */,
-				D26AD9FD22BAB4DE002E497D /* Cycles-Guitars.png in Resources */,
+				D296BBEB22C2AB2F00C6239E /* Jeffs.png in Resources */,
+				D296BB9722C2AB2F00C6239E /* Logo.png in Resources */,
+				D296BBA222C2AB2F00C6239E /* Northumberland.png in Resources */,
+				D296BBAF22C2AB2F00C6239E /* BikeMonkey.png in Resources */,
+				D296BBDC22C2AB2F00C6239E /* HeartBikes.png in Resources */,
 				D27D77B522AFF2760073522C /* Podfile in Resources */,
-				D26ADA1222BAB4DE002E497D /* Stuart.png in Resources */,
-				D26AD9E622BAB4DE002E497D /* Highland.png in Resources */,
-				D26AD9DA22BAB4DE002E497D /* Mecklenburg.png in Resources */,
-				D26AD9CE22BAB4DE002E497D /* iFIT.png in Resources */,
-				D26ADA0022BAB4DE002E497D /* Liscomb.png in Resources */,
-				D26ADA1022BAB4DE002E497D /* Queens-Place.png in Resources */,
-				D26ADA1422BAB4DE002E497D /* DancingGoat.png in Resources */,
-				D26AD9F922BAB4DE002E497D /* VeloBaie.png in Resources */,
-				D26ADA1122BAB4DE002E497D /* RumbLine.png in Resources */,
-				D26AD9EC22BAB4DE002E497D /* The_Bicycle_Lunchbox.png in Resources */,
-				D26AD9CA22BAB4DE002E497D /* RiverRidge.png in Resources */,
-				D26AD9D222BAB4DE002E497D /* Francis.png in Resources */,
-				D26ADA0822BAB4DE002E497D /* AKTC.png in Resources */,
-				D26AD9E122BAB4DE002E497D /* SchoolhouseBrewery.png in Resources */,
+				D296BBA422C2AB2F00C6239E /* Saltbox.png in Resources */,
+				D296BBE022C2AB2F00C6239E /* BernArt.png in Resources */,
+				D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */,
+				D296BBB022C2AB2F00C6239E /* eye.png in Resources */,
+				D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */,
+				D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */,
+				D296BBB122C2AB2F00C6239E /* BurlingtonRose.png in Resources */,
+				D296BBAB22C2AB2F00C6239E /* Mercator-Vineyards.png in Resources */,
+				D296BB9822C2AB2F00C6239E /* BicycleSpecialist.png in Resources */,
+				D296BBA022C2AB2F00C6239E /* CloudNineNovelties.png in Resources */,
+				D296BBE322C2AB2F00C6239E /* iFIT.png in Resources */,
+				D296BBE722C2AB2F00C6239E /* HarbourGuesthouse.png in Resources */,
+				D296BBB622C2AB2F00C6239E /* Cyclesmith.png in Resources */,
+				D296BB9E22C2AB2F00C6239E /* RumbLine.png in Resources */,
+				D296BBDD22C2AB2F00C6239E /* Kiwi.png in Resources */,
+				D296BBC822C2AB2F00C6239E /* Sportwheels.png in Resources */,
+				D296BBD122C2AB2F00C6239E /* Queens-Place.png in Resources */,
 				D29D3B5922AFD11C002BF17B /* Main.storyboard in Resources */,
-				D26AD9E422BAB4DE002E497D /* BayFerry.png in Resources */,
-				D27D77A622AFD3110073522C /* homepage.jpeg in Resources */,
-				D26AD9F722BAB4DE002E497D /* Lunchbox.png in Resources */,
-				D26AD9F622BAB4DE002E497D /* Annapolis.png in Resources */,
-				D26ADA0A22BAB4DE002E497D /* OutsideOutdoor.png in Resources */,
-				D26AD9E722BAB4DE002E497D /* Mabou.png in Resources */,
-				D26AD9E522BAB4DE002E497D /* CloudNineNovelties.png in Resources */,
-				D2A08F4F22B3CDFD007E85B5 /* BFC-Certification-Tall-CMYK-1.png in Resources */,
-				D26ADA0722BAB4DE002E497D /* Best-Western-Plus.png in Resources */,
-				D26AD9FF22BAB4DE002E497D /* UnionStreet.png in Resources */,
-				D26ADA0B22BAB4DE002E497D /* HeartBikes.png in Resources */,
-				D26ADA0622BAB4DE002E497D /* HubCycle.png in Resources */,
-				D26ADA0F22BAB4DE002E497D /* Pavia.png in Resources */,
-				D26AD9D022BAB4DE002E497D /* IdealBikes.png in Resources */,
-				D26ADA0E22BAB4DE002E497D /* NewGlasgow.png in Resources */,
-				D26AD9EF22BAB4DE002E497D /* SweetRide.png in Resources */,
-				D26AD9F822BAB4DE002E497D /* Scotsman.png in Resources */,
-				D26AD9DC22BAB4DE002E497D /* BernArt.png in Resources */,
-				D26AD9F422BAB4DE002E497D /* Northumberland.png in Resources */,
-				D26AD9F022BAB4DE002E497D /* Meander-Brewery.png in Resources */,
-				D26AD9D722BAB4DE002E497D /* JavaBlend.png in Resources */,
-				D26AD9E922BAB4DE002E497D /* Saltbox.png in Resources */,
-				D26AD9D622BAB4DE002E497D /* KaulbackHouse.png in Resources */,
-				D20F14F422BD475C001CBC4F /* Logo.png in Resources */,
-				D26AD9DB22BAB4DE002E497D /* Jeffs.png in Resources */,
-				D26AD9FB22BAB4DE002E497D /* Digby.png in Resources */,
-				D26AD9CD22BAB4DE002E497D /* HarbourGuesthouse.png in Resources */,
-				D26ADA2922BAB4E3002E497D /* FacebookLogo.png in Resources */,
-				D26AD9E322BAB4DE002E497D /* Bike&Bean.png in Resources */,
+				D296BBCD22C2AB2F00C6239E /* BanksBikes.png in Resources */,
+				D296BBA122C2AB2F00C6239E /* Breton.png in Resources */,
+				D296BBAE22C2AB2F00C6239E /* Attraction.png in Resources */,
+				D296BBA322C2AB2F00C6239E /* Scotsman.png in Resources */,
+				D296BBD422C2AB2F00C6239E /* Spoke&Note.png in Resources */,
+				D296BB9F22C2AB2F00C6239E /* Hants-Exhibition-Grounds.png in Resources */,
+				D296BBED22C2AB2F00C6239E /* SchoolhouseBrewery.png in Resources */,
+				D296BB9B22C2AB2F00C6239E /* 58.png in Resources */,
+				D296BBCA22C2AB2F00C6239E /* Camping.png in Resources */,
+				D296BBDB22C2AB2F00C6239E /* JavaBlend.png in Resources */,
+				D296BBD822C2AB2F00C6239E /* Wiles-Lake.png in Resources */,
+				D296BBB522C2AB2F00C6239E /* Cycles-Guitars.png in Resources */,
+				D296BBBC22C2AB2F00C6239E /* Berwick&District.png in Resources */,
+				D296BBCB22C2AB2F00C6239E /* Earltown.png in Resources */,
+				D296BB9D22C2AB2F00C6239E /* Hubbards.png in Resources */,
+				D296BB9622C2AB2F00C6239E /* Annapolis.png in Resources */,
+				D296BBC722C2AB2F00C6239E /* OutsideOutdoor.png in Resources */,
+				D296BBE222C2AB2F00C6239E /* IdealBikes.png in Resources */,
+				D296BBA822C2AB2F00C6239E /* Apron.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,7 +762,8 @@
 				D29D3B5622AFD11C002BF17B /* HomeViewController.swift in Sources */,
 				D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */,
 				D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */,
-				D2DD295522B7C737002C53CC /* LocationDetailController.swift in Sources */,
+				D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */,
+				D20AEBC022C2A682003F6153 /* FeedbackViewController.swift in Sources */,
 				D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */,
 				D299120022C15BB500164FC5 /* Company.swift in Sources */,
 				D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */,
