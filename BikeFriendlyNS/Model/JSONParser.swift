@@ -21,9 +21,14 @@ class JSONParser: NSObject, URLSessionDataDelegate {
     let urlPath: String = "http://scottwsmyth.com/service.php"
     
     func downloadItems(){
+        
         let url: URL = URL(string: urlPath)!
+        
         let defaultSession = Foundation.URLSession(configuration: URLSessionConfiguration.default)
+        
         let task = defaultSession.dataTask(with: url) { (data, response, error) in
+            
+            print("HELLO")
             
             if error != nil{
                 print("Failed to download data")
@@ -34,6 +39,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             }
             
         }
+        
         task.resume()
     }
     
@@ -59,6 +65,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             jsonElement = jsonResult[i] as! NSDictionary
             
             print(jsonElement)
+            
             let location = Company()
             
             //the following insures none of the JsonElement values are nil through optional binding

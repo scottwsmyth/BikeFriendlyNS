@@ -115,6 +115,7 @@
 		D29D3B6922AFD11E002BF17B /* BikeFriendlyNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B6822AFD11E002BF17B /* BikeFriendlyNSTests.swift */; };
 		D29D3B7422AFD11E002BF17B /* BikeFriendlyNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */; };
 		D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */; };
+		D2E8AB4922C3A67700FBB5B5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */; };
 		F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */; };
 /* End PBXBuildFile section */
 
@@ -252,6 +253,7 @@
 		D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeFriendlyNSUITests.swift; sourceTree = "<group>"; };
 		D29D3B7522AFD11E002BF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailViewController.swift; path = BikeFriendlyNS/Controller/LocationDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeFriendlyNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -260,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E8AB4922C3A67700FBB5B5 /* MessageUI.framework in Frameworks */,
 				D21A68FB22B29A16003EF706 /* MapKit.framework in Frameworks */,
 				F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */,
 			);
@@ -285,6 +288,7 @@
 		221CBCD2A739271E8245B7B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */,
 				D21A68FA22B29A16003EF706 /* MapKit.framework */,
 				FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */,
 			);

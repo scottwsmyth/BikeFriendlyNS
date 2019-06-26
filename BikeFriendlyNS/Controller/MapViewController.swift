@@ -12,14 +12,24 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol {
     
+    @IBAction func filterBtnPressed(_ sender: UIButton) {
+    }
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var feedItems: NSArray = NSArray()
     var selectedLocation : Company = Company()
+    var filterList = ["All", "Attraction", "Bike Shop", "Building", "Camping", "Flag", "House", "Restaurant"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        filterBtn.layer.cornerRadius = 10
+        filterBtn.clipsToBounds = true
+        tableView.backgroundColor = UIColor.clear
+
+        
         for i in 0 ..< feedItems.count{
             
             var temp: Company = Company()
@@ -40,6 +50,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     }
     
     //Function sets each annotations title and coordinates. First creates an empty MKPointAnnotation, then sets the properties
+    
+    
     
     func addAnnotations(){
         
@@ -230,5 +242,21 @@ extension MapViewController: CLLocationManagerDelegate {
         //Whenever the authorization changes
         checkLocationAuthorization()
     }
+    
+}
+
+extension MapViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filterList.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = filterList[indexPath.row]
+        cell.contentView.backgroundColor = UIColor.clear
+        return cell
+    }
+    
     
 }

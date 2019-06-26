@@ -21,14 +21,22 @@ class HomeViewController: UIViewController, JSONParserProtocol {
         self.performSegue(withIdentifier: "SecondViewSegue", sender: self) //Segue from welcome screen to the MapViewController
     }
     
+    @IBOutlet weak var beginButton: CustomButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        beginButton.isEnabled = false
         
         let jsonParser = JSONParser()
         jsonParser.delegate = self
         jsonParser.downloadItems()
         
-        //let item: Company = feedItems[0] as! Company
+        //'Load' while data is being fetched from database
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+          self.beginButton.isEnabled = true
+          self.beginButton.setTitle("Begin", for: .normal)
+        })
         
     }
     
