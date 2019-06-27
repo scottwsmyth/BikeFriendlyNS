@@ -12,36 +12,34 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol {
     
-    @IBAction func filterBtnPressed(_ sender: UIButton) {
-    }
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var feedItems: NSArray = NSArray()
     var selectedLocation : Company = Company()
-    var filterList = ["All", "Attraction", "Bike Shop", "Building", "Camping", "Flag", "House", "Restaurant"]
+    var globalAnnotationArray: [MKAnnotation] = []
+    
+    //Titles for the dropdown menus' cells
+    var filterList = ["All", "Attraction", "Accomdation", "Bike Shop", "Building", "Camping", "Flag", "House", "Restaurant"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        filterBtn.layer.cornerRadius = 10
-        filterBtn.clipsToBounds = true
-        tableView.backgroundColor = UIColor.clear
+        
+          //Setting dropdown menu properties (just rounded button and clear color for cells)
+          filterBtn.layer.cornerRadius = 10
+          filterBtn.clipsToBounds = true
+          tableView.isHidden = true
+          tableView.backgroundColor = UIColor.clear
 
-        
-        for i in 0 ..< feedItems.count{
-            
-            var temp: Company = Company()
-            
-            temp = feedItems[i] as! Company
-            
-            //print(temp.title)
-        }
-        
+          zoomInOnUserLocation()
           addAnnotations()
           checkLocationServices()
-          zoomInOnUserLocation()
+        
+        
+        
+          globalAnnotationArray = mapView.annotations
+        
     }
     
     func itemsDownloaded(items: NSArray) {
@@ -69,6 +67,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             let latitude: String? = temp.latitude
             let longitude: String? = temp.longitude
             
+            //If lets are converting the JSONS' latitude and longitude strings to doubles
             if let strLat = latitude {
                 dLati = Double(strLat)! as! Double
             }
@@ -77,10 +76,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
                 dLongi = Double(strLong)! as! Double
             }
             
-                annotation.coordinate = CLLocationCoordinate2D(latitude: dLati, longitude: dLongi)// doubleLat is of type Double now
-            
-            
-            
+            //Add latitude and longitude to current annotation
+            annotation.coordinate = CLLocationCoordinate2D(latitude: dLati, longitude: dLongi)// doubleLat is of type Double now
+    
+            //Add annotation to map
             mapView.addAnnotation(annotation)
         }
     }
@@ -216,15 +215,133 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
         }
     }
     
+    func animate (toggle: Bool){
+        if toggle{
+            UIView.animate(withDuration: 0.5){
+                self.tableView.isHidden = false
+            }
+        }
+        else{
+            UIView.animate(withDuration: 0.5){
+                self.tableView.isHidden = true
+            }
+        }
+    }
+    
+    func filter(selectedType: String){
+        
+        
+        for i in 0 ..< feedItems.count {
+    
+            //grabbing the current feedItem and setting it to currentFeed, also setting currentAnnotation to be a temp.
+            var currentFeed: Company = Company()
+            currentFeed = feedItems[i] as! Company
+            var currentAnnotation = MKPointAnnotation()
+            
+            //If the user selects all the case is simple, we just add every annotation from the global array into the mapview
+            if selectedType == "All"
+            {
+                for i in 0 ..< globalAnnotationArray.count{
+                
+                    currentAnnotation = (globalAnnotationArray[i] as? MKPointAnnotation)!
+                    
+                    mapView.addAnnotation(currentAnnotation)
+                }
+            }
+
+            //Run through the feedItems array and check to see if the currentFeed's type of service != the selected type from the user
+            if currentFeed.typeOfService != selectedType
+            {
+                //Loop through the current mapviews annotations, if it is the user's location skip, if the mapviews annotations array has an annotation = currentFeed then we remove it.
+                for j in 0 ..< mapView.annotations.count{
+                    
+                    var skip = false
+                    
+                    if mapView.annotations[j] is MKUserLocation {
+                        skip = true
+                    }
+                    
+                    if skip != true
+                    {
+                    
+                    currentAnnotation = (mapView.annotations[j] as? MKPointAnnotation)!
+                    
+                    if currentAnnotation.title == currentFeed.title{
+                        mapView.removeAnnotation(currentAnnotation)
+                        break
+                    }
+                    
+                    }
+                }
+            }
+            
+            //If the user selects a type that is equal to the current feed (opposite scenario) we need to add these annotations to the map if they are NOT already there.
+            if currentFeed.typeOfService == selectedType{
+                
+                //Check the mapviews annotation array to see if it contains the feedItem, if not then make an annotation object with the currentFeed's info and add it to the mapview
+                var contained = false
+                
+                for j in 0 ..< mapView.annotations.count{
+                    
+                    if mapView.annotations[j].title == currentFeed.title
+                    {
+                        contained = true
+                        break
+                    }
+                    
+                }
+                
+                //If contained is false after checking the whole mapviews annotation array, then proceed to create
+                if contained == false {
+                    
+                    currentAnnotation.title = currentFeed.title
+                    
+                    var dLati = 0.0
+                    var dLongi = 0.0
+                    let latitude: String? = currentFeed.latitude
+                    let longitude: String? = currentFeed.longitude
+                    
+                    //If lets are converting the JSONS' latitude and longitude strings to doubles
+                    if let strLat = latitude {
+                        dLati = Double(strLat)! as! Double
+                    }
+                    
+                    if let strLong = longitude{
+                        dLongi = Double(strLong)! as! Double
+                    }
+                    
+                    //Add latitude and longitude to current annotation
+                    currentAnnotation.coordinate = CLLocationCoordinate2D(latitude: dLati, longitude: dLongi)// doubleLat is of type Double now
+                    
+                    //Add annotation to map
+                    mapView.addAnnotation(currentAnnotation)
+                    
+
+                }
+                
+            }
+        }
+    }
+
+    
     @IBAction func feedbackBtnPressed(_ sender: UIButton) {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "FeedbackViewController") as? FeedbackViewController
 
         self.navigationController?.pushViewController(vc!, animated: true)
-
     }
-}
+    
+    @IBAction func filterBtnPressed(_ sender: UIButton) {
 
+        if tableView.isHidden == true{
+            animate(toggle: true)
+        }
+        else{
+            animate(toggle: false)
+        }
+    }
+    
+}
 
 //Extending map view controller in order to implement CLLocation delegate methods
 
@@ -256,6 +373,17 @@ extension MapViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = filterList[indexPath.row]
         cell.contentView.backgroundColor = UIColor.clear
         return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedType = filterList[indexPath.row]
+        
+        filter(selectedType: selectedType)
+        
+        filterBtn.setTitle(selectedType, for: .normal)
+        
+        animate(toggle: false)
     }
     
     

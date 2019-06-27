@@ -33,7 +33,7 @@ class HomeViewController: UIViewController, JSONParserProtocol {
         jsonParser.downloadItems()
         
         //'Load' while data is being fetched from database
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
           self.beginButton.isEnabled = true
           self.beginButton.setTitle("Begin", for: .normal)
         })
