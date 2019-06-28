@@ -11,13 +11,19 @@
 		D20F14F622C15153001CBC4F /* service.php in Resources */ = {isa = PBXBuildFile; fileRef = D20F14F522C15153001CBC4F /* service.php */; };
 		D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21A68F622B278AB003EF706 /* MapViewController.swift */; };
 		D21A68FB22B29A16003EF706 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21A68FA22B29A16003EF706 /* MapKit.framework */; };
+		D220D97C22C67A9000FA7104 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97B22C67A9000FA7104 /* compass.png */; };
+		D22AA73222C52FD8004834E0 /* BackgroundImage1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */; };
+		D22AA73322C52FD8004834E0 /* BackgroundImage4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */; };
+		D22AA73422C52FD8004834E0 /* BackgroundImage5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */; };
+		D22AA73522C52FD8004834E0 /* BackgroundImage3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA73022C52FD8004834E0 /* BackgroundImage3.jpeg */; };
+		D22AA73622C52FD8004834E0 /* BackgroundImage2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */; };
 		D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D77AE22AFE57E0073522C /* CustomButton.swift */; };
 		D27D77B522AFF2760073522C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D27D77B422AFF2760073522C /* Podfile */; };
 		D296BB9522C2AB2F00C6239E /* Maven.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3922C2AB2A00C6239E /* Maven.png */; };
 		D296BB9622C2AB2F00C6239E /* Annapolis.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3A22C2AB2A00C6239E /* Annapolis.png */; };
 		D296BB9722C2AB2F00C6239E /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3B22C2AB2A00C6239E /* Logo.png */; };
 		D296BB9822C2AB2F00C6239E /* BicycleSpecialist.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3C22C2AB2A00C6239E /* BicycleSpecialist.png */; };
-		D296BB9922C2AB2F00C6239E /* Building.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3D22C2AB2A00C6239E /* Building.png */; };
+		D296BB9922C2AB2F00C6239E /* Inn.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3D22C2AB2A00C6239E /* Inn.png */; };
 		D296BB9A22C2AB2F00C6239E /* Stuart.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3E22C2AB2A00C6239E /* Stuart.png */; };
 		D296BB9B22C2AB2F00C6239E /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3F22C2AB2A00C6239E /* 58.png */; };
 		D296BB9C22C2AB2F00C6239E /* LaceyMines.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB4022C2AB2B00C6239E /* LaceyMines.png */; };
@@ -143,13 +149,19 @@
 		D20F14F522C15153001CBC4F /* service.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = service.php; sourceTree = "<group>"; };
 		D21A68F622B278AB003EF706 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BikeFriendlyNS/Controller/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		D21A68FA22B29A16003EF706 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D220D97B22C67A9000FA7104 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass.png; path = "BF Assets/compass.png"; sourceTree = SOURCE_ROOT; };
+		D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage1.jpeg; path = "BF Assets/BackgroundImage1.jpeg"; sourceTree = SOURCE_ROOT; };
+		D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage4.jpeg; path = "BF Assets/BackgroundImage4.jpeg"; sourceTree = SOURCE_ROOT; };
+		D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage5.jpeg; path = "BF Assets/BackgroundImage5.jpeg"; sourceTree = SOURCE_ROOT; };
+		D22AA73022C52FD8004834E0 /* BackgroundImage3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage3.jpeg; path = "BF Assets/BackgroundImage3.jpeg"; sourceTree = SOURCE_ROOT; };
+		D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage2.jpeg; path = "BF Assets/BackgroundImage2.jpeg"; sourceTree = SOURCE_ROOT; };
 		D27D77AE22AFE57E0073522C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D27D77B422AFF2760073522C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D296BB3922C2AB2A00C6239E /* Maven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maven.png; path = "BF Assets/Maven.png"; sourceTree = SOURCE_ROOT; };
 		D296BB3A22C2AB2A00C6239E /* Annapolis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Annapolis.png; path = "BF Assets/Annapolis.png"; sourceTree = SOURCE_ROOT; };
 		D296BB3B22C2AB2A00C6239E /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = "BF Assets/Logo.png"; sourceTree = SOURCE_ROOT; };
 		D296BB3C22C2AB2A00C6239E /* BicycleSpecialist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BicycleSpecialist.png; path = "BF Assets/BicycleSpecialist.png"; sourceTree = SOURCE_ROOT; };
-		D296BB3D22C2AB2A00C6239E /* Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Building.png; path = "BF Assets/Building.png"; sourceTree = SOURCE_ROOT; };
+		D296BB3D22C2AB2A00C6239E /* Inn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Inn.png; path = "BF Assets/Inn.png"; sourceTree = SOURCE_ROOT; };
 		D296BB3E22C2AB2A00C6239E /* Stuart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stuart.png; path = "BF Assets/Stuart.png"; sourceTree = SOURCE_ROOT; };
 		D296BB3F22C2AB2A00C6239E /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = "BF Assets/58.png"; sourceTree = SOURCE_ROOT; };
 		D296BB4022C2AB2B00C6239E /* LaceyMines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaceyMines.png; path = "BF Assets/LaceyMines.png"; sourceTree = SOURCE_ROOT; };
@@ -393,6 +405,12 @@
 		D29D3B8522AFD217002BF17B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D220D97B22C67A9000FA7104 /* compass.png */,
+				D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */,
+				D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */,
+				D22AA73022C52FD8004834E0 /* BackgroundImage3.jpeg */,
+				D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */,
+				D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */,
 				D296BB3F22C2AB2A00C6239E /* 58.png */,
 				D296BB6622C2AB2D00C6239E /* 80.png */,
 				D296BB5D22C2AB2C00C6239E /* 87.png */,
@@ -412,7 +430,7 @@
 				D296BB4B22C2AB2B00C6239E /* Bike&Bean.png */,
 				D296BB5322C2AB2B00C6239E /* BikeMonkey.png */,
 				D296BB4522C2AB2B00C6239E /* Breton.png */,
-				D296BB3D22C2AB2A00C6239E /* Building.png */,
+				D296BB3D22C2AB2A00C6239E /* Inn.png */,
 				D296BB5522C2AB2B00C6239E /* BurlingtonRose.png */,
 				D296BB6E22C2AB2D00C6239E /* Camping.png */,
 				D296BB5B22C2AB2C00C6239E /* CathedralChurch.png */,
@@ -612,12 +630,13 @@
 				D296BBB422C2AB2F00C6239E /* Lanes.png in Resources */,
 				D296BBB722C2AB2F00C6239E /* CathedralChurch.png in Resources */,
 				D296BBEE22C2AB2F00C6239E /* SweetRide.png in Resources */,
-				D296BB9922C2AB2F00C6239E /* Building.png in Resources */,
+				D296BB9922C2AB2F00C6239E /* Inn.png in Resources */,
 				D296BBCF22C2AB2F00C6239E /* Liscomb.png in Resources */,
 				D296BBEC22C2AB2F00C6239E /* SnowWhite.png in Resources */,
 				D296BBB322C2AB2F00C6239E /* write-letter.png in Resources */,
 				D296BBA922C2AB2F00C6239E /* OceanStone.png in Resources */,
 				D296BB9C22C2AB2F00C6239E /* LaceyMines.png in Resources */,
+				D22AA73622C52FD8004834E0 /* BackgroundImage2.jpeg in Resources */,
 				D296BBB922C2AB2F00C6239E /* 87.png in Resources */,
 				D296BBDF22C2AB2F00C6239E /* Highland.png in Resources */,
 				D296BB9522C2AB2F00C6239E /* Maven.png in Resources */,
@@ -632,12 +651,14 @@
 				D296BBC522C2AB2F00C6239E /* NewGlasgow.png in Resources */,
 				D296BB9A22C2AB2F00C6239E /* Stuart.png in Resources */,
 				D296BBBF22C2AB2F00C6239E /* MEC.png in Resources */,
+				D22AA73522C52FD8004834E0 /* BackgroundImage3.jpeg in Resources */,
 				D296BBAC22C2AB2F00C6239E /* FacebookLogo.png in Resources */,
 				D296BBCC22C2AB2F00C6239E /* UnionStreet.png in Resources */,
 				D296BBEA22C2AB2F00C6239E /* Schoolhouse.png in Resources */,
 				D296BBE122C2AB2F00C6239E /* Francis.png in Resources */,
 				D296BBA522C2AB2F00C6239E /* Mecklenburg.png in Resources */,
 				D296BBD322C2AB2F00C6239E /* Restaurant.png in Resources */,
+				D220D97C22C67A9000FA7104 /* compass.png in Resources */,
 				D296BBCE22C2AB2F00C6239E /* GardenHouse.png in Resources */,
 				D296BBD022C2AB2F00C6239E /* RiverRidge.png in Resources */,
 				D296BBA622C2AB2F00C6239E /* Velofix.png in Resources */,
@@ -665,6 +686,7 @@
 				D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */,
 				D296BBB022C2AB2F00C6239E /* eye.png in Resources */,
 				D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */,
+				D22AA73222C52FD8004834E0 /* BackgroundImage1.jpeg in Resources */,
 				D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */,
 				D296BBB122C2AB2F00C6239E /* BurlingtonRose.png in Resources */,
 				D296BBAB22C2AB2F00C6239E /* Mercator-Vineyards.png in Resources */,
@@ -672,6 +694,7 @@
 				D296BBA022C2AB2F00C6239E /* CloudNineNovelties.png in Resources */,
 				D296BBE322C2AB2F00C6239E /* iFIT.png in Resources */,
 				D296BBE722C2AB2F00C6239E /* HarbourGuesthouse.png in Resources */,
+				D22AA73422C52FD8004834E0 /* BackgroundImage5.jpeg in Resources */,
 				D296BBB622C2AB2F00C6239E /* Cyclesmith.png in Resources */,
 				D296BB9E22C2AB2F00C6239E /* RumbLine.png in Resources */,
 				D296BBDD22C2AB2F00C6239E /* Kiwi.png in Resources */,
@@ -683,6 +706,7 @@
 				D296BBAE22C2AB2F00C6239E /* Attraction.png in Resources */,
 				D296BBA322C2AB2F00C6239E /* Scotsman.png in Resources */,
 				D296BBD422C2AB2F00C6239E /* Spoke&Note.png in Resources */,
+				D22AA73322C52FD8004834E0 /* BackgroundImage4.jpeg in Resources */,
 				D296BB9F22C2AB2F00C6239E /* Hants-Exhibition-Grounds.png in Resources */,
 				D296BBED22C2AB2F00C6239E /* SchoolhouseBrewery.png in Resources */,
 				D296BB9B22C2AB2F00C6239E /* 58.png in Resources */,

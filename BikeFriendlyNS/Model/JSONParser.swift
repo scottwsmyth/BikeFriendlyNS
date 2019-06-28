@@ -28,8 +28,6 @@ class JSONParser: NSObject, URLSessionDataDelegate {
         
         let task = defaultSession.dataTask(with: url) { (data, response, error) in
             
-            print("HELLO")
-            
             if error != nil{
                 print("Failed to download data")
             }
@@ -61,10 +59,8 @@ class JSONParser: NSObject, URLSessionDataDelegate {
         
         for i in 0 ..< jsonResult.count
         {
-        
-            jsonElement = jsonResult[i] as! NSDictionary
             
-            print(jsonElement)
+            jsonElement = jsonResult[i] as! NSDictionary
             
             let location = Company()
             

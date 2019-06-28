@@ -10,12 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController, JSONParserProtocol {
     
+   var imageArray: [String] = ["BackgroundImage1.jpeg","BackgroundImage2.jpeg","BackgroundImage3.jpeg","BackgroundImage4.jpeg","BackgroundImage5.jpeg"]
+
     var feedItems: NSArray = NSArray()
     
     func itemsDownloaded(items: NSArray) {
         feedItems = items
     }
-    
 
     @IBAction func beginButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SecondViewSegue", sender: self) //Segue from welcome screen to the MapViewController
@@ -25,6 +26,13 @@ class HomeViewController: UIViewController, JSONParserProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let number = Int.random(in: 0 ..< 5)
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: imageArray[number])
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         
         beginButton.isEnabled = false
         

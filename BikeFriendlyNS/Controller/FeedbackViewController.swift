@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class FeedbackViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class FeedbackViewController: UIViewController, MFMailComposeViewControllerDelegate{
 
     @IBAction func sendBtn(_ sender: UIButton) {
      
@@ -57,6 +57,11 @@ class FeedbackViewController: UIViewController, MFMailComposeViewControllerDeleg
         
         // Do any additional setup after loading the view.
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
 
 }

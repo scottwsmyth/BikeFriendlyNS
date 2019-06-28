@@ -1,5 +1,3 @@
-//Service file to give output of DB
-
 <?php
 
 // Create connection

@@ -19,9 +19,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     var feedItems: NSArray = NSArray()
     var selectedLocation : Company = Company()
     var globalAnnotationArray: [MKAnnotation] = []
+    var placeMark: CLPlacemark?
     
     //Titles for the dropdown menus' cells
-    var filterList = ["All", "Attraction", "Accomdation", "Bike Shop", "Building", "Camping", "Flag", "House", "Restaurant"]
+    var filterList = ["All", "Attraction", "Bike Shop", "Camping", "Flag", "House", "Inn", "Restaurant"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,19 +32,19 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
           filterBtn.clipsToBounds = true
           tableView.isHidden = true
           tableView.backgroundColor = UIColor.clear
-
-          zoomInOnUserLocation()
+        
           addAnnotations()
+          zoomInOnUserLocation()
           checkLocationServices()
         
-        
-        
+          //Populate global array
           globalAnnotationArray = mapView.annotations
         
     }
     
     func itemsDownloaded(items: NSArray) {
 
+        print("FEEDITEMS")
         feedItems = items
     }
     
@@ -54,6 +55,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     func addAnnotations(){
         
         for i in 0 ..< feedItems.count {
+            
             let annotation = MKPointAnnotation()
             
             var temp: Company = Company()
@@ -78,7 +80,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             
             //Add latitude and longitude to current annotation
             annotation.coordinate = CLLocationCoordinate2D(latitude: dLati, longitude: dLongi)// doubleLat is of type Double now
-    
+                
             //Add annotation to map
             mapView.addAnnotation(annotation)
         }
@@ -230,7 +232,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     
     func filter(selectedType: String){
         
-        
         for i in 0 ..< feedItems.count {
     
             //grabbing the current feedItem and setting it to currentFeed, also setting currentAnnotation to be a temp.
@@ -241,17 +242,56 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             //If the user selects all the case is simple, we just add every annotation from the global array into the mapview
             if selectedType == "All"
             {
-                for i in 0 ..< globalAnnotationArray.count{
+                //Check the mapviews annotation array to see if it contains the feedItem, if not then make an annotation object with the currentFeed's info and add it to the mapview
+                var contained = false
                 
-                    currentAnnotation = (globalAnnotationArray[i] as? MKPointAnnotation)!
+                for j in 0 ..< mapView.annotations.count{
+                    
+                    if mapView.annotations[j].title == currentFeed.title
+                    {
+                        contained = true
+                        break
+                    }
+                    
+                }
+                
+                //If contained is false after checking the whole mapviews annotation array, then proceed to create
+                if contained == false {
+            
+                    currentAnnotation.title = currentFeed.title
+                    
+                    var dLati = 0.0
+                    var dLongi = 0.0
+                    let latitude: String? = currentFeed.latitude
+                    let longitude: String? = currentFeed.longitude
+                    
+                    //If lets are converting the JSONS' latitude and longitude strings to doubles
+                    if let strLat = latitude {
+                        dLati = Double(strLat)! as! Double
+                    }
+                    
+                    if let strLong = longitude{
+                        dLongi = Double(strLong)! as! Double
+                    }
+                    
+                    //Add latitude and longitude to current annotation
+                    currentAnnotation.coordinate = CLLocationCoordinate2D(latitude: dLati, longitude: dLongi)// doubleLat is of type Double now
+                    
+                    //Add annotation to map
+                    
+                    print(currentAnnotation.title)
                     
                     mapView.addAnnotation(currentAnnotation)
+                    
+                    print("added annotation")
+                    
                 }
             }
 
             //Run through the feedItems array and check to see if the currentFeed's type of service != the selected type from the user
-            if currentFeed.typeOfService != selectedType
+            if currentFeed.typeOfService != selectedType && selectedType != "All"
             {
+        
                 //Loop through the current mapviews annotations, if it is the user's location skip, if the mapviews annotations array has an annotation = currentFeed then we remove it.
                 for j in 0 ..< mapView.annotations.count{
                     
@@ -277,6 +317,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             
             //If the user selects a type that is equal to the current feed (opposite scenario) we need to add these annotations to the map if they are NOT already there.
             if currentFeed.typeOfService == selectedType{
+                
+                print(currentFeed.typeOfService)
+                print(selectedType)
                 
                 //Check the mapviews annotation array to see if it contains the feedItem, if not then make an annotation object with the currentFeed's info and add it to the mapview
                 var contained = false
@@ -341,6 +384,31 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
         }
     }
     
+    @IBAction func directionBtnPressed(_ sender: UIButton) {
+        guard let currentPlaceMark = placeMark else{
+            return
+        }
+        
+        var directionRequest = MKDirections.Request()
+        let destinationPlacemark = MKPlacemark(placemark: currentPlaceMark)
+        directionRequest.source = MKMapItem.forCurrentLocation()
+        directionRequest.destination = MKMapItem(placemark: destinationPlacemark)
+        directionRequest.transportType = .automobile
+        
+        // calculate the directions / route
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate {(directionsResponse, error) in
+            guard let directionsResponse = directionsResponse else{
+                if let error = error{
+                    print("error getting directions: \(error.localizedDescription)")
+                }
+                return
+            }
+            
+            let route = directionsResponse.routes
+        }
+    }
+    
 }
 
 //Extending map view controller in order to implement CLLocation delegate methods
@@ -353,6 +421,10 @@ extension MapViewController: CLLocationManagerDelegate {
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         let region = MKCoordinateRegion.init(center: center, latitudinalMeters: 300000, longitudinalMeters: 300000)
         mapView.setRegion(region, animated: true)
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        self.placeMark = MKPlacemark(coordinate: view.annotation!.coordinate)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
