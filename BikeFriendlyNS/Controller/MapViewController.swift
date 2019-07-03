@@ -205,6 +205,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
                 vc?.passedAddress = temp.address as! String
                 vc?.passedPhone = temp.phone as! String
                 vc?.facebookURL = temp.facebookURL as! String
+                vc?.instagramURL = temp.instagramURL as! String
+                vc?.twitterURL = temp.twitterURL as! String
+                vc?.websiteURL = temp.websiteURL as! String
                 
                 //Push the LocationDetailController on the stack
                 

@@ -15,11 +15,31 @@ class LocationDetailViewController: UIViewController {
     
     @IBAction func facebookBtnPressed(_ sender: Any) {
         
-        popUp()
+        guard let link = URL(string: facebookURL) else { return  }
         
-//        guard let link = URL(string: facebookURL) else { return  }
-//
-//        UIApplication.shared.open(link, options: [:], completionHandler: nil)
+        checkURL(link: link)
+    }
+    
+    @IBAction func twitterBtnPressed(_ sender: Any) {
+        
+        guard let link = URL(string: instagramURL) else { return  }
+        
+        checkURL(link: link)
+        
+    }
+    
+    @IBAction func instagramBtnPressed(_ sender: Any) {
+        
+        guard let link = URL(string: twitterURL) else { return  }
+        
+        checkURL(link: link)
+        
+    }
+    @IBAction func websiteBtnPressed(_ sender: Any) {
+        
+        guard let link = URL(string: websiteURL) else { return  }
+        
+        checkURL(link: link)
         
     }
     
@@ -29,12 +49,15 @@ class LocationDetailViewController: UIViewController {
     @IBOutlet weak var currentAddress: UITextView!
     @IBOutlet weak var currentPhone: UITextView!
     
-    var facebookURL: String = ""
     var passedImg = UIImage()
     var passedTitle: String = ""
     var passedDescription: String = ""
     var passedAddress: String = ""
     var passedPhone: String = ""
+    var facebookURL: String = ""
+    var instagramURL: String = ""
+    var twitterURL: String = ""
+    var websiteURL: String = ""
     
     //Set properties to passed ones from previous controller
     
@@ -55,5 +78,17 @@ class LocationDetailViewController: UIViewController {
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParent: self)
     }
+    
+    func checkURL(link: URL){
+        if link.absoluteString == "NA"{
+            popUp()
+        }
+        else
+        {
+            UIApplication.shared.open(link, options: [:], completionHandler: nil)
+        }
+    }
+    
+    
     
 }

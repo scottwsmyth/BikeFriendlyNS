@@ -68,12 +68,15 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             if let title = jsonElement["title"],
                   let latitude = jsonElement["latitude"],
                   let longitude = jsonElement["longitude"],
-                  let facebookURL = jsonElement["facebookURL"],
                   let descrip = jsonElement["descrip"],
                   let phone = jsonElement["phone"],
                   let address = jsonElement["address"],
                   let imagePath = jsonElement["imagePath"],
-                  let typeOfService = jsonElement["typeOfService"]
+                  let typeOfService = jsonElement["typeOfService"],
+                  let facebookURL = jsonElement["facebookURL"],
+                  let instagramURL = jsonElement["instagramURL"],
+                  let twitterURL = jsonElement["twitterURL"],
+                  let websiteURL = jsonElement["websiteURL"]
             {
                 
                   location.title = title as? String
@@ -81,8 +84,6 @@ class JSONParser: NSObject, URLSessionDataDelegate {
                   location.latitude = latitude as? String
                 
                   location.longitude = longitude as? String
-                
-                  location.facebookURL = facebookURL as? String
                 
                   location.descrip = descrip as? String
                 
@@ -93,6 +94,14 @@ class JSONParser: NSObject, URLSessionDataDelegate {
                   location.imagePath = imagePath as? String
                 
                   location.typeOfService = typeOfService as? String
+                
+                  location.facebookURL = facebookURL as? String
+                
+                  location.instagramURL = instagramURL as? String
+                
+                  location.twitterURL = twitterURL as? String
+                
+                  location.websiteURL = websiteURL as? String
             }
             
             locations.add(location)
@@ -105,5 +114,4 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             
         })
     }
-    
 }
