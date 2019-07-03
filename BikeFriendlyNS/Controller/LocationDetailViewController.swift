@@ -13,11 +13,13 @@ class LocationDetailViewController: UIViewController {
     
     //Button IBAction which opens the current company's facebook URL when the icon is tapped on the storyboard.
     
-    @IBAction func btn_URL(_ sender: Any) {
+    @IBAction func facebookBtnPressed(_ sender: Any) {
         
-        guard let link = URL(string: passedURL) else { return  }
+        popUp()
         
-        UIApplication.shared.open(link, options: [:], completionHandler: nil)
+//        guard let link = URL(string: facebookURL) else { return  }
+//
+//        UIApplication.shared.open(link, options: [:], completionHandler: nil)
         
     }
     
@@ -27,7 +29,7 @@ class LocationDetailViewController: UIViewController {
     @IBOutlet weak var currentAddress: UITextView!
     @IBOutlet weak var currentPhone: UITextView!
     
-    var passedURL: String = ""
+    var facebookURL: String = ""
     var passedImg = UIImage()
     var passedTitle: String = ""
     var passedDescription: String = ""
@@ -44,6 +46,14 @@ class LocationDetailViewController: UIViewController {
         currentDescrip.text = passedDescription
         currentAddress.text = passedAddress
         currentPhone.text = passedPhone
+    }
+    
+    func popUp(){
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
+        self.addChild(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParent: self)
     }
     
 }

@@ -68,7 +68,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             if let title = jsonElement["title"],
                   let latitude = jsonElement["latitude"],
                   let longitude = jsonElement["longitude"],
-                  let url = jsonElement["url"],
+                  let facebookURL = jsonElement["facebookURL"],
                   let descrip = jsonElement["descrip"],
                   let phone = jsonElement["phone"],
                   let address = jsonElement["address"],
@@ -82,7 +82,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
                 
                   location.longitude = longitude as? String
                 
-                  location.url = url as? String
+                  location.facebookURL = facebookURL as? String
                 
                   location.descrip = descrip as? String
                 

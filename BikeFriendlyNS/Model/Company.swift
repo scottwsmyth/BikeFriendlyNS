@@ -15,7 +15,7 @@ class Company: NSObject {
     var title: String?
     var latitude: String?
     var longitude: String?
-    var url: String?
+    var facebookURL: String?
     var descrip: String?
     var phone: String?
     var address: String?
@@ -26,12 +26,12 @@ class Company: NSObject {
         
     }
     
-    init(title: String, latitude: String,longitude: String, url: String, descrip: String, phone: String, address: String, imagePath: String, typeOfService: String){
+    init(title: String, latitude: String,longitude: String, facebookURL: String, descrip: String, phone: String, address: String, imagePath: String, typeOfService: String){
         
         self.title = title
         self.latitude = latitude
         self.longitude = longitude
-        self.url = url
+        self.facebookURL = facebookURL
         self.descrip = descrip
         self.phone = phone
         self.address = address

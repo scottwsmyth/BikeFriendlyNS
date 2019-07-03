@@ -12,6 +12,9 @@
 		D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21A68F622B278AB003EF706 /* MapViewController.swift */; };
 		D21A68FB22B29A16003EF706 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21A68FA22B29A16003EF706 /* MapKit.framework */; };
 		D220D97C22C67A9000FA7104 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97B22C67A9000FA7104 /* compass.png */; };
+		D220D97F22CBC15100FA7104 /* TwitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97D22CBC15000FA7104 /* TwitterLogo.png */; };
+		D220D98022CBC15100FA7104 /* InstagramLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97E22CBC15000FA7104 /* InstagramLogo.png */; };
+		D220D98422CBD56B00FA7104 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220D98322CBD56B00FA7104 /* PopUpViewController.swift */; };
 		D22AA73222C52FD8004834E0 /* BackgroundImage1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */; };
 		D22AA73322C52FD8004834E0 /* BackgroundImage4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */; };
 		D22AA73422C52FD8004834E0 /* BackgroundImage5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */; };
@@ -70,7 +73,7 @@
 		D296BBC522C2AB2F00C6239E /* NewGlasgow.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6922C2AB2D00C6239E /* NewGlasgow.png */; };
 		D296BBC622C2AB2F00C6239E /* AKTC.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6A22C2AB2D00C6239E /* AKTC.png */; };
 		D296BBC722C2AB2F00C6239E /* OutsideOutdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6B22C2AB2D00C6239E /* OutsideOutdoor.png */; };
-		D296BBC822C2AB2F00C6239E /* Sportwheels.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6C22C2AB2D00C6239E /* Sportwheels.png */; };
+		D296BBC822C2AB2F00C6239E /* SportWheels.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6C22C2AB2D00C6239E /* SportWheels.png */; };
 		D296BBC922C2AB2F00C6239E /* Frameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6D22C2AB2D00C6239E /* Frameworks.png */; };
 		D296BBCA22C2AB2F00C6239E /* Camping.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6E22C2AB2D00C6239E /* Camping.png */; };
 		D296BBCB22C2AB2F00C6239E /* Earltown.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6F22C2AB2D00C6239E /* Earltown.png */; };
@@ -150,6 +153,9 @@
 		D21A68F622B278AB003EF706 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BikeFriendlyNS/Controller/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		D21A68FA22B29A16003EF706 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D220D97B22C67A9000FA7104 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass.png; path = "BF Assets/compass.png"; sourceTree = SOURCE_ROOT; };
+		D220D97D22CBC15000FA7104 /* TwitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterLogo.png; path = "BF Assets/TwitterLogo.png"; sourceTree = SOURCE_ROOT; };
+		D220D97E22CBC15000FA7104 /* InstagramLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InstagramLogo.png; path = "BF Assets/InstagramLogo.png"; sourceTree = SOURCE_ROOT; };
+		D220D98322CBD56B00FA7104 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage1.jpeg; path = "BF Assets/BackgroundImage1.jpeg"; sourceTree = SOURCE_ROOT; };
 		D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage4.jpeg; path = "BF Assets/BackgroundImage4.jpeg"; sourceTree = SOURCE_ROOT; };
 		D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage5.jpeg; path = "BF Assets/BackgroundImage5.jpeg"; sourceTree = SOURCE_ROOT; };
@@ -208,7 +214,7 @@
 		D296BB6922C2AB2D00C6239E /* NewGlasgow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewGlasgow.png; path = "BF Assets/NewGlasgow.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6A22C2AB2D00C6239E /* AKTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AKTC.png; path = "BF Assets/AKTC.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6B22C2AB2D00C6239E /* OutsideOutdoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OutsideOutdoor.png; path = "BF Assets/OutsideOutdoor.png"; sourceTree = SOURCE_ROOT; };
-		D296BB6C22C2AB2D00C6239E /* Sportwheels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sportwheels.png; path = "BF Assets/Sportwheels.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6C22C2AB2D00C6239E /* SportWheels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SportWheels.png; path = "BF Assets/SportWheels.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6D22C2AB2D00C6239E /* Frameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Frameworks.png; path = "BF Assets/Frameworks.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6E22C2AB2D00C6239E /* Camping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camping.png; path = "BF Assets/Camping.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6F22C2AB2D00C6239E /* Earltown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Earltown.png; path = "BF Assets/Earltown.png"; sourceTree = SOURCE_ROOT; };
@@ -398,6 +404,7 @@
 				D21A68F622B278AB003EF706 /* MapViewController.swift */,
 				D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */,
 				D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */,
+				D220D98322CBD56B00FA7104 /* PopUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -405,6 +412,8 @@
 		D29D3B8522AFD217002BF17B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D220D97E22CBC15000FA7104 /* InstagramLogo.png */,
+				D220D97D22CBC15000FA7104 /* TwitterLogo.png */,
 				D220D97B22C67A9000FA7104 /* compass.png */,
 				D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */,
 				D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */,
@@ -492,7 +501,7 @@
 				D296BB4722C2AB2B00C6239E /* Scotsman.png */,
 				D296BB9022C2AB2F00C6239E /* SnowWhite.png */,
 				D296BB7822C2AB2E00C6239E /* Spoke&Note.png */,
-				D296BB6C22C2AB2D00C6239E /* Sportwheels.png */,
+				D296BB6C22C2AB2D00C6239E /* SportWheels.png */,
 				D296BB3E22C2AB2A00C6239E /* Stuart.png */,
 				D296BB9222C2AB2F00C6239E /* SweetRide.png */,
 				D296BB9322C2AB2F00C6239E /* TangledGardens.png */,
@@ -633,6 +642,7 @@
 				D296BB9922C2AB2F00C6239E /* Inn.png in Resources */,
 				D296BBCF22C2AB2F00C6239E /* Liscomb.png in Resources */,
 				D296BBEC22C2AB2F00C6239E /* SnowWhite.png in Resources */,
+				D220D98022CBC15100FA7104 /* InstagramLogo.png in Resources */,
 				D296BBB322C2AB2F00C6239E /* write-letter.png in Resources */,
 				D296BBA922C2AB2F00C6239E /* OceanStone.png in Resources */,
 				D296BB9C22C2AB2F00C6239E /* LaceyMines.png in Resources */,
@@ -672,6 +682,7 @@
 				D296BBE422C2AB2F00C6239E /* Meander-Brewery.png in Resources */,
 				D296BBD222C2AB2F00C6239E /* DancingGoat.png in Resources */,
 				D296BBC922C2AB2F00C6239E /* Frameworks.png in Resources */,
+				D220D97F22CBC15100FA7104 /* TwitterLogo.png in Resources */,
 				D296BBC422C2AB2F00C6239E /* Mabou.png in Resources */,
 				D296BBC622C2AB2F00C6239E /* AKTC.png in Resources */,
 				D20F14F622C15153001CBC4F /* service.php in Resources */,
@@ -698,7 +709,7 @@
 				D296BBB622C2AB2F00C6239E /* Cyclesmith.png in Resources */,
 				D296BB9E22C2AB2F00C6239E /* RumbLine.png in Resources */,
 				D296BBDD22C2AB2F00C6239E /* Kiwi.png in Resources */,
-				D296BBC822C2AB2F00C6239E /* Sportwheels.png in Resources */,
+				D296BBC822C2AB2F00C6239E /* SportWheels.png in Resources */,
 				D296BBD122C2AB2F00C6239E /* Queens-Place.png in Resources */,
 				D29D3B5922AFD11C002BF17B /* Main.storyboard in Resources */,
 				D296BBCD22C2AB2F00C6239E /* BanksBikes.png in Resources */,
@@ -794,6 +805,7 @@
 				D20AEBC022C2A682003F6153 /* FeedbackViewController.swift in Sources */,
 				D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */,
 				D299120022C15BB500164FC5 /* Company.swift in Sources */,
+				D220D98422CBD56B00FA7104 /* PopUpViewController.swift in Sources */,
 				D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

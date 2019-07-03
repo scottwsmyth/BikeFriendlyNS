@@ -44,13 +44,25 @@
                                     <constraint firstAttribute="height" constant="123" id="ILU-AA-nEG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIKE FRIENDLY NOVA SCOTIA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxz-Vu-MGi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="BIKE FRIENDLY NOVA SCOTIA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxz-Vu-MGi">
                                 <rect key="frame" x="80.666666666666686" y="266" width="253" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="3Pv-xa-s3E"/>
                                     <constraint firstAttribute="height" constant="107" id="Jec-Qv-w4l"/>
                                 </constraints>
+                                <viewLayoutGuide key="safeArea" id="EWi-PZ-78Z"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Plan your cycling trip through Nova Scotia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl1-F9-SPg">
+                                <rect key="frame" x="80" y="381" width="254" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="GHU-tH-ieo"/>
+                                    <constraint firstAttribute="height" constant="107" id="HKo-ox-les"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="ktF-Wx-CdO"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -64,6 +76,8 @@
                             <constraint firstItem="IWD-pA-wIC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RhM-tH-G9L"/>
                             <constraint firstItem="IWD-pA-wIC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YtA-24-r4h"/>
                             <constraint firstItem="nsE-P0-yOH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gfm-jF-vjU"/>
+                            <constraint firstItem="Kl1-F9-SPg" firstAttribute="top" secondItem="Kxz-Vu-MGi" secondAttribute="bottom" constant="8" id="hKu-0k-Cey"/>
+                            <constraint firstItem="Kl1-F9-SPg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hke-gh-bd9"/>
                             <constraint firstItem="Kxz-Vu-MGi" firstAttribute="top" secondItem="nsE-P0-yOH" secondAttribute="bottom" constant="43" id="iVU-ee-1pN"/>
                             <constraint firstItem="u1a-15-tGn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pWR-9y-Ek5"/>
                             <constraint firstItem="Kxz-Vu-MGi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wEP-mj-1wH"/>
@@ -232,7 +246,18 @@
                                 </constraints>
                                 <state key="normal" image="FacebookLogo.png"/>
                                 <connections>
-                                    <action selector="btn_URL:" destination="WND-5l-ToG" eventType="touchUpInside" id="qco-rz-BxC"/>
+                                    <action selector="facebookBtnPressed:" destination="WND-5l-ToG" eventType="touchUpInside" id="qco-rz-BxC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xt-LX-6nn">
+                                <rect key="frame" x="95" y="695" width="38" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="GED-G4-NGD"/>
+                                    <constraint firstAttribute="width" constant="38" id="XPO-0S-RTu"/>
+                                </constraints>
+                                <state key="normal" image="TwitterLogo.png"/>
+                                <connections>
+                                    <action selector="twitterBtnPressed:" destination="hBg-Dy-1rQ" eventType="touchUpInside" id="6cv-45-BLK"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bem-rS-7hn">
@@ -255,6 +280,17 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDj-Y1-DQe">
+                                <rect key="frame" x="281" y="695" width="38" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="3JX-i3-1mt"/>
+                                    <constraint firstAttribute="width" constant="38" id="uuy-fv-Ro0"/>
+                                </constraints>
+                                <state key="normal" image="InstagramLogo.png"/>
+                                <connections>
+                                    <action selector="instaBtnPressed:" destination="hBg-Dy-1rQ" eventType="touchUpInside" id="bdq-Vk-MuR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -266,6 +302,8 @@
                             <constraint firstItem="PVG-Zq-0lf" firstAttribute="centerX" secondItem="ixD-oy-95U" secondAttribute="centerX" id="8PN-ey-euB"/>
                             <constraint firstItem="QVn-tG-Dqu" firstAttribute="trailing" secondItem="HBV-Fg-y0y" secondAttribute="trailing" constant="15" id="9di-rt-1al"/>
                             <constraint firstItem="KMC-V8-i8u" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="45" id="C4W-de-XFY"/>
+                            <constraint firstItem="QVn-tG-Dqu" firstAttribute="bottom" secondItem="tDj-Y1-DQe" secondAttribute="bottom" constant="5" id="D08-Ug-WgR"/>
+                            <constraint firstItem="Yol-J3-smv" firstAttribute="leading" secondItem="5xt-LX-6nn" secondAttribute="trailing" constant="55" id="EUa-YK-AeV"/>
                             <constraint firstItem="HBV-Fg-y0y" firstAttribute="top" secondItem="Odq-eK-LnR" secondAttribute="bottom" constant="8" id="Eul-ea-3mo"/>
                             <constraint firstItem="Yol-J3-smv" firstAttribute="top" secondItem="bem-rS-7hn" secondAttribute="bottom" constant="8" id="Fo6-y7-Mjs"/>
                             <constraint firstItem="QVn-tG-Dqu" firstAttribute="trailing" secondItem="bem-rS-7hn" secondAttribute="trailing" constant="45" id="Ij1-R7-K8S"/>
@@ -273,8 +311,10 @@
                             <constraint firstItem="KMC-V8-i8u" firstAttribute="top" secondItem="HBV-Fg-y0y" secondAttribute="bottom" constant="8" id="SIN-A3-coz"/>
                             <constraint firstItem="HBV-Fg-y0y" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="15" id="awk-tk-cR6"/>
                             <constraint firstItem="QVn-tG-Dqu" firstAttribute="trailing" secondItem="KMC-V8-i8u" secondAttribute="trailing" constant="45" id="bcL-vL-dNU"/>
+                            <constraint firstItem="QVn-tG-Dqu" firstAttribute="bottom" secondItem="5xt-LX-6nn" secondAttribute="bottom" constant="5" id="dz4-Ww-RxU"/>
                             <constraint firstItem="Odq-eK-LnR" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="46" id="khf-8m-FkC"/>
                             <constraint firstItem="PVG-Zq-0lf" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="45.5" id="mRX-Nk-ZAa"/>
+                            <constraint firstItem="tDj-Y1-DQe" firstAttribute="leading" secondItem="Yol-J3-smv" secondAttribute="trailing" constant="55" id="p28-nr-2fp"/>
                             <constraint firstItem="bem-rS-7hn" firstAttribute="top" secondItem="KMC-V8-i8u" secondAttribute="bottom" constant="8" id="yLq-2p-3xa"/>
                             <constraint firstItem="bem-rS-7hn" firstAttribute="leading" secondItem="QVn-tG-Dqu" secondAttribute="leading" constant="45" id="zgC-nX-8Wx"/>
                         </constraints>
@@ -290,8 +330,68 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWc-G6-XO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hBg-Dy-1rQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1205.625" y="-351.76056338028167"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="yZR-Fv-4ad">
+            <objects>
+                <viewController storyboardIdentifier="PopUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Oe-D0-H39" customClass="PopUpViewController" customModule="BikeFriendlyNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d61-c5-26x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeJ-bZ-p3j">
+                                <rect key="frame" x="95" y="563" width="224" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry, URL not available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDR-H5-4cg">
+                                        <rect key="frame" x="22.666666666666671" y="22" width="179" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="stF-lq-o4k"/>
+                                            <constraint firstAttribute="height" constant="24" id="xWs-wt-kl4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSw-Z6-Ui0">
+                                        <rect key="frame" x="87" y="54" width="50" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="5Jz-AC-mjm"/>
+                                            <constraint firstAttribute="width" constant="50" id="DaG-Ay-Xic"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Okay">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okayBtnPressed:" destination="2Oe-D0-H39" eventType="touchUpInside" id="15I-VL-rnB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FDR-H5-4cg" secondAttribute="bottom" constant="54" id="1nT-ZY-VSm"/>
+                                    <constraint firstItem="FDR-H5-4cg" firstAttribute="centerX" secondItem="HeJ-bZ-p3j" secondAttribute="centerX" id="F9V-JO-C4i"/>
+                                    <constraint firstAttribute="bottom" secondItem="LSw-Z6-Ui0" secondAttribute="bottom" constant="10" id="Y87-jc-exQ"/>
+                                    <constraint firstItem="LSw-Z6-Ui0" firstAttribute="centerX" secondItem="HeJ-bZ-p3j" secondAttribute="centerX" id="cDy-TW-ryZ"/>
+                                    <constraint firstAttribute="width" constant="224" id="cgC-XI-Qek"/>
+                                    <constraint firstAttribute="height" constant="100" id="gKB-Sb-Fsb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tPt-Og-2BP" firstAttribute="bottom" secondItem="HeJ-bZ-p3j" secondAttribute="bottom" constant="73" id="t1Y-Bq-TbF"/>
+                            <constraint firstItem="HeJ-bZ-p3j" firstAttribute="centerX" secondItem="d61-c5-26x" secondAttribute="centerX" id="xD6-dj-zT2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tPt-Og-2BP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBX-Zj-EKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936.2318840579712" y="-354.61956521739131"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="nWz-Hp-jXs">
@@ -509,7 +609,9 @@
     </scenes>
     <resources>
         <image name="FacebookLogo.png" width="128" height="128"/>
+        <image name="InstagramLogo.png" width="71.859649658203125" height="71.859649658203125"/>
         <image name="Logo.png" width="121.07262420654297" height="105"/>
+        <image name="TwitterLogo.png" width="89.693428039550781" height="89.693428039550781"/>
         <image name="compass.png" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
 </document>
