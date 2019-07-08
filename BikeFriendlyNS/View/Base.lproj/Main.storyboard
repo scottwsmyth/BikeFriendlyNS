@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="height" constant="107" id="HKo-ox-les"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="ktF-Wx-CdO"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -164,8 +164,20 @@
                                     <outlet property="delegate" destination="BXh-YI-G12" id="KQz-dx-fn3"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-Td-SIu">
+                                <rect key="frame" x="321" y="498" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4wC-IC-r9i"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ehj-sf-5DC"/>
+                                </constraints>
+                                <state key="normal" image="BNS_Man.png"/>
+                                <connections>
+                                    <action selector="directionBtnPressed:" destination="BXh-YI-G12" eventType="touchUpInside" id="KJK-Wd-XgD"/>
+                                    <action selector="membershipBtnPressed:" destination="BXh-YI-G12" eventType="touchUpInside" id="agA-Op-oJh"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4Y-aG-n6U">
-                                <rect key="frame" x="321" y="547" width="40" height="40"/>
+                                <rect key="frame" x="321" y="546" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="nQq-cz-iVm"/>
                                     <constraint firstAttribute="height" constant="40" id="zSL-2Y-Vt2"/>
@@ -183,8 +195,9 @@
                             <constraint firstItem="YKu-2U-0sv" firstAttribute="bottom" secondItem="0eZ-YO-g6Z" secondAttribute="bottom" constant="20" id="4Ct-cz-jyY"/>
                             <constraint firstItem="UkY-rX-G89" firstAttribute="top" secondItem="C2a-hf-hmF" secondAttribute="top" id="6eY-Ik-N7o"/>
                             <constraint firstItem="YKu-2U-0sv" firstAttribute="trailing" secondItem="0eZ-YO-g6Z" secondAttribute="trailing" constant="16" id="7jJ-Ue-8Qo"/>
-                            <constraint firstItem="0eZ-YO-g6Z" firstAttribute="top" secondItem="V4Y-aG-n6U" secondAttribute="bottom" constant="20" id="FTf-bD-Rin"/>
+                            <constraint firstItem="0eZ-YO-g6Z" firstAttribute="top" secondItem="V4Y-aG-n6U" secondAttribute="bottom" constant="21" id="FTf-bD-Rin"/>
                             <constraint firstItem="tHX-Ay-cCH" firstAttribute="leading" secondItem="YKu-2U-0sv" secondAttribute="leading" id="Fcb-Ma-bj5"/>
+                            <constraint firstItem="YKu-2U-0sv" firstAttribute="trailing" secondItem="tUk-Td-SIu" secondAttribute="trailing" constant="14" id="H1P-fg-51E"/>
                             <constraint firstItem="2lP-Tp-SIS" firstAttribute="top" secondItem="tHX-Ay-cCH" secondAttribute="bottom" id="Hmy-rj-sSG"/>
                             <constraint firstItem="tHX-Ay-cCH" firstAttribute="leading" secondItem="YKu-2U-0sv" secondAttribute="leading" id="KfL-Zb-rhX"/>
                             <constraint firstItem="UkY-rX-G89" firstAttribute="trailing" secondItem="YKu-2U-0sv" secondAttribute="trailing" id="RWb-OA-1CV"/>
@@ -193,6 +206,7 @@
                             <constraint firstItem="UkY-rX-G89" firstAttribute="bottom" secondItem="YKu-2U-0sv" secondAttribute="bottom" id="fXI-nw-3IE"/>
                             <constraint firstItem="tHX-Ay-cCH" firstAttribute="top" secondItem="YKu-2U-0sv" secondAttribute="top" id="oXa-kk-MPN"/>
                             <constraint firstItem="UkY-rX-G89" firstAttribute="leading" secondItem="YKu-2U-0sv" secondAttribute="leading" id="vbW-qM-qCm"/>
+                            <constraint firstItem="V4Y-aG-n6U" firstAttribute="top" secondItem="tUk-Td-SIu" secondAttribute="bottom" constant="8" id="xGn-PI-lIm"/>
                             <constraint firstItem="tHX-Ay-cCH" firstAttribute="trailing" secondItem="YKu-2U-0sv" secondAttribute="trailing" id="yg0-dI-F67"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YKu-2U-0sv"/>
@@ -564,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNb-KA-oLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205.7971014492755" y="1042.663043478261"/>
+            <point key="canvasLocation" x="1205" y="1222"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="epn-cA-ohh">
@@ -620,8 +634,24 @@
             </objects>
             <point key="canvasLocation" x="1206" y="332"/>
         </scene>
+        <!--News View Controller-->
+        <scene sceneID="j1X-ap-G0h">
+            <objects>
+                <viewController id="FCo-un-EOf" customClass="NewsViewController" customModule="BikeFriendlyNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WkH-yo-XAT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PEG-bM-xr8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGa-Ar-eA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="331"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="BNS_Man.png" width="288" height="288"/>
         <image name="FacebookLogo.png" width="128" height="128"/>
         <image name="InstagramLogo.png" width="71.859649658203125" height="71.859649658203125"/>
         <image name="Logo.png" width="121.07262420654297" height="105"/>

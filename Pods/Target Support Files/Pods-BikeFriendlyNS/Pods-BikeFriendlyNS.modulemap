@@ -1,0 +1,6 @@
+module Pods_BikeFriendlyNS {
+  umbrella header "Pods-BikeFriendlyNS-umbrella.h"
+
+  export *
+  module * { export * }
+}

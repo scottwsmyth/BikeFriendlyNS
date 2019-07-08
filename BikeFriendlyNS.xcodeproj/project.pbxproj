@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D20AEBC022C2A682003F6153 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */; };
 		D20F14F622C15153001CBC4F /* service.php in Resources */ = {isa = PBXBuildFile; fileRef = D20F14F522C15153001CBC4F /* service.php */; };
+		D216BF1022CFCA2200D217B2 /* webContents.txt in Resources */ = {isa = PBXBuildFile; fileRef = D216BF0F22CFCA2200D217B2 /* webContents.txt */; };
 		D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21A68F622B278AB003EF706 /* MapViewController.swift */; };
 		D21A68FB22B29A16003EF706 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21A68FA22B29A16003EF706 /* MapKit.framework */; };
 		D220D97C22C67A9000FA7104 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97B22C67A9000FA7104 /* compass.png */; };
@@ -22,6 +23,7 @@
 		D22AA73622C52FD8004834E0 /* BackgroundImage2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */; };
 		D24059C822CCDF2A006E8581 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24059C722CCDF2A006E8581 /* CustomView.swift */; };
 		D24059CA22CD2F6C006E8581 /* webImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D24059C922CD2F6C006E8581 /* webImage.png */; };
+		D242F4A922CFB6750032B211 /* BNS_Man.png in Resources */ = {isa = PBXBuildFile; fileRef = D242F4A822CFB6750032B211 /* BNS_Man.png */; };
 		D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D77AE22AFE57E0073522C /* CustomButton.swift */; };
 		D27D77B522AFF2760073522C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D27D77B422AFF2760073522C /* Podfile */; };
 		D296BB9522C2AB2F00C6239E /* Maven.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3922C2AB2A00C6239E /* Maven.png */; };
@@ -125,6 +127,7 @@
 		D29D3B5E22AFD11E002BF17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29D3B5C22AFD11E002BF17B /* LaunchScreen.storyboard */; };
 		D29D3B6922AFD11E002BF17B /* BikeFriendlyNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B6822AFD11E002BF17B /* BikeFriendlyNSTests.swift */; };
 		D29D3B7422AFD11E002BF17B /* BikeFriendlyNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */; };
+		D2BC062E22CFC565008B8EE4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC062D22CFC565008B8EE4 /* NewsViewController.swift */; };
 		D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */; };
 		D2E8AB4922C3A67700FBB5B5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */; };
 		F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */; };
@@ -152,6 +155,7 @@
 		B8AF5EF63A49A926D30DA0D8 /* Pods-BikeFriendlyNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeFriendlyNS.release.xcconfig"; path = "Target Support Files/Pods-BikeFriendlyNS/Pods-BikeFriendlyNS.release.xcconfig"; sourceTree = "<group>"; };
 		D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		D20F14F522C15153001CBC4F /* service.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = service.php; sourceTree = "<group>"; };
+		D216BF0F22CFCA2200D217B2 /* webContents.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = webContents.txt; sourceTree = "<group>"; };
 		D21A68F622B278AB003EF706 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BikeFriendlyNS/Controller/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		D21A68FA22B29A16003EF706 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D220D97B22C67A9000FA7104 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass.png; path = "BF Assets/compass.png"; sourceTree = SOURCE_ROOT; };
@@ -165,6 +169,7 @@
 		D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage2.jpeg; path = "BF Assets/BackgroundImage2.jpeg"; sourceTree = SOURCE_ROOT; };
 		D24059C722CCDF2A006E8581 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		D24059C922CD2F6C006E8581 /* webImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = webImage.png; path = "BF Assets/webImage.png"; sourceTree = SOURCE_ROOT; };
+		D242F4A822CFB6750032B211 /* BNS_Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BNS_Man.png; path = "BF Assets/BNS_Man.png"; sourceTree = SOURCE_ROOT; };
 		D27D77AE22AFE57E0073522C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D27D77B422AFF2760073522C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D296BB3922C2AB2A00C6239E /* Maven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maven.png; path = "BF Assets/Maven.png"; sourceTree = SOURCE_ROOT; };
@@ -274,6 +279,7 @@
 		D29D3B6F22AFD11E002BF17B /* BikeFriendlyNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeFriendlyNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeFriendlyNSUITests.swift; sourceTree = "<group>"; };
 		D29D3B7522AFD11E002BF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BC062D22CFC565008B8EE4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailViewController.swift; path = BikeFriendlyNS/Controller/LocationDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeFriendlyNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +367,7 @@
 				D29D3B5C22AFD11E002BF17B /* LaunchScreen.storyboard */,
 				D29D3B5F22AFD11E002BF17B /* Info.plist */,
 				D20F14F522C15153001CBC4F /* service.php */,
+				D216BF0F22CFCA2200D217B2 /* webContents.txt */,
 			);
 			path = BikeFriendlyNS;
 			sourceTree = "<group>";
@@ -405,6 +412,7 @@
 		D29D3B8422AFD1ED002BF17B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D2BC062D22CFC565008B8EE4 /* NewsViewController.swift */,
 				D29D3B5522AFD11C002BF17B /* HomeViewController.swift */,
 				D21A68F622B278AB003EF706 /* MapViewController.swift */,
 				D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */,
@@ -418,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				D24059C922CD2F6C006E8581 /* webImage.png */,
+				D242F4A822CFB6750032B211 /* BNS_Man.png */,
 				D220D97E22CBC15000FA7104 /* InstagramLogo.png */,
 				D220D97D22CBC15000FA7104 /* TwitterLogo.png */,
 				D220D97B22C67A9000FA7104 /* compass.png */,
@@ -737,6 +746,8 @@
 				D296BB9622C2AB2F00C6239E /* Annapolis.png in Resources */,
 				D296BBC722C2AB2F00C6239E /* OutsideOutdoor.png in Resources */,
 				D296BBE222C2AB2F00C6239E /* IdealBikes.png in Resources */,
+				D242F4A922CFB6750032B211 /* BNS_Man.png in Resources */,
+				D216BF1022CFCA2200D217B2 /* webContents.txt in Resources */,
 				D24059CA22CD2F6C006E8581 /* webImage.png in Resources */,
 				D296BBA822C2AB2F00C6239E /* Apron.png in Resources */,
 			);
@@ -806,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29D3B5622AFD11C002BF17B /* HomeViewController.swift in Sources */,
+				D2BC062E22CFC565008B8EE4 /* NewsViewController.swift in Sources */,
 				D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */,
 				D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */,
 				D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */,

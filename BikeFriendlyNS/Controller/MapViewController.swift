@@ -332,11 +332,33 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             animate(toggle: false)
         }
     }
+    @IBAction func membershipBtnPressed(_ sender: Any) {
+        
+        showMembersipAlert()
+        
+    }
+    
+    var runOnce = 0
+    var clearRoute = 0
     
     @IBAction func directionBtnPressed(_ sender: UIButton) {
         guard let currentPlaceMark = placeMark else{
             return
         }
+        
+        if(clearRoute == 1)
+        {
+            mapView.removeOverlays(mapView.overlays)
+            clearRoute-=1
+            return
+        }
+        
+        if(runOnce == 0)
+        {
+            showAlert()
+        }
+        
+        runOnce+=1
         
         let directionRequest = MKDirections.Request()
         let destinationPlacemark = MKPlacemark(placemark: currentPlaceMark)
@@ -360,9 +382,45 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
             
             let routeRect = route.polyline.boundingMapRect
             self.mapView.setRegion(MKCoordinateRegion.init(routeRect), animated: true)
+            
+            self.clearRoute+=1;
+            
         }
     }
     
+    func showAlert(){
+        let alert = UIAlertController(title: "Heads up", message: "Using wayfind should be done with caution, riding on provincial highways should be a last resort.", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func showMembersipAlert(){
+        let alert = UIAlertController(title: "", message: "Would you like to sign up for a membership with Bicycle Nova Scotia?", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "YES", style: UIAlertAction.Style.default, handler: { (action) in
+            self.redirectToBNS()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "NO", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func redirectToBNS(){
+        
+        guard let link = URL(string: "http://www.bicycle.ns.ca/membership") else { return  }
+    
+        UIApplication.shared.open(link, options: [:], completionHandler: nil)
+    
+        
+    }
 }
 
 //Extending map view controller in order to implement CLLocation delegate methods

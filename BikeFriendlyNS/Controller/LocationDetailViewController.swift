@@ -15,31 +15,16 @@ class LocationDetailViewController: UIViewController {
     
     @IBAction func facebookBtnPressed(_ sender: Any) {
         
+        
         guard let link = URL(string: facebookURL) else { return  }
         
-        checkURL(link: link)
-    }
-    
-    @IBAction func twitterBtnPressed(_ sender: Any) {
-        
-        guard let link = URL(string: instagramURL) else { return  }
-        
-        checkURL(link: link)
-        
-    }
-    
-    @IBAction func instagramBtnPressed(_ sender: Any) {
-        
-        guard let link = URL(string: twitterURL) else { return  }
-        
-        checkURL(link: link)
-        
-    }
-    @IBAction func websiteBtnPressed(_ sender: Any) {
-        
-        guard let link = URL(string: websiteURL) else { return  }
-        
-        checkURL(link: link)
+        if link.absoluteString == "NA"{
+            popUp()
+        }
+        else
+        {
+        UIApplication.shared.open(link, options: [:], completionHandler: nil)
+        }
         
     }
     
@@ -78,17 +63,5 @@ class LocationDetailViewController: UIViewController {
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParent: self)
     }
-    
-    func checkURL(link: URL){
-        if link.absoluteString == "NA"{
-            popUp()
-        }
-        else
-        {
-            UIApplication.shared.open(link, options: [:], completionHandler: nil)
-        }
-    }
-    
-    
     
 }

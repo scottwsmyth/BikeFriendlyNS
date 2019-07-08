@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSoup
 
 class HomeViewController: UIViewController, JSONParserProtocol {
     
@@ -26,6 +27,13 @@ class HomeViewController: UIViewController, JSONParserProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //WRITE TO FILE
+        
+//        let fileName = "webContents.html"
+//        let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
+//
+        //GET HTML CONTENT
         
         let number = Int.random(in: 0 ..< 5)
         
