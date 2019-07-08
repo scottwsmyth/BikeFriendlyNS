@@ -1,7 +1,7 @@
 <?php
 
 // Create connection
-    $con=mysqli_connect("localhost","scottws1","Ha1992;;","scottws1_locations_db");
+    $con = mysqli_connect("localhost","scottws1","Ha1992;;","scottws1_locations_db");
 
 // Check connection
 if (mysqli_connect_errno())
