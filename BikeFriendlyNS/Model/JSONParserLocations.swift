@@ -8,19 +8,25 @@
 
 import UIKit
 
-protocol JSONParserProtocol: class {
-    func itemsDownloaded(items: NSArray)
+protocol JSONParserLocationsProtocol: class {
+    
+    func itemsDownloadedLocations(items: NSArray)
+    
 }
 
-class JSONParser: NSObject, URLSessionDataDelegate {
+class JSONParserLocations: NSObject, URLSessionDataDelegate {
 
-    weak var delegate: JSONParserProtocol!
+    weak var delegate: JSONParserLocationsProtocol!
     
     var data = Data()
     
-    let urlPath: String = "http://scottwsmyth.com/service.php"
+    let urlPath: String = "https://scottwsmyth.com/service.php"
+    
+    let dispatchGroup = DispatchGroup()
     
     func downloadItems(){
+        
+        dispatchGroup.enter()
         
         let url: URL = URL(string: urlPath)!
         
@@ -34,6 +40,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             else{
                 print("Data downloaded")
                 self.parseJSON(data!)
+                self.dispatchGroup.leave()
             }
             
         }
@@ -55,7 +62,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
         }
         
         var jsonElement = NSDictionary()
-        let locations = NSMutableArray()
+        let locationsArray = NSMutableArray()
         
         for i in 0 ..< jsonResult.count
         {
@@ -65,6 +72,7 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             let location = Company()
             
             //the following insures none of the JsonElement values are nil through optional binding
+            
             if let title = jsonElement["title"],
                   let latitude = jsonElement["latitude"],
                   let longitude = jsonElement["longitude"],
@@ -80,6 +88,8 @@ class JSONParser: NSObject, URLSessionDataDelegate {
             {
                 
                   location.title = title as? String
+                
+                  
                 
                   location.latitude = latitude as? String
                 
@@ -104,13 +114,13 @@ class JSONParser: NSObject, URLSessionDataDelegate {
                   location.websiteURL = websiteURL as? String
             }
             
-            locations.add(location)
+            locationsArray.add(location)
             
         }
         
         DispatchQueue.main.async(execute: { () -> Void in
             
-            self.delegate.itemsDownloaded(items: locations)
+            self.delegate.itemsDownloadedLocations(items: locationsArray)
             
         })
     }

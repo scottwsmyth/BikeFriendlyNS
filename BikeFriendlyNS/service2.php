@@ -1,25 +1,19 @@
 <?php
-
-    //Connect to the database
     
-    $connect = mysqli_connect("localhost","scottws1","Ha1992;;","scottws1_news");
+    // Create connection
+    $con = mysqli_connect("localhost","scottws1","Ha1992;;","scottws1_news");
     
+    // Check connection
     if (mysqli_connect_errno())
     {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
     
-    //After connecting to the database we need to query it
+    // This SQL statement selects ALL from the table 'Locations'
+    $sql = "SELECT * FROM blog_post";
     
-    $query = "SELECT * FROM blog_post";
-    
-    //Execute the query
-    
-    $result = mysqli_query($connect, $sql);
-    
-    //Retrieve the data after executing the query
-    
-    if ($result = mysqli_query($connect, $query))
+    // Check if there are results
+    if ($result = mysqli_query($con, $sql))
     {
         // If so, then create a results array and a temporary one
         // to hold the data
@@ -38,10 +32,6 @@
         echo json_encode($resultArray);
     }
     
-    //Convert to JSON
-    
-    echo json_encode($resultArray);
-    
-    mysqli_close($connect)
-    
-?>
+    // Close connections
+    mysqli_close($con);
+    ?>

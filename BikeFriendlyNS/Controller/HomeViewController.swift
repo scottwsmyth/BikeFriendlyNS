@@ -9,13 +9,13 @@
 import UIKit
 import SwiftSoup
 
-class HomeViewController: UIViewController, JSONParserProtocol {
-    
+class HomeViewController: UIViewController, JSONParserLocationsProtocol {
+ 
    var imageArray: [String] = ["BackgroundImage1.jpeg","BackgroundImage2.jpeg","BackgroundImage3.jpeg","BackgroundImage4.jpeg","BackgroundImage5.jpeg"]
 
     var feedItems: NSArray = NSArray()
     
-    func itemsDownloaded(items: NSArray) {
+    func itemsDownloadedLocations(items: NSArray) {
         feedItems = items
     }
 
@@ -28,13 +28,6 @@ class HomeViewController: UIViewController, JSONParserProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //WRITE TO FILE
-        
-//        let fileName = "webContents.html"
-//        let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
-//
-        //GET HTML CONTENT
-        
         let number = Int.random(in: 0 ..< 5)
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -44,9 +37,12 @@ class HomeViewController: UIViewController, JSONParserProtocol {
         
         beginButton.isEnabled = false
         
-        let jsonParser = JSONParser()
+        let jsonParser = JSONParserLocations()
         jsonParser.delegate = self
         jsonParser.downloadItems()
+        
+        //******TO-DO: FIND A WAY TO WAIT FOR DOWNLOAD.ITEMS TO FINISH BEFORE MOVING FORWARD. USING STATIC AMOUNT OF TIME ATM.******
+        
         
         //'Load' while data is being fetched from database
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {

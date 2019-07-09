@@ -26,6 +26,11 @@
 		D24402A222D3768B00D3F09E /* service2.php in Resources */ = {isa = PBXBuildFile; fileRef = D24402A122D3768B00D3F09E /* service2.php */; };
 		D24402A422D380E000D3F09E /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402A322D380E000D3F09E /* NewsTableViewController.swift */; };
 		D24402A622D380F600D3F09E /* NewsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402A522D380F600D3F09E /* NewsContentViewController.swift */; };
+		D24402A822D3820C00D3F09E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402A722D3820C00D3F09E /* CustomTableViewCell.swift */; };
+		D24402AA22D3822700D3F09E /* JSONParserNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402A922D3822700D3F09E /* JSONParserNews.swift */; };
+		D24402AC22D3B24500D3F09E /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402AB22D3B24500D3F09E /* BlogPost.swift */; };
+		D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */; };
+		D25D60FF22D4DE1400BE2F99 /* news_4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */; };
 		D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D77AE22AFE57E0073522C /* CustomButton.swift */; };
 		D27D77B522AFF2760073522C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D27D77B422AFF2760073522C /* Podfile */; };
 		D296BB9522C2AB2F00C6239E /* Maven.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3922C2AB2A00C6239E /* Maven.png */; };
@@ -121,7 +126,7 @@
 		D296BBEF22C2AB2F00C6239E /* TangledGardens.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9322C2AB2F00C6239E /* TangledGardens.png */; };
 		D296BBF022C2AB2F00C6239E /* Tanner.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB9422C2AB2F00C6239E /* Tanner.png */; };
 		D299120022C15BB500164FC5 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29911FF22C15BB500164FC5 /* Company.swift */; };
-		D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299120122C24B4B00164FC5 /* JSONParser.swift */; };
+		D299120222C24B4B00164FC5 /* JSONParserLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299120122C24B4B00164FC5 /* JSONParserLocations.swift */; };
 		D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B5322AFD11C002BF17B /* AppDelegate.swift */; };
 		D29D3B5622AFD11C002BF17B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B5522AFD11C002BF17B /* HomeViewController.swift */; };
 		D29D3B5922AFD11C002BF17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29D3B5722AFD11C002BF17B /* Main.storyboard */; };
@@ -129,7 +134,6 @@
 		D29D3B5E22AFD11E002BF17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29D3B5C22AFD11E002BF17B /* LaunchScreen.storyboard */; };
 		D29D3B6922AFD11E002BF17B /* BikeFriendlyNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B6822AFD11E002BF17B /* BikeFriendlyNSTests.swift */; };
 		D29D3B7422AFD11E002BF17B /* BikeFriendlyNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */; };
-		D2BC062E22CFC565008B8EE4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC062D22CFC565008B8EE4 /* NewsViewController.swift */; };
 		D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */; };
 		D2E8AB4922C3A67700FBB5B5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */; };
 		F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */; };
@@ -174,6 +178,11 @@
 		D24402A122D3768B00D3F09E /* service2.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = service2.php; sourceTree = "<group>"; };
 		D24402A322D380E000D3F09E /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		D24402A522D380F600D3F09E /* NewsContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContentViewController.swift; sourceTree = "<group>"; };
+		D24402A722D3820C00D3F09E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D24402A922D3822700D3F09E /* JSONParserNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserNews.swift; sourceTree = "<group>"; };
+		D24402AB22D3B24500D3F09E /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_1.jpeg; path = "BF Assets/news_1.jpeg"; sourceTree = SOURCE_ROOT; };
+		D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_4.jpeg; path = "BF Assets/news_4.jpeg"; sourceTree = SOURCE_ROOT; };
 		D27D77AE22AFE57E0073522C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D27D77B422AFF2760073522C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D296BB3922C2AB2A00C6239E /* Maven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maven.png; path = "BF Assets/Maven.png"; sourceTree = SOURCE_ROOT; };
@@ -269,7 +278,7 @@
 		D296BB9322C2AB2F00C6239E /* TangledGardens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TangledGardens.png; path = "BF Assets/TangledGardens.png"; sourceTree = SOURCE_ROOT; };
 		D296BB9422C2AB2F00C6239E /* Tanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tanner.png; path = "BF Assets/Tanner.png"; sourceTree = SOURCE_ROOT; };
 		D29911FF22C15BB500164FC5 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
-		D299120122C24B4B00164FC5 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		D299120122C24B4B00164FC5 /* JSONParserLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserLocations.swift; sourceTree = "<group>"; };
 		D29D3B5022AFD11C002BF17B /* BikeFriendlyNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeFriendlyNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29D3B5322AFD11C002BF17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D29D3B5522AFD11C002BF17B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -283,7 +292,6 @@
 		D29D3B6F22AFD11E002BF17B /* BikeFriendlyNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeFriendlyNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeFriendlyNSUITests.swift; sourceTree = "<group>"; };
 		D29D3B7522AFD11E002BF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2BC062D22CFC565008B8EE4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailViewController.swift; path = BikeFriendlyNS/Controller/LocationDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeFriendlyNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,7 +406,9 @@
 			isa = PBXGroup;
 			children = (
 				D29911FF22C15BB500164FC5 /* Company.swift */,
-				D299120122C24B4B00164FC5 /* JSONParser.swift */,
+				D24402AB22D3B24500D3F09E /* BlogPost.swift */,
+				D299120122C24B4B00164FC5 /* JSONParserLocations.swift */,
+				D24402A922D3822700D3F09E /* JSONParserNews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,6 +419,7 @@
 				D29D3B5722AFD11C002BF17B /* Main.storyboard */,
 				D27D77AE22AFE57E0073522C /* CustomButton.swift */,
 				D24059C722CCDF2A006E8581 /* CustomView.swift */,
+				D24402A722D3820C00D3F09E /* CustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,7 +427,6 @@
 		D29D3B8422AFD1ED002BF17B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D2BC062D22CFC565008B8EE4 /* NewsViewController.swift */,
 				D29D3B5522AFD11C002BF17B /* HomeViewController.swift */,
 				D21A68F622B278AB003EF706 /* MapViewController.swift */,
 				D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */,
@@ -432,6 +442,8 @@
 			isa = PBXGroup;
 			children = (
 				D24059C922CD2F6C006E8581 /* webImage.png */,
+				D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */,
+				D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */,
 				D242F4A822CFB6750032B211 /* BNS_Man.png */,
 				D220D97E22CBC15000FA7104 /* InstagramLogo.png */,
 				D220D97D22CBC15000FA7104 /* TwitterLogo.png */,
@@ -718,6 +730,7 @@
 				D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */,
 				D296BBB022C2AB2F00C6239E /* eye.png in Resources */,
 				D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */,
+				D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */,
 				D22AA73222C52FD8004834E0 /* BackgroundImage1.jpeg in Resources */,
 				D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */,
 				D296BBB122C2AB2F00C6239E /* BurlingtonRose.png in Resources */,
@@ -746,6 +759,7 @@
 				D296BBCA22C2AB2F00C6239E /* Camping.png in Resources */,
 				D296BBDB22C2AB2F00C6239E /* JavaBlend.png in Resources */,
 				D296BBD822C2AB2F00C6239E /* Wiles-Lake.png in Resources */,
+				D25D60FF22D4DE1400BE2F99 /* news_4.jpeg in Resources */,
 				D296BBB522C2AB2F00C6239E /* Cycles-Guitars.png in Resources */,
 				D296BBBC22C2AB2F00C6239E /* Berwick&District.png in Resources */,
 				D296BBCB22C2AB2F00C6239E /* Earltown.png in Resources */,
@@ -822,16 +836,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24402AC22D3B24500D3F09E /* BlogPost.swift in Sources */,
 				D29D3B5622AFD11C002BF17B /* HomeViewController.swift in Sources */,
-				D2BC062E22CFC565008B8EE4 /* NewsViewController.swift in Sources */,
 				D29D3B5422AFD11C002BF17B /* AppDelegate.swift in Sources */,
-				D299120222C24B4B00164FC5 /* JSONParser.swift in Sources */,
+				D299120222C24B4B00164FC5 /* JSONParserLocations.swift in Sources */,
 				D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */,
 				D20AEBC022C2A682003F6153 /* FeedbackViewController.swift in Sources */,
 				D24059C822CCDF2A006E8581 /* CustomView.swift in Sources */,
 				D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */,
 				D24402A422D380E000D3F09E /* NewsTableViewController.swift in Sources */,
+				D24402AA22D3822700D3F09E /* JSONParserNews.swift in Sources */,
 				D24402A622D380F600D3F09E /* NewsContentViewController.swift in Sources */,
+				D24402A822D3820C00D3F09E /* CustomTableViewCell.swift in Sources */,
 				D299120022C15BB500164FC5 /* Company.swift in Sources */,
 				D220D98422CBD56B00FA7104 /* PopUpViewController.swift in Sources */,
 				D21A68F722B278AB003EF706 /* MapViewController.swift in Sources */,

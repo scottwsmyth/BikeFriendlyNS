@@ -10,16 +10,24 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol {
-    
+class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProtocol {
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var feedItems: NSArray = NSArray()
+    var tableViewArray: NSArray = NSArray()
     var selectedLocation : Company = Company()
     var globalAnnotationArray: [MKAnnotation] = []
     var placeMark: CLPlacemark?
+    var blogPostArray: NSArray = NSArray()
+    
+    func itemsDownloadedNews(items: NSArray) {
+        
+        blogPostArray = items
+        
+    }
     
     //Titles for the dropdown menus' cells
     var filterList = ["All", "Attraction", "Bike Shop", "Camping", "Flag", "House", "Inn", "Restaurant"]
@@ -27,24 +35,40 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Setting dropdown menu properties (just rounded button and clear color for cells)
-        filterBtn.layer.cornerRadius = 10
-        filterBtn.clipsToBounds = true
-        tableView.isHidden = true
-        tableView.backgroundColor = UIColor.clear
+        //******TO-DO: NEED TO WAIT UNTIL THE DATA IS DOWNLOADED BEFORE ALLOWING THE NEWS BUTTON TO BE PRESSED******
         
-        addAnnotations()
-        zoomInOnUserLocation()
-        checkLocationServices()
+        let jsonParser = JSONParserNews()
+        jsonParser.delegate = self
         
-        //Populate global array
-        globalAnnotationArray = mapView.annotations
+        let group = DispatchGroup()
+        group.enter()
         
-    }
+        // avoid deadlocks by not using .main queue here
+        DispatchQueue.global(qos: .userInitiated).async {
+            
+            jsonParser.downloadItems()
+            
+            group.leave()
+        }
+        
+        //'Load' while data is being fetched from database
+        group.notify(queue: .main, execute: {
+            // This will be called when block ends
+            
+            //Setting dropdown menu properties (just rounded button and clear color for cells)
+            self.filterBtn.layer.cornerRadius = 10
+            self.filterBtn.clipsToBounds = true
+            self.tableView.isHidden = true
+            self.tableView.backgroundColor = UIColor.clear
+            
+            self.addAnnotations()
+            self.zoomInOnUserLocation()
+            self.checkLocationServices()
+            
+            //Populate global array
+            self.globalAnnotationArray = self.mapView.annotations
+        })
     
-    func itemsDownloaded(items: NSArray) {
-        
-        feedItems = items
     }
     
     //Function sets each annotations title and coordinates. First creates an empty MKPointAnnotation, then sets the properties
@@ -316,6 +340,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     }
     
     
+    @IBAction func newsBtnPressed(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "NewsTableViewController") as? NewsTableViewController
+        
+        vc!.blogPostArray = self.blogPostArray
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
     @IBAction func feedbackBtnPressed(_ sender: UIButton) {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "FeedbackViewController") as? FeedbackViewController
@@ -343,6 +376,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     
     @IBAction func directionBtnPressed(_ sender: UIButton) {
         guard let currentPlaceMark = placeMark else{
+            
+            let alert = UIAlertController(title: "", message: "No location selected, cannot get bike route.", preferredStyle: UIAlertController.Style.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+                return
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
             return
         }
         
@@ -402,11 +444,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
     func showMembersipAlert(){
         let alert = UIAlertController(title: "", message: "Would you like to sign up for a membership with Bicycle Nova Scotia?", preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "YES", style: UIAlertAction.Style.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (action) in
             self.redirectToBNS()
         }))
         
-        alert.addAction(UIAlertAction(title: "NO", style: UIAlertAction.Style.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
         }))
         
@@ -418,7 +460,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserProtocol
         guard let link = URL(string: "http://www.bicycle.ns.ca/membership") else { return  }
     
         UIApplication.shared.open(link, options: [:], completionHandler: nil)
-    
         
     }
 }
