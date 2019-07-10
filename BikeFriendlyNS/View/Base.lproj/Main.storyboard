@@ -261,21 +261,21 @@
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" indicatorStyle="black" maximumZoomScale="4" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HBV-Fg-y0y">
                                 <rect key="frame" x="0.0" y="331" width="375" height="133.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KMC-V8-i8u">
                                 <rect key="frame" x="0.0" y="469.5" width="375" height="67"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bem-rS-7hn">
                                 <rect key="frame" x="0.0" y="541.5" width="375" height="66.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
@@ -439,7 +439,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-8K-k8b">
-                                <rect key="frame" x="26.5" y="321" width="322" height="295"/>
+                                <rect key="frame" x="19" y="321" width="337.5" height="295"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -450,11 +450,11 @@
                         <constraints>
                             <constraint firstItem="dlf-XA-OCV" firstAttribute="bottom" secondItem="ZkA-8K-k8b" secondAttribute="bottom" constant="51" id="Hed-Z1-zaR"/>
                             <constraint firstItem="iB3-PA-eIY" firstAttribute="width" secondItem="PvD-YL-taN" secondAttribute="width" multiplier="1.2" id="Qaw-Q4-VrW"/>
-                            <constraint firstItem="ZkA-8K-k8b" firstAttribute="width" secondItem="iB3-PA-eIY" secondAttribute="width" multiplier="1.2" id="ZTD-HA-LFm"/>
                             <constraint firstItem="iB3-PA-eIY" firstAttribute="centerX" secondItem="QfI-MD-cfn" secondAttribute="centerX" id="bI8-iM-c04"/>
                             <constraint firstItem="PvD-YL-taN" firstAttribute="centerX" secondItem="QfI-MD-cfn" secondAttribute="centerX" id="cAZ-BB-zmE"/>
                             <constraint firstItem="ZkA-8K-k8b" firstAttribute="centerX" secondItem="QfI-MD-cfn" secondAttribute="centerX" id="m6Y-Eh-Vui"/>
                             <constraint firstItem="ZkA-8K-k8b" firstAttribute="top" secondItem="PvD-YL-taN" secondAttribute="bottom" constant="35" id="oyi-L0-rw3"/>
+                            <constraint firstItem="ZkA-8K-k8b" firstAttribute="width" secondItem="QfI-MD-cfn" secondAttribute="width" multiplier="0.9" id="pAR-uU-lcK"/>
                             <constraint firstItem="PvD-YL-taN" firstAttribute="top" secondItem="iB3-PA-eIY" secondAttribute="bottom" constant="8" id="rz1-5p-IXS"/>
                             <constraint firstItem="PvD-YL-taN" firstAttribute="height" secondItem="QfI-MD-cfn" secondAttribute="height" multiplier="0.25" id="w6y-kn-RJr"/>
                             <constraint firstItem="iB3-PA-eIY" firstAttribute="top" secondItem="dlf-XA-OCV" secondAttribute="top" constant="12" id="x1Z-bh-XGD"/>

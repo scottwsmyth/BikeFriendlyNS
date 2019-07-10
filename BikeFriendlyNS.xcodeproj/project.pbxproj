@@ -130,6 +130,11 @@
 		D29D3B5E22AFD11E002BF17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29D3B5C22AFD11E002BF17B /* LaunchScreen.storyboard */; };
 		D29D3B6922AFD11E002BF17B /* BikeFriendlyNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B6822AFD11E002BF17B /* BikeFriendlyNSTests.swift */; };
 		D29D3B7422AFD11E002BF17B /* BikeFriendlyNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */; };
+		D2CA823122D64E89005F9418 /* backgroundImage3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2CA822C22D64E88005F9418 /* backgroundImage3.jpg */; };
+		D2CA823222D64E89005F9418 /* backgroundImage2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2CA822D22D64E88005F9418 /* backgroundImage2.jpg */; };
+		D2CA823322D64E89005F9418 /* backgroundImage5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2CA822E22D64E88005F9418 /* backgroundImage5.jpg */; };
+		D2CA823422D64E89005F9418 /* backgroundImage4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2CA822F22D64E88005F9418 /* backgroundImage4.jpg */; };
+		D2CA823522D64E89005F9418 /* backgroundImage1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2CA823022D64E89005F9418 /* backgroundImage1.jpg */; };
 		D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */; };
 		D2E8AB4922C3A67700FBB5B5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */; };
 		F097ECE34D1C73500617111D /* libPods-BikeFriendlyNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */; };
@@ -284,6 +289,11 @@
 		D29D3B6F22AFD11E002BF17B /* BikeFriendlyNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeFriendlyNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29D3B7322AFD11E002BF17B /* BikeFriendlyNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeFriendlyNSUITests.swift; sourceTree = "<group>"; };
 		D29D3B7522AFD11E002BF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CA822C22D64E88005F9418 /* backgroundImage3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage3.jpg; path = "BF Assets/backgroundImage3.jpg"; sourceTree = SOURCE_ROOT; };
+		D2CA822D22D64E88005F9418 /* backgroundImage2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage2.jpg; path = "BF Assets/backgroundImage2.jpg"; sourceTree = SOURCE_ROOT; };
+		D2CA822E22D64E88005F9418 /* backgroundImage5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage5.jpg; path = "BF Assets/backgroundImage5.jpg"; sourceTree = SOURCE_ROOT; };
+		D2CA822F22D64E88005F9418 /* backgroundImage4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage4.jpg; path = "BF Assets/backgroundImage4.jpg"; sourceTree = SOURCE_ROOT; };
+		D2CA823022D64E89005F9418 /* backgroundImage1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage1.jpg; path = "BF Assets/backgroundImage1.jpg"; sourceTree = SOURCE_ROOT; };
 		D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDetailViewController.swift; path = BikeFriendlyNS/Controller/LocationDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		D2E8AB4822C3A67700FBB5B5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FD3D4E77938BE128B83D6932 /* libPods-BikeFriendlyNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeFriendlyNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -433,6 +443,11 @@
 		D29D3B8522AFD217002BF17B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D2CA823022D64E89005F9418 /* backgroundImage1.jpg */,
+				D2CA822D22D64E88005F9418 /* backgroundImage2.jpg */,
+				D2CA822C22D64E88005F9418 /* backgroundImage3.jpg */,
+				D2CA822F22D64E88005F9418 /* backgroundImage4.jpg */,
+				D2CA822E22D64E88005F9418 /* backgroundImage5.jpg */,
 				D25D610022D62BCE00BE2F99 /* contact.jpg */,
 				D24059C922CD2F6C006E8581 /* webImage.png */,
 				D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */,
@@ -648,7 +663,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CA823222D64E89005F9418 /* backgroundImage2.jpg in Resources */,
 				D296BBC022C2AB2F00C6239E /* Flag.png in Resources */,
+				D2CA823422D64E89005F9418 /* backgroundImage4.jpg in Resources */,
 				D296BBF022C2AB2F00C6239E /* Tanner.png in Resources */,
 				D296BBE822C2AB2F00C6239E /* Pavia.png in Resources */,
 				D296BBE922C2AB2F00C6239E /* Holiday-Inn.png in Resources */,
@@ -659,6 +676,7 @@
 				D296BBD522C2AB2F00C6239E /* House.png in Resources */,
 				D296BBB422C2AB2F00C6239E /* Lanes.png in Resources */,
 				D296BBB722C2AB2F00C6239E /* CathedralChurch.png in Resources */,
+				D2CA823122D64E89005F9418 /* backgroundImage3.jpg in Resources */,
 				D296BBEE22C2AB2F00C6239E /* SweetRide.png in Resources */,
 				D296BB9922C2AB2F00C6239E /* Inn.png in Resources */,
 				D296BBCF22C2AB2F00C6239E /* Liscomb.png in Resources */,
@@ -714,6 +732,7 @@
 				D296BBA422C2AB2F00C6239E /* Saltbox.png in Resources */,
 				D296BBE022C2AB2F00C6239E /* BernArt.png in Resources */,
 				D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */,
+				D2CA823522D64E89005F9418 /* backgroundImage1.jpg in Resources */,
 				D296BBB022C2AB2F00C6239E /* eye.png in Resources */,
 				D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */,
 				D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */,
@@ -743,6 +762,7 @@
 				D296BBCA22C2AB2F00C6239E /* Camping.png in Resources */,
 				D296BBDB22C2AB2F00C6239E /* JavaBlend.png in Resources */,
 				D296BBD822C2AB2F00C6239E /* Wiles-Lake.png in Resources */,
+				D2CA823322D64E89005F9418 /* backgroundImage5.jpg in Resources */,
 				D25D60FF22D4DE1400BE2F99 /* news_4.jpeg in Resources */,
 				D296BBB522C2AB2F00C6239E /* Cycles-Guitars.png in Resources */,
 				D296BBBC22C2AB2F00C6239E /* Berwick&District.png in Resources */,
