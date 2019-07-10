@@ -11,49 +11,46 @@ import MessageUI
 
 class FeedbackViewController: UIViewController, MFMailComposeViewControllerDelegate{
 
-    @IBAction func sendBtn(_ sender: UIButton) {
-     
-        let toRecipients = ["scott.smyth@dal.ca"]
-        let mc: MFMailComposeViewController = MFMailComposeViewController()
-        mc.mailComposeDelegate = self
-        
-        mc.setToRecipients(toRecipients)
-        mc.setSubject("\(nameView.text!): Bike Friendly Feedback")
-        mc.setMessageBody("Name: \(nameView.text!)\nEmail: \(emailView.text!)\nFeedback Type: \(feedbackTypeView.text!)\n Feedback: \(feedbackView.text!)", isHTML: false)
-        self.present(mc, animated: true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        switch result.rawValue {
-        case MFMailComposeResult.cancelled.rawValue:
-            print("Cancelled")
+    @IBAction func sendBtn(_ sender: UIButton) {
+     
+        if nameView.text?.isEmpty ?? true || nameView.text?.isEmpty ?? true  || nameView.text?.isEmpty ?? true {
             
-        case MFMailComposeResult.failed.rawValue:
-            print("Failed")
+            let alert = UIAlertController(title: "Error", message: "Please fill out all the fields!.", preferredStyle: UIAlertController.Style.alert)
             
-        case MFMailComposeResult.saved.rawValue:
-            print("Saved")
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+                return
+            }))
             
-        case MFMailComposeResult.sent.rawValue:
-            print("Sent")
-            
-        default:
-            break
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{sendEmail()}
+    }
+    
+    func sendEmail(){
+        guard MFMailComposeViewController.canSendMail() else{
+            return
         }
         
-        self.dismiss(animated: true, completion: nil)
+        let controller = MFMailComposeViewController()
+        controller.mailComposeDelegate = self
+        controller.setToRecipients(["scott.smyth@dal.ca"])
+        controller.setSubject("BFNS Feedback")
+        controller.setMessageBody("Name: \(nameView.text!)\nEmail: \(emailView.text!)\nFeedback type:\(feedbackTypeView.text!)\n\n [Your feedback here...]", isHTML: false)
+        
+        present(controller, animated: true)
+        
     }
     
     @IBOutlet weak var emailView: UITextField!
     @IBOutlet weak var feedbackTypeView: UITextField!
     @IBOutlet weak var nameView: UITextField!
-    @IBOutlet weak var feedbackView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.feedbackView.layer.borderColor = UIColor.init(red: 232/250, green: 232/250, blue: 232/250, alpha: 1).cgColor
-        self.feedbackView.layer.borderWidth = 1
         
         // Do any additional setup after loading the view.
     }

@@ -49,7 +49,6 @@ class JSONParserLocations: NSObject, URLSessionDataDelegate {
     }
     
     func parseJSON(_ data:Data) {
-    
         
         var jsonResult = NSArray()
         
@@ -57,7 +56,7 @@ class JSONParserLocations: NSObject, URLSessionDataDelegate {
             jsonResult = try JSONSerialization.jsonObject(with: data, options:JSONSerialization.ReadingOptions.allowFragments) as! NSArray
             
         } catch let error as NSError {
-            print(error)
+            print("HEY \(error)")
             
         }
         

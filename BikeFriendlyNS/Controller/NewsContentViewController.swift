@@ -10,9 +10,26 @@ import UIKit
 
 class NewsContentViewController: UIViewController {
 
+    @IBOutlet weak var newsContentTitle: UILabel!
+    @IBOutlet weak var newsContentImage: UIImageView!
+    @IBOutlet weak var newsContentBlurb: UITextView!
+    
+    var passedTitle = ""
+    var passedImage = ""
+    var passedContentBlurb = ""
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.newsContentBlurb.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        newsContentTitle.text = passedTitle
+        newsContentImage.image = UIImage(named: passedImage)
+        newsContentBlurb.text = passedContentBlurb
+        
         // Do any additional setup after loading the view.
     }
     

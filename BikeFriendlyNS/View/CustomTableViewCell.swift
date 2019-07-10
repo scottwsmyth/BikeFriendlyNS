@@ -10,6 +10,7 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var readMoreBtn: UIButton!
     @IBOutlet var currentImage: UIImageView!
     @IBOutlet var currentTitle: UILabel!
     @IBOutlet var currentPreview: UITextView!

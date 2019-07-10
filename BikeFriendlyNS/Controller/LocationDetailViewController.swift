@@ -10,12 +10,9 @@ import UIKit
 
 class LocationDetailViewController: UIViewController {
     
-    
     //Button IBAction which opens the current company's facebook URL when the icon is tapped on the storyboard.
     
     @IBAction func facebookBtnPressed(_ sender: Any) {
-        
-        
         guard let link = URL(string: facebookURL) else { return  }
         
         if link.absoluteString == "NA"{
@@ -23,10 +20,36 @@ class LocationDetailViewController: UIViewController {
         }
         else
         {
-        UIApplication.shared.open(link, options: [:], completionHandler: nil)
+            UIApplication.shared.open(link, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @IBAction func instaBtnPressed(_ sender: Any) {
+        guard let link = URL(string: instagramURL) else { return  }
+        
+        if link.absoluteString == "NA"{
+            popUp()
+        }
+        else
+        {
+            UIApplication.shared.open(link, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @IBAction func websiteBtnPressed(_ sender: Any) {
+        
+        guard let link = URL(string: websiteURL) else { return  }
+        
+        if link.absoluteString == "NA"{
+            popUp()
+        }
+        else
+        {
+            UIApplication.shared.open(link, options: [:], completionHandler: nil)
         }
         
     }
+    
     
     @IBOutlet weak var currentImage: UIImageView!
     @IBOutlet weak var currentLabel: UILabel!

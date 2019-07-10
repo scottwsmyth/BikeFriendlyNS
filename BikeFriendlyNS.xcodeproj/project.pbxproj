@@ -15,11 +15,6 @@
 		D220D97F22CBC15100FA7104 /* TwitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97D22CBC15000FA7104 /* TwitterLogo.png */; };
 		D220D98022CBC15100FA7104 /* InstagramLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D97E22CBC15000FA7104 /* InstagramLogo.png */; };
 		D220D98422CBD56B00FA7104 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220D98322CBD56B00FA7104 /* PopUpViewController.swift */; };
-		D22AA73222C52FD8004834E0 /* BackgroundImage1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */; };
-		D22AA73322C52FD8004834E0 /* BackgroundImage4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */; };
-		D22AA73422C52FD8004834E0 /* BackgroundImage5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */; };
-		D22AA73522C52FD8004834E0 /* BackgroundImage3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA73022C52FD8004834E0 /* BackgroundImage3.jpeg */; };
-		D22AA73622C52FD8004834E0 /* BackgroundImage2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */; };
 		D24059C822CCDF2A006E8581 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24059C722CCDF2A006E8581 /* CustomView.swift */; };
 		D24059CA22CD2F6C006E8581 /* webImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D24059C922CD2F6C006E8581 /* webImage.png */; };
 		D242F4A922CFB6750032B211 /* BNS_Man.png in Resources */ = {isa = PBXBuildFile; fileRef = D242F4A822CFB6750032B211 /* BNS_Man.png */; };
@@ -31,6 +26,7 @@
 		D24402AC22D3B24500D3F09E /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402AB22D3B24500D3F09E /* BlogPost.swift */; };
 		D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */; };
 		D25D60FF22D4DE1400BE2F99 /* news_4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */; };
+		D25D610122D62BCE00BE2F99 /* contact.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25D610022D62BCE00BE2F99 /* contact.jpg */; };
 		D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D77AE22AFE57E0073522C /* CustomButton.swift */; };
 		D27D77B522AFF2760073522C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D27D77B422AFF2760073522C /* Podfile */; };
 		D296BB9522C2AB2F00C6239E /* Maven.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB3922C2AB2A00C6239E /* Maven.png */; };
@@ -167,11 +163,6 @@
 		D220D97D22CBC15000FA7104 /* TwitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterLogo.png; path = "BF Assets/TwitterLogo.png"; sourceTree = SOURCE_ROOT; };
 		D220D97E22CBC15000FA7104 /* InstagramLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InstagramLogo.png; path = "BF Assets/InstagramLogo.png"; sourceTree = SOURCE_ROOT; };
 		D220D98322CBD56B00FA7104 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage1.jpeg; path = "BF Assets/BackgroundImage1.jpeg"; sourceTree = SOURCE_ROOT; };
-		D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage4.jpeg; path = "BF Assets/BackgroundImage4.jpeg"; sourceTree = SOURCE_ROOT; };
-		D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage5.jpeg; path = "BF Assets/BackgroundImage5.jpeg"; sourceTree = SOURCE_ROOT; };
-		D22AA73022C52FD8004834E0 /* BackgroundImage3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage3.jpeg; path = "BF Assets/BackgroundImage3.jpeg"; sourceTree = SOURCE_ROOT; };
-		D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage2.jpeg; path = "BF Assets/BackgroundImage2.jpeg"; sourceTree = SOURCE_ROOT; };
 		D24059C722CCDF2A006E8581 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		D24059C922CD2F6C006E8581 /* webImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = webImage.png; path = "BF Assets/webImage.png"; sourceTree = SOURCE_ROOT; };
 		D242F4A822CFB6750032B211 /* BNS_Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BNS_Man.png; path = "BF Assets/BNS_Man.png"; sourceTree = SOURCE_ROOT; };
@@ -183,6 +174,7 @@
 		D24402AB22D3B24500D3F09E /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_1.jpeg; path = "BF Assets/news_1.jpeg"; sourceTree = SOURCE_ROOT; };
 		D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_4.jpeg; path = "BF Assets/news_4.jpeg"; sourceTree = SOURCE_ROOT; };
+		D25D610022D62BCE00BE2F99 /* contact.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = contact.jpg; path = "BF Assets/contact.jpg"; sourceTree = SOURCE_ROOT; };
 		D27D77AE22AFE57E0073522C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D27D77B422AFF2760073522C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D296BB3922C2AB2A00C6239E /* Maven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maven.png; path = "BF Assets/Maven.png"; sourceTree = SOURCE_ROOT; };
@@ -441,6 +433,7 @@
 		D29D3B8522AFD217002BF17B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D25D610022D62BCE00BE2F99 /* contact.jpg */,
 				D24059C922CD2F6C006E8581 /* webImage.png */,
 				D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */,
 				D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */,
@@ -448,11 +441,6 @@
 				D220D97E22CBC15000FA7104 /* InstagramLogo.png */,
 				D220D97D22CBC15000FA7104 /* TwitterLogo.png */,
 				D220D97B22C67A9000FA7104 /* compass.png */,
-				D22AA72D22C52FD8004834E0 /* BackgroundImage1.jpeg */,
-				D22AA73122C52FD8004834E0 /* BackgroundImage2.jpeg */,
-				D22AA73022C52FD8004834E0 /* BackgroundImage3.jpeg */,
-				D22AA72E22C52FD8004834E0 /* BackgroundImage4.jpeg */,
-				D22AA72F22C52FD8004834E0 /* BackgroundImage5.jpeg */,
 				D296BB3F22C2AB2A00C6239E /* 58.png */,
 				D296BB6622C2AB2D00C6239E /* 80.png */,
 				D296BB5D22C2AB2C00C6239E /* 87.png */,
@@ -679,7 +667,6 @@
 				D296BBB322C2AB2F00C6239E /* write-letter.png in Resources */,
 				D296BBA922C2AB2F00C6239E /* OceanStone.png in Resources */,
 				D296BB9C22C2AB2F00C6239E /* LaceyMines.png in Resources */,
-				D22AA73622C52FD8004834E0 /* BackgroundImage2.jpeg in Resources */,
 				D296BBB922C2AB2F00C6239E /* 87.png in Resources */,
 				D296BBDF22C2AB2F00C6239E /* Highland.png in Resources */,
 				D296BB9522C2AB2F00C6239E /* Maven.png in Resources */,
@@ -694,7 +681,6 @@
 				D296BBC522C2AB2F00C6239E /* NewGlasgow.png in Resources */,
 				D296BB9A22C2AB2F00C6239E /* Stuart.png in Resources */,
 				D296BBBF22C2AB2F00C6239E /* MEC.png in Resources */,
-				D22AA73522C52FD8004834E0 /* BackgroundImage3.jpeg in Resources */,
 				D296BBAC22C2AB2F00C6239E /* FacebookLogo.png in Resources */,
 				D296BBCC22C2AB2F00C6239E /* UnionStreet.png in Resources */,
 				D296BBEA22C2AB2F00C6239E /* Schoolhouse.png in Resources */,
@@ -731,15 +717,14 @@
 				D296BBB022C2AB2F00C6239E /* eye.png in Resources */,
 				D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */,
 				D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */,
-				D22AA73222C52FD8004834E0 /* BackgroundImage1.jpeg in Resources */,
 				D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */,
 				D296BBB122C2AB2F00C6239E /* BurlingtonRose.png in Resources */,
 				D296BBAB22C2AB2F00C6239E /* Mercator-Vineyards.png in Resources */,
+				D25D610122D62BCE00BE2F99 /* contact.jpg in Resources */,
 				D296BB9822C2AB2F00C6239E /* BicycleSpecialist.png in Resources */,
 				D296BBA022C2AB2F00C6239E /* CloudNineNovelties.png in Resources */,
 				D296BBE322C2AB2F00C6239E /* iFIT.png in Resources */,
 				D296BBE722C2AB2F00C6239E /* HarbourGuesthouse.png in Resources */,
-				D22AA73422C52FD8004834E0 /* BackgroundImage5.jpeg in Resources */,
 				D296BBB622C2AB2F00C6239E /* Cyclesmith.png in Resources */,
 				D296BB9E22C2AB2F00C6239E /* RumbLine.png in Resources */,
 				D296BBDD22C2AB2F00C6239E /* Kiwi.png in Resources */,
@@ -752,7 +737,6 @@
 				D24402A222D3768B00D3F09E /* service2.php in Resources */,
 				D296BBA322C2AB2F00C6239E /* Scotsman.png in Resources */,
 				D296BBD422C2AB2F00C6239E /* Spoke&Note.png in Resources */,
-				D22AA73322C52FD8004834E0 /* BackgroundImage4.jpeg in Resources */,
 				D296BB9F22C2AB2F00C6239E /* Hants-Exhibition-Grounds.png in Resources */,
 				D296BBED22C2AB2F00C6239E /* SchoolhouseBrewery.png in Resources */,
 				D296BB9B22C2AB2F00C6239E /* 58.png in Resources */,

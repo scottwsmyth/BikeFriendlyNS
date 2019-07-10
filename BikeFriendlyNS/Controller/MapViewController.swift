@@ -62,6 +62,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
             self.tableView.backgroundColor = UIColor.clear
             
             self.addAnnotations()
+            
+            //******TO-DO make sure that the app finishes zooming in before checking the users location services
+            
             self.zoomInOnUserLocation()
             self.checkLocationServices()
             

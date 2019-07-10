@@ -9,16 +9,34 @@
 import UIKit
 
 class NewsTableViewController: UITableViewController {
-
+    
     var blogPostArray: NSArray = NSArray()
     
     @IBOutlet var table : UITableView!
     
+    @IBAction func readMorePressed(_ sender: UIButton) {
+        
+        let temp = blogPostArray[sender.tag] as! BlogPost
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "NewsContentViewController") as? NewsContentViewController
+        
+        vc?.passedTitle = temp.title!
+        vc?.passedContentBlurb = temp.preview!
+        
+        if UIImage(named: temp.image!) != nil{
+            vc?.passedImage = temp.image!
+        }
+        else{
+            vc?.passedImage = "BNS_Man.png"
+        }
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(blogPostArray)
-        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
 
     // MARK: - Table view data source
@@ -38,19 +56,19 @@ class NewsTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! CustomTableViewCell
         
-        print(indexPath.item)
+        cell.readMoreBtn.tag = indexPath.row;
         
-        var temp = blogPostArray[indexPath.item] as! BlogPost
+        let temp = blogPostArray[indexPath.item] as! BlogPost
         
-        let mySubstring = String(temp.preview!.prefix(175)) // Hello
+        let mySubstring = String(temp.preview!.prefix(175))
         
         cell.currentTitle.text = temp.title
-        cell.currentPreview.text = ("\(mySubstring)... \n\nRead more")
+        cell.currentPreview.text = ("\(mySubstring)...")
+        cell.currentPreview.setContentOffset(CGPoint.zero, animated: false)
+
         
-        print(mySubstring)
-        
-        if UIImage(named: temp.image as! String) != nil{
-            cell.currentImage.image = UIImage(named: temp.image as! String)
+        if UIImage(named: temp.image!) != nil{
+            cell.currentImage.image = UIImage(named: temp.image!)
         }
         else{
             cell.currentImage.image = UIImage(named: "BNS_Man.png")
@@ -59,9 +77,24 @@ class NewsTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let temp = blogPostArray[indexPath.item] as! BlogPost
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "NewsContentViewController") as? NewsContentViewController
+        
+        vc?.passedTitle = temp.title!
+        vc?.passedContentBlurb = temp.preview!
+        
+        if UIImage(named: temp.image!) != nil{
+            vc?.passedImage = temp.image!
+        }
+        else{
+            vc?.passedImage = "BNS_Man.png"
+        }
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
         
     }
-
-
+    
 }
