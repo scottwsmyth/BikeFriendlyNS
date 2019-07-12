@@ -25,6 +25,16 @@
 		D24402AA22D3822700D3F09E /* JSONParserNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402A922D3822700D3F09E /* JSONParserNews.swift */; };
 		D24402AC22D3B24500D3F09E /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24402AB22D3B24500D3F09E /* BlogPost.swift */; };
 		D244939422D7775A005278D9 /* about-us.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D244939322D7775A005278D9 /* about-us.jpg */; };
+		D244939A22D78274005278D9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244939922D78274005278D9 /* MenuViewController.swift */; };
+		D244939C22D78A5D005278D9 /* menu-hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = D244939B22D78A5D005278D9 /* menu-hamburger.png */; };
+		D24493A222D79181005278D9 /* about-us-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493A122D79181005278D9 /* about-us-logo.png */; };
+		D24493A422D791CE005278D9 /* how-to-use-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493A322D791CE005278D9 /* how-to-use-logo.png */; };
+		D24493A622D7921F005278D9 /* feedback-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493A522D7921E005278D9 /* feedback-logo.png */; };
+		D24493A822D79334005278D9 /* question-mark-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493A722D79334005278D9 /* question-mark-logo.png */; };
+		D24493AA22D79429005278D9 /* pencil-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493A922D79429005278D9 /* pencil-logo.png */; };
+		D24493AC22D7978D005278D9 /* menu-hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493AB22D7978C005278D9 /* menu-hamburger.png */; };
+		D24493B022D7A987005278D9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24493AF22D7A987005278D9 /* AboutViewController.swift */; };
+		D24493B222D7C155005278D9 /* map-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D24493B122D7C155005278D9 /* map-logo.png */; };
 		D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */; };
 		D25D60FF22D4DE1400BE2F99 /* news_4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */; };
 		D25D610122D62BCE00BE2F99 /* contact.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25D610022D62BCE00BE2F99 /* contact.jpg */; };
@@ -179,6 +189,16 @@
 		D24402A922D3822700D3F09E /* JSONParserNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserNews.swift; sourceTree = "<group>"; };
 		D24402AB22D3B24500D3F09E /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		D244939322D7775A005278D9 /* about-us.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "about-us.jpg"; path = "BF Assets/about-us.jpg"; sourceTree = SOURCE_ROOT; };
+		D244939922D78274005278D9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D244939B22D78A5D005278D9 /* menu-hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-hamburger.png"; path = "BF Assets/menu-hamburger.png"; sourceTree = SOURCE_ROOT; };
+		D24493A122D79181005278D9 /* about-us-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "about-us-logo.png"; path = "BF Assets/about-us-logo.png"; sourceTree = SOURCE_ROOT; };
+		D24493A322D791CE005278D9 /* how-to-use-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "how-to-use-logo.png"; path = "BF Assets/how-to-use-logo.png"; sourceTree = SOURCE_ROOT; };
+		D24493A522D7921E005278D9 /* feedback-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "feedback-logo.png"; path = "BF Assets/feedback-logo.png"; sourceTree = SOURCE_ROOT; };
+		D24493A722D79334005278D9 /* question-mark-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "question-mark-logo.png"; path = "BF Assets/question-mark-logo.png"; sourceTree = SOURCE_ROOT; };
+		D24493A922D79429005278D9 /* pencil-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pencil-logo.png"; path = "BF Assets/pencil-logo.png"; sourceTree = SOURCE_ROOT; };
+		D24493AB22D7978C005278D9 /* menu-hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-hamburger.png"; path = "BF Assets/menu-hamburger.png"; sourceTree = SOURCE_ROOT; };
+		D24493AF22D7A987005278D9 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D24493B122D7C155005278D9 /* map-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-logo.png"; path = "BF Assets/map-logo.png"; sourceTree = SOURCE_ROOT; };
 		D25D60FC22D4DE0C00BE2F99 /* news_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_1.jpeg; path = "BF Assets/news_1.jpeg"; sourceTree = SOURCE_ROOT; };
 		D25D60FE22D4DE1400BE2F99 /* news_4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_4.jpeg; path = "BF Assets/news_4.jpeg"; sourceTree = SOURCE_ROOT; };
 		D25D610022D62BCE00BE2F99 /* contact.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = contact.jpg; path = "BF Assets/contact.jpg"; sourceTree = SOURCE_ROOT; };
@@ -378,6 +398,7 @@
 				D29D3B8422AFD1ED002BF17B /* Controller */,
 				D29D3B8322AFD1E7002BF17B /* View */,
 				D29D3B8122AFD1D0002BF17B /* Model */,
+				D29D3B5722AFD11C002BF17B /* Main.storyboard */,
 				D29D3B5322AFD11C002BF17B /* AppDelegate.swift */,
 				D29D3B5A22AFD11E002BF17B /* Assets.xcassets */,
 				D29D3B5C22AFD11E002BF17B /* LaunchScreen.storyboard */,
@@ -420,7 +441,6 @@
 		D29D3B8322AFD1E7002BF17B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D29D3B5722AFD11C002BF17B /* Main.storyboard */,
 				D27D77AE22AFE57E0073522C /* CustomButton.swift */,
 				D24059C722CCDF2A006E8581 /* CustomView.swift */,
 				D24402A722D3820C00D3F09E /* CustomTableViewCell.swift */,
@@ -432,6 +452,8 @@
 			isa = PBXGroup;
 			children = (
 				D29D3B5522AFD11C002BF17B /* HomeViewController.swift */,
+				D244939922D78274005278D9 /* MenuViewController.swift */,
+				D24493AF22D7A987005278D9 /* AboutViewController.swift */,
 				D21A68F622B278AB003EF706 /* MapViewController.swift */,
 				D2DD295422B7C737002C53CC /* LocationDetailViewController.swift */,
 				D20AEBBF22C2A682003F6153 /* FeedbackViewController.swift */,
@@ -445,6 +467,14 @@
 		D29D3B8522AFD217002BF17B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D24493B122D7C155005278D9 /* map-logo.png */,
+				D24493AB22D7978C005278D9 /* menu-hamburger.png */,
+				D24493A922D79429005278D9 /* pencil-logo.png */,
+				D24493A722D79334005278D9 /* question-mark-logo.png */,
+				D24493A522D7921E005278D9 /* feedback-logo.png */,
+				D24493A322D791CE005278D9 /* how-to-use-logo.png */,
+				D244939B22D78A5D005278D9 /* menu-hamburger.png */,
+				D24493A122D79181005278D9 /* about-us-logo.png */,
 				D244939322D7775A005278D9 /* about-us.jpg */,
 				D2CA823022D64E89005F9418 /* backgroundImage1.jpg */,
 				D2CA822D22D64E88005F9418 /* backgroundImage2.jpg */,
@@ -673,6 +703,7 @@
 				D296BBE822C2AB2F00C6239E /* Pavia.png in Resources */,
 				D296BBE922C2AB2F00C6239E /* Holiday-Inn.png in Resources */,
 				D296BBBA22C2AB2F00C6239E /* Logo-White-BG.png in Resources */,
+				D24493A622D7921F005278D9 /* feedback-logo.png in Resources */,
 				D296BBAA22C2AB2F00C6239E /* Bike Shop.png in Resources */,
 				D29D3B5E22AFD11E002BF17B /* LaunchScreen.storyboard in Resources */,
 				D296BBD622C2AB2F00C6239E /* Garrison.png in Resources */,
@@ -704,6 +735,7 @@
 				D296BBBF22C2AB2F00C6239E /* MEC.png in Resources */,
 				D296BBAC22C2AB2F00C6239E /* FacebookLogo.png in Resources */,
 				D296BBCC22C2AB2F00C6239E /* UnionStreet.png in Resources */,
+				D24493A222D79181005278D9 /* about-us-logo.png in Resources */,
 				D296BBEA22C2AB2F00C6239E /* Schoolhouse.png in Resources */,
 				D296BBE122C2AB2F00C6239E /* Francis.png in Resources */,
 				D296BBA522C2AB2F00C6239E /* Mecklenburg.png in Resources */,
@@ -734,10 +766,14 @@
 				D296BBDC22C2AB2F00C6239E /* HeartBikes.png in Resources */,
 				D27D77B522AFF2760073522C /* Podfile in Resources */,
 				D296BBA422C2AB2F00C6239E /* Saltbox.png in Resources */,
+				D24493AC22D7978D005278D9 /* menu-hamburger.png in Resources */,
 				D296BBE022C2AB2F00C6239E /* BernArt.png in Resources */,
 				D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */,
 				D2CA823522D64E89005F9418 /* backgroundImage1.jpg in Resources */,
+				D244939C22D78A5D005278D9 /* menu-hamburger.png in Resources */,
+				D24493B222D7C155005278D9 /* map-logo.png in Resources */,
 				D296BBB022C2AB2F00C6239E /* eye.png in Resources */,
+				D24493A822D79334005278D9 /* question-mark-logo.png in Resources */,
 				D296BBAD22C2AB2F00C6239E /* Digby.png in Resources */,
 				D25D60FD22D4DE0C00BE2F99 /* news_1.jpeg in Resources */,
 				D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */,
@@ -750,10 +786,12 @@
 				D296BBE722C2AB2F00C6239E /* HarbourGuesthouse.png in Resources */,
 				D296BBB622C2AB2F00C6239E /* Cyclesmith.png in Resources */,
 				D296BB9E22C2AB2F00C6239E /* RumbLine.png in Resources */,
+				D24493A422D791CE005278D9 /* how-to-use-logo.png in Resources */,
 				D296BBDD22C2AB2F00C6239E /* Kiwi.png in Resources */,
 				D296BBC822C2AB2F00C6239E /* SportWheels.png in Resources */,
 				D296BBD122C2AB2F00C6239E /* Queens-Place.png in Resources */,
 				D29D3B5922AFD11C002BF17B /* Main.storyboard in Resources */,
+				D24493AA22D79429005278D9 /* pencil-logo.png in Resources */,
 				D296BBCD22C2AB2F00C6239E /* BanksBikes.png in Resources */,
 				D296BBA122C2AB2F00C6239E /* Breton.png in Resources */,
 				D296BBAE22C2AB2F00C6239E /* Attraction.png in Resources */,
@@ -851,7 +889,9 @@
 				D2DD295522B7C737002C53CC /* LocationDetailViewController.swift in Sources */,
 				D20AEBC022C2A682003F6153 /* FeedbackViewController.swift in Sources */,
 				D24059C822CCDF2A006E8581 /* CustomView.swift in Sources */,
+				D244939A22D78274005278D9 /* MenuViewController.swift in Sources */,
 				D27D77AF22AFE57E0073522C /* CustomButton.swift in Sources */,
+				D24493B022D7A987005278D9 /* AboutViewController.swift in Sources */,
 				D24402A422D380E000D3F09E /* NewsTableViewController.swift in Sources */,
 				D24402AA22D3822700D3F09E /* JSONParserNews.swift in Sources */,
 				D24402A622D380F600D3F09E /* NewsContentViewController.swift in Sources */,

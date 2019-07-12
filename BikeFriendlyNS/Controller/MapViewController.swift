@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProtocol {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var mapView: MKMapView!
@@ -39,21 +39,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
         
         let jsonParser = JSONParserNews()
         jsonParser.delegate = self
-        
-        let group = DispatchGroup()
-        group.enter()
-        
-        // avoid deadlocks by not using .main queue here
-        DispatchQueue.global(qos: .userInitiated).async {
-            
-            jsonParser.downloadItems()
-            
-            group.leave()
-        }
-        
-        //'Load' while data is being fetched from database
-        group.notify(queue: .main, execute: {
-            // This will be called when block ends
             
             //Setting dropdown menu properties (just rounded button and clear color for cells)
             self.filterBtn.layer.cornerRadius = 10
@@ -70,7 +55,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
             
             //Populate global array
             self.globalAnnotationArray = self.mapView.annotations
-        })
+      
     
     }
     
@@ -342,6 +327,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nav = segue.destination as! UINavigationController
+        
+        let vc = nav.topViewController as! MenuViewController
+        
+        vc.feedItems = self.feedItems
+    }
+    
+    @IBAction func menuBtnPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "MenuViewControllerSegue", sender: self)
+    }
     
     @IBAction func newsBtnPressed(_ sender: Any) {
         
@@ -525,3 +522,4 @@ extension MapViewController: UITableViewDelegate, UITableViewDataSource {
     
     
 }
+

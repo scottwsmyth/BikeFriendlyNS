@@ -11,7 +11,7 @@ import SwiftSoup
 
 class HomeViewController: UIViewController, JSONParserLocationsProtocol {
  
-   var imageArray: [String] = ["backgroundImage1.jpg","backgroundImage2.jpg","backgroundImage3.jpg","backgroundImage4.jpg","backgroundImage5.jpg"]
+    var imageArray: [String] = ["backgroundImage1.jpg","backgroundImage2.jpg","backgroundImage3.jpg","backgroundImage4.jpg","backgroundImage5.jpg"]
 
     var feedItems: NSArray = NSArray()
     

@@ -52,6 +52,8 @@ class FeedbackViewController: UIViewController, MFMailComposeViewControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.tintColor = UIColor.darkGray
+
         // Do any additional setup after loading the view.
     }
     
