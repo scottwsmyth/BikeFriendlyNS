@@ -104,6 +104,8 @@ class JSONParserLocations: NSObject, URLSessionDataDelegate {
                 
                   location.typeOfService = typeOfService as? String
                 
+                  print(location.typeOfService)
+                
                   location.facebookURL = facebookURL as? String
                 
                   location.instagramURL = instagramURL as? String

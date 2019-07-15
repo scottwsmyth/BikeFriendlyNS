@@ -88,7 +88,7 @@
 		D296BBBD22C2AB2F00C6239E /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6122C2AB2C00C6239E /* 120.png */; };
 		D296BBBE22C2AB2F00C6239E /* Best-Western-Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6222C2AB2C00C6239E /* Best-Western-Plus.png */; };
 		D296BBBF22C2AB2F00C6239E /* MEC.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6322C2AB2C00C6239E /* MEC.png */; };
-		D296BBC022C2AB2F00C6239E /* Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6422C2AB2C00C6239E /* Flag.png */; };
+		D296BBC022C2AB2F00C6239E /* Point of Interest.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6422C2AB2C00C6239E /* Point of Interest.png */; };
 		D296BBC122C2AB2F00C6239E /* BayFerry.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6522C2AB2C00C6239E /* BayFerry.png */; };
 		D296BBC222C2AB2F00C6239E /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6622C2AB2D00C6239E /* 80.png */; };
 		D296BBC322C2AB2F00C6239E /* HubCycle.png in Resources */ = {isa = PBXBuildFile; fileRef = D296BB6722C2AB2D00C6239E /* HubCycle.png */; };
@@ -259,7 +259,7 @@
 		D296BB6122C2AB2C00C6239E /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = "BF Assets/120.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6222C2AB2C00C6239E /* Best-Western-Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Best-Western-Plus.png"; path = "BF Assets/Best-Western-Plus.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6322C2AB2C00C6239E /* MEC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MEC.png; path = "BF Assets/MEC.png"; sourceTree = SOURCE_ROOT; };
-		D296BB6422C2AB2C00C6239E /* Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flag.png; path = "BF Assets/Flag.png"; sourceTree = SOURCE_ROOT; };
+		D296BB6422C2AB2C00C6239E /* Point of Interest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Point of Interest.png"; path = "BF Assets/Point of Interest.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6522C2AB2C00C6239E /* BayFerry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BayFerry.png; path = "BF Assets/BayFerry.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6622C2AB2D00C6239E /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = "BF Assets/80.png"; sourceTree = SOURCE_ROOT; };
 		D296BB6722C2AB2D00C6239E /* HubCycle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HubCycle.png; path = "BF Assets/HubCycle.png"; sourceTree = SOURCE_ROOT; };
@@ -542,7 +542,7 @@
 				D296BB6F22C2AB2D00C6239E /* Earltown.png */,
 				D296BB5422C2AB2B00C6239E /* eye.png */,
 				D296BB5022C2AB2B00C6239E /* FacebookLogo.png */,
-				D296BB6422C2AB2C00C6239E /* Flag.png */,
+				D296BB6422C2AB2C00C6239E /* Point of Interest.png */,
 				D296BB6D22C2AB2D00C6239E /* Frameworks.png */,
 				D296BB8522C2AB2E00C6239E /* Francis.png */,
 				D296BB7222C2AB2D00C6239E /* GardenHouse.png */,
@@ -718,7 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CA823222D64E89005F9418 /* backgroundImage2.jpg in Resources */,
-				D296BBC022C2AB2F00C6239E /* Flag.png in Resources */,
+				D296BBC022C2AB2F00C6239E /* Point of Interest.png in Resources */,
 				D2CA823422D64E89005F9418 /* backgroundImage4.jpg in Resources */,
 				D296BBF022C2AB2F00C6239E /* Tanner.png in Resources */,
 				D296BBE822C2AB2F00C6239E /* Pavia.png in Resources */,
