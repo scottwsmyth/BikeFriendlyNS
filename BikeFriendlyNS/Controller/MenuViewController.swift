@@ -11,33 +11,25 @@ import UIKit
 class MenuViewController: UITableViewController {
     
     var feedItems: NSArray = NSArray()
+    var blogPostArray: NSArray = NSArray()
     
     @IBAction func mapBtnPressed(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuToMapSegue") as? MapViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MapViewController") as? MapViewController
+        vc?.feedItems = self.feedItems
+        vc?.blogPostArray = self.blogPostArray
         self.navigationController?.pushViewController(vc!, animated: true)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let nav = segue.destination as! UINavigationController
-        
-        let vc = nav.topViewController as! MapViewController
-        
-        vc.feedItems = self.feedItems
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.tintColor = UIColor.darkGray
+        navigationItem.leftBarButtonItem?.tintColor = UIColor.init(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
         
         // Do any additional setup after loading the view.
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print(indexPath.row)
-        
+                
         var buttonName = ""
         
         switch (indexPath.row) {
@@ -45,28 +37,122 @@ class MenuViewController: UITableViewController {
         case 0:
             buttonName = "about"
         case 1:
-            buttonName = "howToUse"
+            buttonName = "book"
         case 2:
-            buttonName = "FAQ"
+            buttonName = "howToUse"
         case 3:
-            buttonName = "feedback"
+            buttonName = "FAQ"
         case 4:
+            buttonName = "feedback"
+        case 5:
+            buttonName = "news"
+        case 6:
             buttonName = "subscribe"
         default:
             print("There has been an error")
         }
         
+        //Conditionals to see what cell was pressed then present corresponding view controller.
+        
         if buttonName == "about"{
-            print("SUP BRU")
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let aboutVC = storyBoard.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+            let vc = storyBoard.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
             
-            aboutVC.feedItems = self.feedItems
+            vc.blogPostArray = self.blogPostArray
             
-            self.navigationController?.pushViewController(aboutVC, animated: true)
+            vc.feedItems = self.feedItems
+            
+            self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        else if buttonName == "subscribe"{
+            showMembersipAlert()
+        }
+        
+        else if buttonName == "feedback"{
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyBoard.instantiateViewController(withIdentifier: "FeedbackViewController") as! FeedbackViewController
+            
+            vc.blogPostArray = self.blogPostArray
+            
+            vc.feedItems = self.feedItems
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if buttonName == "news"{
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyBoard.instantiateViewController(withIdentifier: "NewsTableViewController") as! NewsTableViewController
+            
+            vc.blogPostArray = self.blogPostArray
+            
+            vc.feedItems = self.feedItems
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if buttonName == "book"{
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyBoard.instantiateViewController(withIdentifier: "BookViewController") as! BookViewController
+            
+            vc.blogPostArray = self.blogPostArray
+            
+            vc.feedItems = self.feedItems
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if buttonName == "FAQ"{
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyBoard.instantiateViewController(withIdentifier: "FAQViewController") as! FAQViewController
+            
+            vc.blogPostArray = self.blogPostArray
+            
+            vc.feedItems = self.feedItems
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else{
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyBoard.instantiateViewController(withIdentifier: "HowToUseViewController") as! HowToUseViewController
+            
+            vc.blogPostArray = self.blogPostArray
+            
+            vc.feedItems = self.feedItems
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
+    func showMembersipAlert(){
+        let alert = UIAlertController(title: "", message: "Would you like to sign up for a membership with Bicycle Nova Scotia?", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (action) in
+            self.redirectToBNS()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func redirectToBNS(){
+        
+        guard let link = URL(string: "http://www.bicycle.ns.ca/membership") else { return  }
+        
+        UIApplication.shared.open(link, options: [:], completionHandler: nil)
         
     }
 }

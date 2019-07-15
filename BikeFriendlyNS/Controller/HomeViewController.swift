@@ -11,7 +11,10 @@ import SwiftSoup
 
 class HomeViewController: UIViewController, JSONParserLocationsProtocol {
  
-    var imageArray: [String] = ["backgroundImage1.jpg","backgroundImage2.jpg","backgroundImage3.jpg","backgroundImage4.jpg","backgroundImage5.jpg"]
+    @IBOutlet weak var containerView: UIView!
+    
+    var imageArray: [String] =
+        ["backgroundImage1.jpg","backgroundImage2.jpg","backgroundImage3.jpg","backgroundImage4.jpg","backgroundImage5.jpg"]
 
     var feedItems: NSArray = NSArray()
     
@@ -28,6 +31,8 @@ class HomeViewController: UIViewController, JSONParserLocationsProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        containerView.backgroundColor = UIColor.black.withAlphaComponent(0.17)
+        
         let number = Int.random(in: 0 ..< 5)
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -43,13 +48,11 @@ class HomeViewController: UIViewController, JSONParserLocationsProtocol {
         
         //******TO-DO: FIND A WAY TO WAIT FOR DOWNLOAD.ITEMS TO FINISH BEFORE MOVING FORWARD. USING STATIC AMOUNT OF TIME ATM.******
         
-        
         //'Load' while data is being fetched from database
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
           self.beginButton.isEnabled = true
           self.beginButton.setTitle("Begin", for: .normal)
         })
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -60,7 +63,5 @@ class HomeViewController: UIViewController, JSONParserLocationsProtocol {
         
         vc.feedItems = self.feedItems
     }
-
-
 }
 

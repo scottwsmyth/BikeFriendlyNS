@@ -10,10 +10,22 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
     
+    var feedItems: NSArray = NSArray()
     var blogPostArray: NSArray = NSArray()
     
     @IBOutlet var table : UITableView!
     
+    @IBAction func menuBtnPressed(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        
+        vc.blogPostArray = self.blogPostArray
+        
+        vc.feedItems = self.feedItems
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func readMorePressed(_ sender: UIButton) {
         
         let temp = blogPostArray[sender.tag] as! BlogPost
@@ -37,6 +49,9 @@ class NewsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.init(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
+        
     }
 
     // MARK: - Table view data source

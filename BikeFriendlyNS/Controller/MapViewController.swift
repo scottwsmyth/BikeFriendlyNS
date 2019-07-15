@@ -12,6 +12,7 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProtocol {
     
+    @IBOutlet weak var directionsBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var mapView: MKMapView!
@@ -39,7 +40,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
         
         let jsonParser = JSONParserNews()
         jsonParser.delegate = self
-            
+        
+        if (blogPostArray.count == 0){
+            jsonParser.downloadItems()
+        }
+        
             //Setting dropdown menu properties (just rounded button and clear color for cells)
             self.filterBtn.layer.cornerRadius = 10
             self.filterBtn.clipsToBounds = true
@@ -327,33 +332,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction func menuBtnPressed(_ sender: Any) {
         
-        let nav = segue.destination as! UINavigationController
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = nav.topViewController as! MenuViewController
+        let vc = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        
+        vc.blogPostArray = self.blogPostArray
         
         vc.feedItems = self.feedItems
-    }
-    
-    @IBAction func menuBtnPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "MenuViewControllerSegue", sender: self)
-    }
-    
-    @IBAction func newsBtnPressed(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "NewsTableViewController") as? NewsTableViewController
+        self.navigationController?.pushViewController(vc, animated: true)
         
-        vc!.blogPostArray = self.blogPostArray
-        
-        self.navigationController?.pushViewController(vc!, animated: true)
-    }
-    
-    @IBAction func feedbackBtnPressed(_ sender: UIButton) {
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "FeedbackViewController") as? FeedbackViewController
-        
-        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     @IBAction func filterBtnPressed(_ sender: UIButton) {
@@ -365,25 +355,26 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
             animate(toggle: false)
         }
     }
-    @IBAction func membershipBtnPressed(_ sender: Any) {
-        
-        showMembersipAlert()
-        
-    }
     
     var runOnce = 0
     var clearRoute = 0
     
     @IBAction func directionBtnPressed(_ sender: UIButton) {
+        
+        directionsBtn.isEnabled = false
+        
         guard let currentPlaceMark = placeMark else{
             
             let alert = UIAlertController(title: "", message: "No location selected, cannot get bike route.", preferredStyle: UIAlertController.Style.alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
-                return
+
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in                return
             }))
-            
+
             self.present(alert, animated: true, completion: nil)
+            
+            directionsBtn.setImage(UIImage(named: "compass.png"), for: .normal)
+            
+            directionsBtn.isEnabled = true
             
             return
         }
@@ -392,6 +383,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
         {
             mapView.removeOverlays(mapView.overlays)
             clearRoute-=1
+            directionsBtn.setImage(UIImage(named: "compass.png"), for: .normal)
+            directionsBtn.isEnabled = true
+
             return
         }
         
@@ -427,7 +421,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
             
             self.clearRoute+=1;
             
+            self.directionsBtn.setImage(UIImage(named: "compass-crossed-out.png"), for: .normal)
+            self.directionsBtn.isEnabled = true
+            
         }
+        
     }
     
     func showAlert(){
@@ -438,28 +436,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
         }))
         
         self.present(alert, animated: true, completion: nil)
-        
-    }
-    
-    func showMembersipAlert(){
-        let alert = UIAlertController(title: "", message: "Would you like to sign up for a membership with Bicycle Nova Scotia?", preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (action) in
-            self.redirectToBNS()
-        }))
-        
-        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
-        }))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func redirectToBNS(){
-        
-        guard let link = URL(string: "http://www.bicycle.ns.ca/membership") else { return  }
-    
-        UIApplication.shared.open(link, options: [:], completionHandler: nil)
         
     }
 }
