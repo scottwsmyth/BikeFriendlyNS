@@ -130,14 +130,14 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vY0-vV-0Rh">
                                         <rect key="frame" x="28" y="55" width="319" height="507"/>
-                                        <mutableString key="text">Welcome to the Bike Friendly App by Bicycle Nova Scotia! BNS is a provincial sporting and recreation organization for cycling in Nova Scotia, and is working hard to improve the profile and safety of recreational and competitive riding in the province. We are a membership based organization. You can join BNS by clicking on the subscribe tab in the menu.
+                                        <string key="text">Welcome to the Bike Friendly App by Bicycle Nova Scotia! BNS is a provincial sporting and recreation organization for cycling in Nova Scotia, and is working hard to improve the profile and safety of recreational and competitive riding in the province. We are a membership based organization. You can join BNS by clicking on the subscribe tab in the menu.
 
 This Bike Friendly Network map is based on our Bike Friendly Certification program that can be found at https://bikefriendlyns.ca. The businesses on this network map have gone out of their way to facilitate cycling in NS by providing safe parking, access to washrooms and water, and have staff that can point you towards nearby trails and attractions that cyclists might find exciting. Stop by a Bike Friendly Business near you and show them some love!
 
 We hope this app helps you plan your next big tour, or day trip while you’re on the go, and inspires you to saddle up and see what Nova Scotia has to offer to the cycling community of our province!
 
 Cheers!
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -514,7 +514,7 @@ Cheers!
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="gqj-AO-Q1v" secondAttribute="height" multiplier="262:241" id="nNb-Aa-dCh"/>
                                         </constraints>
-                                        <mutableString key="text">The book includes:
+                                        <string key="text">The book includes:
 
 - 106 cycling routes around all parts of Nova Scotia, mostly on low-traffic country roads and rail trails
 - 38 detailed maps, with full-colour fold-out map
@@ -522,7 +522,7 @@ Cheers!
 - Kid-friendly rides and tips for cycling with children
 Features on the Cabot Trail and the Destination Trails (Rum Runners, Harvest Moon Trailway, Celtic Shores)
 - Regional overviews
-- Each ride includes: route descriptions, ride considerations, side trips/variations, points of interest (with kilometre markers), cue sheet (turn-by-turn instructions), and map.</mutableString>
+- Each ride includes: route descriptions, ride considerations, side trips/variations, points of interest (with kilometre markers), cue sheet (turn-by-turn instructions), and map.</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -597,7 +597,7 @@ Features on the Cabot Trail and the Destination Trails (Rum Runners, Harvest Moo
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-eo-bo9">
                                         <rect key="frame" x="28" y="60" width="319" height="543"/>
-                                        <mutableString key="text">Q: Does this app track my location?
+                                        <string key="text">Q: Does this app track my location?
 A: No. We don’t use tracking technology or programming in this app. 
 
 Q: Will this app store information about me based on how I use the app?
@@ -614,7 +614,7 @@ A: Use the Feedback Form to report bugs, or make suggestions. We love hearing fr
 
 Q: I just had a near-miss with a motorist, or I’m injured. What do I do?
 A: If you’re seriously injured, call 911 immediately. If you’ve experienced a near miss with traffic, use our Incident Report Form to log your experience at http://bicycle.ns.ca/incident-report-form/. If you’re being confronted by an angry road-user, try to remove yourself from the situation. Do your best to record any identifying features of the road-user. Report the situation to the  police as soon as possible. If you are unable to remove yourself from the situation, call 911. 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
@@ -687,7 +687,7 @@ A: If you’re seriously injured, call 911 immediately. If you’ve experienced 
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Etv-Ln-qDJ">
                                         <rect key="frame" x="28" y="60" width="319" height="517"/>
-                                        <mutableString key="text">This map will help you when you’re out on the road by showing your location, and nearby Bike Friendly Businesses. Tap on a business icon to see the address of the business, a description of the business and links to their Facebook and Instagram accounts and website. If you’d like to stop by a nearby business, simply tap the business you’d like to visit on the map screen, then use the compass icon. The app will help you plot a course to your destination. Tap the compass icon again to clear the route and lay a course to a new location. Joining BNS is easy using our logo. The Bike Friendly logo can also be used to provide feedback about the app, or any of the businesses you visit along your ride. Finally, to keep informed of cycling news in Nova Scotia, or to see any hot sales offered by our Bike Friendly Partners, check out the News tab.</mutableString>
+                                        <string key="text">This map will help you when you’re out on the road by showing your location, and nearby Bike Friendly Businesses. Tap on a business icon to see the address of the business, a description of the business and links to their Facebook and Instagram accounts and website. If you’d like to stop by a nearby business, simply tap the business you’d like to visit on the map screen, then use the compass icon. The app will help you plot a course to your destination. Tap the compass icon again to clear the route and lay a course to a new location. Joining BNS is easy using our logo. The Bike Friendly logo can also be used to provide feedback about the app, or any of the businesses you visit along your ride. Finally, to keep informed of cycling news in Nova Scotia, or to see any hot sales offered by our Bike Friendly Partners, check out the News tab.</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>

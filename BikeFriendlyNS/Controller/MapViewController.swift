@@ -31,7 +31,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, JSONParserNewsProt
     }
     
     //Titles for the dropdown menus' cells
-    var filterList = ["All", "Attraction", "Bike Shop", "Camping", "House", "Inn", "Point of Interest", erm
+    var filterList = ["All", "Attraction", "Bike Shop", "Camping", "House", "Inn", "Point of Interest",
         "Restaurant"]
     
     override func viewDidLoad() {
