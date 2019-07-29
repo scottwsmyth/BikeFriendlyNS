@@ -23,7 +23,7 @@ class MenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem?.tintColor = UIColor.init(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
+        navigationItem.leftBarButtonItem?.tintColor = UIColor.init(red: 240.0/255.0, green: 194.0/255.0, blue: 102.0/255.0, alpha: 1.0)
         
         // Do any additional setup after loading the view.
     }

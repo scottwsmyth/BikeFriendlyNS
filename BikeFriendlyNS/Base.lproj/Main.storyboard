@@ -833,7 +833,7 @@ A: If you’re seriously injured, call 911 immediately. If you’ve experienced 
                     </view>
                     <navigationItem key="navigationItem" id="0Da-PH-xaY">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu-hamburger.png" id="Cy3-FX-u2t">
-                            <color key="tintColor" red="0.94217698429999996" green="0.76245398620000004" blue="0.39813242799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.94117647058823528" green="0.76078431372549016" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuBtnPressed:" destination="BXh-YI-G12" id="ZvI-Kj-lgC"/>
                             </connections>
@@ -986,7 +986,6 @@ A: If you’re seriously injured, call 911 immediately. If you’ve experienced 
                                             <constraint firstAttribute="height" constant="24" id="xWs-wt-kl4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSw-Z6-Ui0">
@@ -997,14 +996,15 @@ A: If you’re seriously injured, call 911 immediately. If you’ve experienced 
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Okay">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="okayBtnPressed:" destination="2Oe-D0-H39" eventType="touchUpInside" id="15I-VL-rnB"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.76078431369999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="FDR-H5-4cg" secondAttribute="bottom" constant="54" id="1nT-ZY-VSm"/>
                                     <constraint firstItem="FDR-H5-4cg" firstAttribute="centerX" secondItem="HeJ-bZ-p3j" secondAttribute="centerX" id="F9V-JO-C4i"/>
@@ -1195,7 +1195,7 @@ A: If you’re seriously injured, call 911 immediately. If you’ve experienced 
                     </tableView>
                     <navigationItem key="navigationItem" title="News" id="UT7-JG-8Bm">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu-hamburger.png" id="g0C-Fi-3Oa">
-                            <color key="tintColor" red="0.94217698429999996" green="0.76245398620000004" blue="0.39813242799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.94117647058823528" green="0.76078431372549016" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuBtnPressed:" destination="FCo-un-EOf" id="08t-2E-8fm"/>
                             </connections>
@@ -1217,13 +1217,15 @@ A: If you’re seriously injured, call 911 immediately. If you’ve experienced 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J43-hp-Txu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J43-hp-Txu">
                                 <rect key="frame" x="30" y="599" width="315" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="W3i-di-YWb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.76078431369999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="sendBtn:" destination="uje-Ih-jL7" eventType="touchUpInside" id="vK8-2T-NhP"/>
                                 </connections>
